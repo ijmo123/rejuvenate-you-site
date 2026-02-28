@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageTitle = 'About Rejuvenate You Scottsdale | Our Story & Mission';
+const pageDescription = 'Learn about Rejuvenate You Scottsdale, our mission, values, and commitment to helping you look and feel your best with professional waxing and skincare services.';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Rejuvenate You - Scottsdale",
+  "description": "Learn about Rejuvenate You Scottsdale, our mission, values, and commitment to helping you look and feel your best.",
+  "url": "https://www.rejuvenate-you.com/scottsdale/about"
+};
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} schema={schema} currentLocation="scottsdale">
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">About Rejuvenate You Scottsdale</h1>
+      <p class="text-xl max-w-3xl mx-auto text-purple-100">
+        Our mission, values, and commitment to helping Scottsdale clients look and feel their best
+      </p>
+    </div>
+  </section>
+
+  <!-- About Danielle -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-6" style="color: #7B2D8E;">Meet Danielle</h2>
+          <p class="text-lg text-gray-700 mb-4">
+            Hi, I'm Danielle, the owner of Rejuvenate You. I'm an esthetician with over <strong>15 years of experience</strong> working in wax chains and medi-spas.
+          </p>
+          <p class="text-gray-700 mb-4">
+            During my years in the industry, I discovered my passion for connecting with people and being a part of their transformations. I believe that good connections are crucial for achieving excellent results.
+          </p>
+          <p class="text-gray-700 mb-4">
+            My goal is to provide a comfortable and relaxing environment where clients can feel at ease while receiving the best possible treatments. I'm committed to staying up-to-date with the latest advancements in the industry.
+          </p>
+          <p class="text-gray-700">
+            Thank you for choosing Rejuvenate You Scottsdale. We look forward to helping you look and feel your best!
+          </p>
+        </div>
+        <div class="bg-purple-100 rounded-xl h-96 flex items-center justify-center">
+          <div class="text-center text-gray-400">
+            <span class="block text-8xl mb-4">👩‍💼</span>
+            <span class="text-lg">Danielle Morales, Owner & Esthetician</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Life -->
+  <section class="py-16 bg-purple-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Life Outside the Studio</h2>
+      <div class="bg-white p-8 rounded-xl shadow-sm">
+        <p class="text-lg text-gray-700 mb-6">
+          While not at work you'll find me looking for adventures and opportunities to make every experience a learning experience for my two kiddo's, I feel like parenting is just like life coaching.
+        </p>
+        <p class="text-lg text-gray-700 mb-6">
+          My husband has been the best partner while raising our two kids, a preteen and teenager. I love hiking, dancing and lifting heavy things for fun! I find myself always in gratitude when I hike during sunrise and sunset so I try to go a few times a week.
+        </p>
+        <div class="grid grid-cols-3 gap-4 text-center mt-8">
+          <div class="p-4 bg-purple-50 rounded-lg">
+            <span class="text-4xl">🏔️</span>
+            <p class="mt-2 font-medium text-gray-700">Hiking</p>
+          </div>
+          <div class="p-4 bg-purple-50 rounded-lg">
+            <span class="text-4xl">💃</span>
+            <p class="mt-2 font-medium text-gray-700">Dancing</p>
+          </div>
+          <div class="p-4 bg-purple-50 rounded-lg">
+            <span class="text-4xl">🏋️‍♀️</span>
+            <p class="mt-2 font-medium text-gray-700">Lifting</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-12 text-center" style="color: #7B2D8E;">Our Values</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6 bg-purple-50 rounded-xl">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #7B2D8E;">
+            <span class="text-2xl">💜</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #7B2D8E;">Expertise</h3>
+          <p class="text-gray-600">15+ years of experience in waxing and skincare. Continuous learning and improvement.</p>
+        </div>
+        <div class="text-center p-6 bg-purple-50 rounded-xl">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #7B2D8E;">
+            <span class="text-2xl">🤝</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #7B2D8E;">Connection</h3>
+          <p class="text-gray-600">Building relationships with clients. Listening to your needs and concerns.</p>
+        </div>
+        <div class="text-center p-6 bg-purple-50 rounded-xl">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #7B2D8E;">
+            <span class="text-2xl">✨</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #7B2D8E;">Results</h3>
+          <p class="text-gray-600">Delivering the best possible outcomes for every client, every visit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Info -->
+  <section class="py-16 bg-purple-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-6" style="color: #7B2D8E;">Our Scottsdale Location</h2>
+      <p class="text-lg text-gray-700 mb-4">
+        <strong>7127 E Sahuaro Dr, Ste 103</strong><br>
+        Scottsdale, AZ 85254<br>
+        📞 <a href="tel:4807476996" class="font-bold" style="color: #7B2D8E;">(480) 747-6996</a>
+      </p>
+      <p class="text-gray-600">
+        We also have a <a href="/phoenix" class="font-semibold hover:underline" style="color: #7B2D8E;">Phoenix location</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6">Ready to Experience Rejuvenate You?</h2>
+      <p class="text-xl mb-8 text-purple-100">
+        Book your Scottsdale appointment today and discover why our clients keep coming back.
+      </p>
+      <a 
+        href="https://rejuvenateyouwaxing.glossgenius.com/services"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block px-8 py-4 rounded-lg font-bold text-purple-900 bg-white hover:bg-purple-50 transition"
+      >
+        Book Scottsdale
+      </a>
+    </div>
+  </section>
+</BaseLayout>
