@@ -1,35 +1,139 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "Is microneedling painful?",
+    answer: "Most clients experience minimal discomfort. A topical numbing cream is applied before treatment to ensure your comfort. The sensation is often described as a light vibrating or prickling feeling."
+  },
+  {
+    question: "How many microneedling sessions do I need?",
+    answer: "Most clients see optimal results after 3-6 sessions spaced 4-6 weeks apart. However, you may notice improvements after just one treatment. Your esthetician will recommend a personalized treatment plan based on your skin concerns."
+  },
+  {
+    question: "What is the downtime after microneedling?",
+    answer: "There is minimal downtime. You may experience redness similar to a mild sunburn for 24-48 hours. Most clients can return to normal activities immediately, though we recommend avoiding makeup and direct sun exposure for 24 hours."
+  }
+];
 ---
 
 <ServicePage
   title="Microneedling Scottsdale | Collagen Stimulation Treatment"
   description="Professional microneedling in Scottsdale. Reduce fine lines, acne scars, and improve skin texture. Stimulate natural collagen production. Book today."
+  price="From $200"
+  duration="30-60 min"
+  location="scottsdale"
+  faqs={faqs}
 >
 
-# Microneedling Scottsdale
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_8f488d5f-2499-4306-929c-5eb072fc98ad_microneedling+scottsdale+az.jpeg"
+    alt="Microneedling treatment at Rejuvenate You in Scottsdale"
+    class="w-full h-64 md:h-96 object-cover rounded-xl"
+  />
+</div>
 
-Minimize unsightly blemishes by stimulating your skin's natural collagen production with our microneedling treatments.
+<p class="text-lg mb-6">
+  Minimize unsightly blemishes by stimulating your skin's natural collagen production with our microneedling treatments.
+</p>
 
-## What is Microneedling?
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What is Microneedling?</h2>
 
-Microneedling is a minimally invasive treatment that uses fine needles to create micro-injuries in the skin. This triggers your body's natural healing response, stimulating collagen and elastin production.
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_a17fdc74-407f-465c-b1c3-95d741bac86e_microneedling+service+scottsdale+az.jpeg"
+      alt="Microneedling procedure"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Microneedling is a minimally invasive treatment that uses fine needles to create micro-injuries in the skin. This triggers your body's natural healing response, stimulating collagen and elastin production.
+    </p>
+    <p>
+      This treatment is highly effective for treating early signs of skin laxity, fine lines, dull skin tones, and scars.
+    </p>
+  </div>
+</div>
 
-## Benefits of Microneedling
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of Microneedling</h2>
 
-- Reduces fine lines and wrinkles
-- Minimizes acne scars
-- Improves skin texture and tone
-- Reduces pore size
-- Stimulates natural collagen production
-- Little to no downtime
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-4">
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Reduces fine lines and wrinkles</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Minimizes acne scars</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Improves skin texture and tone</span>
+      </li>
+    </ul>
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Reduces pore size</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Stimulates natural collagen</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Little to no downtime</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-## What to Expect
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What to Expect</h2>
 
-Treatment typically takes 30-60 minutes. Most clients see results after 3-6 sessions spaced 4-6 weeks apart.
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Treatment typically takes 30-60 minutes. Most clients see results after 3-6 sessions spaced 4-6 weeks apart.
+    </p>
+    <p>
+      During your consultation, we'll assess your skin concerns and create a personalized treatment plan to help you achieve your desired results.
+    </p>
+  </div>
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_d99d7e45-8a58-4c29-b801-1a817a30ea6c_microneedling+scottsdale.jpeg"
+      alt="Microneedling results"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+</div>
 
-## Book Your Consultation
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Is Microneedling Right for You?</h2>
 
-[Book online](https://rejuvenateyouwaxing.glossgenius.com/services) or call (480) 747-6996
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <p class="mb-4">
+    Microneedling is suitable for most skin types and can address a variety of concerns including:
+  </p>
+  <ul class="list-disc pl-5 space-y-2 text-gray-700">
+    <li>Fine lines and wrinkles</li>
+    <li>Acne scars and other scarring</li>
+    <li>Uneven skin texture</li>
+    <li>Large pores</li>
+    <li>Hyperpigmentation</li>
+    <li>Dull skin tone</li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Consultation</h2>
+
+<p class="text-lg">
+  Ready to rejuvenate your skin? <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your microneedling consultation</a> at our Scottsdale location today. Call <a href="tel:4807476996" style="color: #7B2D8E;" class="font-semibold">(480) 747-6996</a> or book online.
+</p>
 
 </ServicePage>

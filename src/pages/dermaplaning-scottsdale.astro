@@ -1,10 +1,174 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "What is dermaplaning?",
+    answer: "Dermaplaning is a physical exfoliation treatment that uses a sterile surgical scalpel to gently scrape away dead skin cells and vellus hair (peach fuzz) from the surface of your skin."
+  },
+  {
+    question: "Does dermaplaning make hair grow back thicker?",
+    answer: "No, this is a common myth. Dermaplaning does not change the structure of your hair follicles. The vellus hair will grow back at the same rate and texture as before."
+  },
+  {
+    question: "How often should I get dermaplaning?",
+    answer: "Most clients benefit from dermaplaning every 3-4 weeks, which aligns with the natural skin cell turnover cycle. Your esthetician can recommend the best schedule for your skin."
+  }
+];
 ---
 
 <ServicePage
-  title="Dermaplaning Scottsdale"
-  description="Service from Rejuvenate You"
+  title="Dermaplaning Scottsdale | Facial Exfoliation & Peach Fuzz Removal"
+  description="Professional dermaplaning in Scottsdale. Remove dead skin cells and peach fuzz for smoother, brighter skin. Instant results with no downtime. Book today!"
+  price="$85"
+  duration="30-45 min"
+  location="scottsdale"
+  faqs={faqs}
 >
-Content to be imported.
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_02370109-1849-4534-a866-c3013ed5a1f2_dermaplaning-services.jpeg"
+    alt="Dermaplaning service at Rejuvenate You in Scottsdale"
+    class="w-full h-64 md:h-96 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Reveal smoother, brighter skin with our professional dermaplaning treatment. This gentle exfoliation removes dead skin cells and peach fuzz, leaving your skin incredibly soft and radiant.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What is Dermaplaning?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_28136082-bb80-480b-8843-f8e0d964a2e1_dermaplaning.jpg"
+      alt="Dermaplaning procedure"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Dermaplaning is a physical exfoliation treatment that uses a sterile surgical scalpel to gently scrape away dead skin cells and vellus hair (peach fuzz) from the surface of your skin.
+    </p>
+    <p>
+      This non-invasive treatment reveals the fresh, healthy skin beneath and creates a smooth canvas for flawless makeup application.
+    </p>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of Dermaplaning</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-4">
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Instantly smoother skin</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Brighter complexion</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Removes peach fuzz</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Better product absorption</span>
+      </li>
+    </ul>
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Flawless makeup application</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Reduces appearance of fine lines</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Safe for most skin types</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>No downtime</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Dermaplaning Process</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Cleansing</strong> — Your skin is thoroughly cleansed to remove any makeup, oil, or debris.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Exfoliation</strong> — Using a sterile surgical scalpel held at a 45-degree angle, we gently scrape away dead skin and peach fuzz.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Treatment</strong> — Optional: We can apply serums or treatments that penetrate deeper after dermaplaning.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Protection</strong> — SPF is applied to protect your freshly exfoliated skin.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Does Hair Grow Back Thicker?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      <strong>No,</strong> this is a common myth. Dermaplaning does not change the structure of your hair follicles. The vellus hair (peach fuzz) will grow back at the same rate and texture as before.
+    </p>
+    <p>
+      Because we're removing vellus hair (not terminal hair like on your legs or underarms), it cannot grow back thicker or darker.
+    </p>
+  </div>
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_bc502b75-688e-4339-8c46-e21dd1cc402c_dermaplaning-scottsdale.jpeg"
+      alt="Dermaplaning results"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Aftercare Tips</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ul class="space-y-2">
+    <li>• Avoid direct sun exposure for 24-48 hours</li>
+    <li>• Wear SPF 30+ daily</li>
+    <li>• Avoid retinol or exfoliating products for 3 days</li>
+    <li>• Skip heavy makeup for 24 hours if possible</li>
+    <li>• Keep skin hydrated with gentle moisturizer</li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Dermaplaning Treatment</h2>
+
+<p class="text-lg">
+  Ready for instantly smoother, brighter skin? <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your dermaplaning appointment</a> at our Scottsdale location today! Only $85 for this transformative treatment.
+</p>
+
 </ServicePage>

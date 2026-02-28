@@ -1,42 +1,168 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "Is men's Brazilian waxing painful?",
+    answer: "We specialize in making the experience as comfortable as possible. Our guided breathing techniques and strategic speed minimize discomfort. Most male clients are surprised by how manageable the process is."
+  },
+  {
+    question: "How long does men's waxing take?",
+    answer: "Men's Brazilian waxing typically takes 30-45 minutes. Back or chest waxing takes 20-30 minutes. We'll give you a time estimate when you book."
+  },
+  {
+    question: "How often should men get waxed?",
+    answer: "Most male clients schedule appointments every 4-6 weeks. Hair grows at different rates for everyone, so we'll help you find the right schedule for your needs."
+  }
+];
 ---
 
 <ServicePage
-  title="Men's Waxing Scottsdale | Brazilian, Back & Body Wax"
-  description="Professional men's waxing in Scottsdale. Brazilian, back, chest, and full body waxing. Discreet, comfortable service. 15+ years experience. Book online."
+  title="Men's Waxing Scottsdale | Male Brazilian & Body Waxing"
+  description="Professional men's waxing in Scottsdale. Male Brazilian, back, chest, and full body waxing services. Discreet, comfortable, and thorough. Book today!"
+  price="From $30"
+  duration="20-45 min"
+  location="scottsdale"
+  faqs={faqs}
 >
 
-# Men's Waxing Scottsdale
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_0b97a288-2ff8-48eb-9130-541d093bf5e7_waxing-for-men.jpeg"
+    alt="Men's waxing service at Rejuvenate You in Scottsdale"
+    class="w-full h-64 md:h-96 object-cover rounded-xl"
+  />
+</div>
 
-Welcome to Rejuvenate You, your premier destination for men's waxing in Scottsdale. We understand that grooming is essential for the modern man, and we provide a comfortable, discreet experience.
+<p class="text-lg mb-6">
+  Professional men's waxing services in a comfortable, judgment-free environment. From male Brazilian waxing to back and chest services, we provide thorough, discreet hair removal for men who want smooth, clean skin.
+</p>
 
-## Men's Waxing Services
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Men's Waxing Services</h2>
 
-### Male Brazilian Wax — $80
-Complete hair removal for a clean, confident feel. Our experienced technicians make this service quick and as comfortable as possible.
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="bg-purple-50 p-6 rounded-lg">
+    <h3 class="font-bold text-lg mb-3" style="color: #7B2D8E;">Men's Brazilian</h3>
+    <p class="text-2xl font-bold mb-2">$80</p>
+    <p class="text-gray-600">Complete hair removal front and back, or customized to your preference.</p>
+  </div>
+  <div class="bg-purple-50 p-6 rounded-lg">
+    <h3 class="font-bold text-lg mb-3" style="color: #7B2D8E;">Back Wax</h3>
+    <p class="text-2xl font-bold mb-2">$60</p>
+    <p class="text-gray-600">Full back hair removal for smooth, clean skin.</p>
+  </div>
+  <div class="bg-purple-50 p-6 rounded-lg">
+    <h3 class="font-bold text-lg mb-3" style="color: #7B2D8E;">Chest Wax</h3>
+    <p class="text-2xl font-bold mb-2">$30</p>
+    <p class="text-gray-600">Chest and sternum area for a polished look.</p>
+  </div>
+  <div class="bg-purple-50 p-6 rounded-lg">
+    <h3 class="font-bold text-lg mb-3" style="color: #7B2D8E;">Brow Wax</h3>
+    <p class="text-2xl font-bold mb-2">$21</p>
+    <p class="text-gray-600">Clean, masculine brow shaping.</p>
+  </div>
+</div>
 
-### Back Wax — $60
-Say goodbye to unwanted back hair. Achieve a smooth, clean look effortlessly.
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Men Choose Professional Waxing</h2>
 
-### Chest Wax — $30
-Show off a well-defined chest. Get rid of unwanted hair and reveal your natural physique.
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_1704236723356-F0ZZC66MHFKM5SDZ0PNC_mens-hair-removal.jpg"
+      alt="Men's hair removal services"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Longer-lasting results</strong> — 4-6 weeks of smooth skin vs. daily shaving</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>No razor burn</strong> — Avoid irritation, cuts, and ingrown hairs</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Finer regrowth</strong> — Hair grows back softer, not stubbly</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Professional results</strong> — Hard-to-reach areas done right</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-### Brow & Facial Wax — $21
-Define your features with our precise brow and facial waxing techniques.
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What to Expect</h2>
 
-### Full Body Wax
-For the complete grooming experience. Enjoy head-to-toe smoothness and confidence. Call for pricing.
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Consultation</strong> — We discuss your goals and any concerns. Your comfort is our priority.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Preparation</strong> — The area is cleansed and prepped for optimal results.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Treatment</strong> — Using quality hard wax and expert technique, we remove unwanted hair efficiently.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Aftercare</strong> — We provide guidance on caring for your skin post-wax.
+      </div>
+    </li>
+  </ol>
+</div>
 
-## What to Expect
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">A Comfortable Experience</h2>
 
-- Clean, private treatment rooms
-- Professional, judgment-free service
-- High-quality hard wax for sensitive areas
-- Expert technique for minimal discomfort
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      We understand that men's waxing can feel intimidating, especially for first-timers. Our experienced estheticians create a professional, discreet environment where you can feel comfortable.
+    </p>
+    <p>
+      We use guided breathing techniques and work efficiently to minimize discomfort. Many of our male clients become regulars after their first experience.
+    </p>
+  </div>
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_48810a57-ab63-45e9-99c9-98a055c66970_male+face+waxing+scottsdale.jpeg"
+      alt="Male face waxing"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+</div>
 
-## Book Your Appointment
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Preparing for Your Wax</h2>
 
-[Book online](https://rejuvenateyouwaxing.glossgenius.com/services) or call (480) 747-6996
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ul class="space-y-2">
+    <li>• Hair should be at least ¼ inch long (about 2-3 weeks of growth)</li>
+    <li>• Shower before your appointment</li>
+    <li>• Avoid lotions or oils on the area</li>
+    <li>• Wear loose, comfortable clothing</li>
+    <li>• Avoid alcohol and caffeine before your appointment</li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Men's Waxing Appointment</h2>
+
+<p class="text-lg">
+  Ready for smooth, clean skin? <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your men's waxing appointment</a> at our Scottsdale location today. Professional, discreet service guaranteed.
+</p>
 
 </ServicePage>
