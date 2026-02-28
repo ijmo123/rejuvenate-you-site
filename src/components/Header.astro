@@ -38,8 +38,8 @@ const locationName = currentLocation === 'phoenix' ? 'Phoenix' :
                      currentLocation === 'scottsdale' ? 'Scottsdale' : '';
 ---
 
-<header class="bg-white shadow-md sticky top-0 z-50">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<header id="main-header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+    <nav id="main-nav" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 transition-all duration-300">
         <div class="flex justify-between items-center">
             <!-- Logo - goes to location-specific home -->
             <div class="flex items-center space-x-2">
@@ -160,4 +160,27 @@ const locationName = currentLocation === 'phoenix' ? 'Phoenix' :
             mobileMenu.classList.toggle('hidden');
         });
     }
+
+    // Collapse header on scroll
+    const header = document.getElementById('main-header');
+    const nav = document.getElementById('main-nav');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > 100) {
+            // Scrolled down - make header compact
+            header?.classList.add('py-2');
+            header?.classList.remove('py-4');
+            nav?.classList.remove('py-4');
+        } else {
+            // At top - full size
+            header?.classList.add('py-4');
+            header?.classList.remove('py-2');
+            nav?.classList.add('py-4');
+        }
+        
+        lastScrollY = currentScrollY;
+    });
 </script>
