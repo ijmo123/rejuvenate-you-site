@@ -25,38 +25,114 @@ const isScottsdale = currentLocation === 'scottsdale';
 <footer class="bg-gray-900 text-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Location 1: Scottsdale -->
-            <div class={isPhoenix ? 'opacity-60' : ''}>
-                <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Scottsdale</h3>
-                <div class="space-y-2 text-sm">
-                    <p>
-                        <a href="tel:6239803867" class="hover:text-purple-400 transition">
-                            (623) 980-3867
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://rejuvenateyouwaxing.glossgenius.com/services" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
-                            Book Scottsdale
-                        </a>
-                    </p>
-                </div>
+            <!-- Current Location Info -->
+            <div>
+                {isPhoenix && (
+                    <>
+                        <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Phoenix</h3>
+                        <address class="not-italic space-y-2 text-sm">
+                            <p>
+                                <a href="https://www.google.com/maps?cid=7887328475959804245" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    727 E Bethany Home Rd, Ste d-224<br>
+                                    Phoenix, AZ 85014
+                                </a>
+                            </p>
+                            <p class="mt-4">
+                                <a href="tel:6239803867" class="hover:text-purple-400 transition">
+                                    (623) 980-3867
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    Book Phoenix
+                                </a>
+                            </p>
+                        </address>
+                    </>
+                )}
+                {isScottsdale && (
+                    <>
+                        <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Scottsdale</h3>
+                        <address class="not-italic space-y-2 text-sm">
+                            <p>
+                                <a href="https://www.google.com/maps?cid=9311880125746937216" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    7127 E Sahuaro Dr, Ste 103<br>
+                                    Scottsdale, AZ 85254
+                                </a>
+                            </p>
+                            <p class="mt-4">
+                                <a href="tel:6239803867" class="hover:text-purple-400 transition">
+                                    (623) 980-3867
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://rejuvenateyouwaxing.glossgenius.com/services" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    Book Scottsdale
+                                </a>
+                            </p>
+                        </address>
+                    </>
+                )}
+                {!isPhoenix && !isScottsdale && (
+                    <>
+                        <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Contact Us</h3>
+                        <div class="space-y-2 text-sm">
+                            <p>
+                                <a href="tel:6239803867" class="hover:text-purple-400 transition">
+                                    (623) 980-3867
+                                </a>
+                            </p>
+                            <p class="mt-4">
+                                <a href="https://rejuvenateyouwaxing.glossgenius.com/services" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    Book Scottsdale
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    Book Phoenix
+                                </a>
+                            </p>
+                        </div>
+                    </>
+                )}
             </div>
 
-            <!-- Location 2: Phoenix -->
-            <div class={isScottsdale ? 'opacity-60' : ''}>
-                <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Phoenix</h3>
-                <div class="space-y-2 text-sm">
-                    <p>
-                        <a href="tel:6239803867" class="hover:text-purple-400 transition">
-                            (623) 980-3867
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
-                            Book Phoenix
-                        </a>
-                    </p>
-                </div>
+            <!-- Other Location (no address) -->
+            <div class={isPhoenix ? 'opacity-60' : isScottsdale ? 'opacity-60' : ''}>
+                {isPhoenix && (
+                    <>
+                        <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Scottsdale</h3>
+                        <div class="space-y-2 text-sm">
+                            <p>
+                                <a href="tel:6239803867" class="hover:text-purple-400 transition">
+                                    (623) 980-3867
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://rejuvenateyouwaxing.glossgenius.com/services" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    Book Scottsdale
+                                </a>
+                            </p>
+                        </div>
+                    </>
+                )}
+                {isScottsdale && (
+                    <>
+                        <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Phoenix</h3>
+                        <div class="space-y-2 text-sm">
+                            <p>
+                                <a href="tel:6239803867" class="hover:text-purple-400 transition">
+                                    (623) 980-3867
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    Book Phoenix
+                                </a>
+                            </p>
+                        </div>
+                    </>
+                )}
             </div>
 
             <!-- Links & Info -->
