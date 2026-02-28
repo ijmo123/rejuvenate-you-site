@@ -67,18 +67,22 @@ const locationName = currentLocation === 'phoenix' ? 'Phoenix' :
                 <!-- Location Dropdown -->
                 <div class="relative group">
                     <button class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-purple-700 inline-flex items-center">
-                        Locations
+                        {currentLocation ? `Switch Location` : 'Locations'}
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
                     </button>
                     <div class="hidden group-hover:block absolute left-0 mt-0 w-48 bg-white rounded-md shadow-lg py-2 z-20">
-                        <a href="/scottsdale" class={`block px-4 py-2 text-sm hover:bg-purple-50 ${currentLocation === 'scottsdale' ? 'text-purple-700 font-semibold bg-purple-50' : 'text-gray-700'}`}>
-                            Scottsdale
-                        </a>
-                        <a href="/phoenix" class={`block px-4 py-2 text-sm hover:bg-purple-50 ${currentLocation === 'phoenix' ? 'text-purple-700 font-semibold bg-purple-50' : 'text-gray-700'}`}>
-                            Phoenix
-                        </a>
+                        {currentLocation !== 'scottsdale' && (
+                            <a href="/scottsdale" class="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50">
+                                Scottsdale
+                            </a>
+                        )}
+                        {currentLocation !== 'phoenix' && (
+                            <a href="/phoenix" class="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50">
+                                Phoenix
+                            </a>
+                        )}
                     </div>
                 </div>
 
@@ -119,12 +123,16 @@ const locationName = currentLocation === 'phoenix' ? 'Phoenix' :
             <a href={blogLink} class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
                 Blog
             </a>
-            <a href="/scottsdale" class={`block px-3 py-2 rounded-md text-base font-medium hover:text-purple-700 ${currentLocation === 'scottsdale' ? 'text-purple-700 font-semibold' : 'text-gray-700'}`}>
-                Scottsdale
-            </a>
-            <a href="/phoenix" class={`block px-3 py-2 rounded-md text-base font-medium hover:text-purple-700 ${currentLocation === 'phoenix' ? 'text-purple-700 font-semibold' : 'text-gray-700'}`}>
-                Phoenix
-            </a>
+            {currentLocation !== 'scottsdale' && (
+                <a href="/scottsdale" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
+                    Scottsdale
+                </a>
+            )}
+            {currentLocation !== 'phoenix' && (
+                <a href="/phoenix" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
+                    Phoenix
+                </a>
+            )}
             <a href={contactLink} class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
                 Contact
             </a>
