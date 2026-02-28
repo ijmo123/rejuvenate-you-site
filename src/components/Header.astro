@@ -67,7 +67,9 @@ const locationName = currentLocation === 'phoenix' ? 'Phoenix' :
                 <!-- Location Dropdown -->
                 <div class="relative group">
                     <button class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-purple-700 inline-flex items-center">
-                        {currentLocation ? `Switch Location` : 'Locations'}
+                        {currentLocation === 'phoenix' ? 'Switch to Scottsdale' : 
+                         currentLocation === 'scottsdale' ? 'Switch to Phoenix' : 
+                         'Locations'}
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                         </svg>
