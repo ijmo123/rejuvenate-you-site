@@ -1,47 +1,218 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "How painful is a Brazilian wax?",
+    answer: "Everyone has a different pain threshold, but our esthetician can reduce pain and discomfort by getting wax to the right temperature. It should be hot enough to melt not warm enough to hurt your skin. The experienced esthetician will have mind-body techniques such as breathing suggestions and other ways to calm the pain receptors."
+  },
+  {
+    question: "What's the difference between Brazilian and Bikini wax?",
+    answer: "When you select the Brazilian wax method, you can tell your esthetician whether you want full coverage or want some hair to remain. For example, some women keep a small triangle, a small strip, or a square shape. A bikini wax only removes hair that would be visible around the bikini line."
+  },
+  {
+    question: "How should I prepare for my Brazilian wax?",
+    answer: "Take a warm shower before your Brazilian wax session. It will help to open up the pores and make it easier for the wax to adhere to the hair. Exfoliate the area before Brazilian waxing. Don't use any creams or lotions before Brazilian waxing. Trim any pubic hairs before coming in for your session. Make sure you have at least ¼ inch of growth."
+  }
+];
 ---
 
 <ServicePage
   title="Brazilian Wax Phoenix | 50% Off Second Visit | 5.0★ Rejuvenate You"
-  description="Best Brazilian wax in Phoenix, AZ. First-time client friendly, 50% off your"
+  description="Best Brazilian wax in Phoenix, AZ. First-time client friendly, 50% off your second visit. 5.0★ rated with 15+ years experience. Book online today!"
+  price="$60"
+  duration="15-20 min"
+  location="phoenix"
+  faqs={faqs}
 >
 
-# Brazilian Wax Phoenix | 50% Off Second Visit | 5.0★ Rejuvenate You
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_46598252-ff89-4700-80f2-2e535177697e_brazilian-waxing-scottsdale.jpg"
+    alt="Brazilian wax service at Rejuvenate You in Phoenix"
+    class="w-full h-64 md:h-96 object-cover rounded-xl"
+  />
+</div>
 
+<p class="text-lg mb-6">
+  Best Brazilian wax in Phoenix, AZ. First-time client friendly, 50% off your second visit. 5.0★ rated with 15+ years experience. Book online today!
+</p>
 
-Best Brazilian wax in Phoenix, AZ. First-time client friendly, 50% off your 
-second visit. 5.0★ rated with 15+ years experience. Book online today.
+<!-- Special Offer Banner -->
+<div class="bg-purple-600 text-white p-6 rounded-xl mb-8 text-center">
+  <h2 class="text-2xl font-bold mb-2">🎉 FIRST-TIME CLIENT SPECIAL</h2>
+  <p class="text-lg mb-2">Your second Brazilian wax is <span class="font-bold text-yellow-300">50% OFF</span> when you schedule within 4-6 weeks</p>
+  <p class="text-sm opacity-90">First-Timer Specialists • 5.0★ Rated • 15+ Years Experience</p>
+</div>
 
+<!-- Trust Badges -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+  <div class="text-center p-4 bg-purple-50 rounded-lg">
+    <p class="text-2xl mb-1">⭐</p>
+    <p class="font-bold" style="color: #7B2D8E;">5.0★ Rating</p>
+    <p class="text-sm text-gray-600">Phoenix & Scottsdale</p>
+  </div>
+  <div class="text-center p-4 bg-purple-50 rounded-lg">
+    <p class="text-2xl mb-1">🏆</p>
+    <p class="font-bold" style="color: #7B2D8E;">15+ Years</p>
+    <p class="text-sm text-gray-600">Experience</p>
+  </div>
+  <div class="text-center p-4 bg-purple-50 rounded-lg">
+    <p class="text-2xl mb-1">✨</p>
+    <p class="font-bold" style="color: #7B2D8E;">First-Timer</p>
+    <p class="text-sm text-gray-600">Specialists</p>
+  </div>
+  <div class="text-center p-4 bg-purple-50 rounded-lg">
+    <p class="text-2xl mb-1">🔒</p>
+    <p class="font-bold" style="color: #7B2D8E;">Clean, Private</p>
+    <p class="text-sm text-gray-600">Studio</p>
+  </div>
+</div>
 
-## Benefits of a Brazilian Wax in Phoenix
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of a Brazilian Wax in Phoenix</h2>
 
-## How painful is brazilian waxing?
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_493ba91d-a9ae-41e2-aa68-dd58b7715b00_benefits-of-brazilian-waxing.jpg"
+      alt="Benefits of Brazilian waxing"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Opting for our full Brazilian wax service in Phoenix offers many advantages. Consider the negative aspects of shaving. When you shave, the hair can grow thicker, itchier, and coarser. The shaving process doesn't provide a long-term solution either.
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Longer-lasting results than shaving</li>
+      <li>Smoother skin texture</li>
+      <li>Reduced hair growth over time</li>
+      <li>No razor burn or cuts</li>
+    </ul>
+  </div>
+</div>
 
-## Difference Between a Brazilian &amp; Bikini Wax
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">How Painful is Brazilian Waxing?</h2>
 
-## The Brazilian Waxing Process in Phoenix
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <p class="mb-4">
+    Everyone has a different pain threshold, but our esthetician can reduce pain and discomfort by getting wax to the right temperature. It should be hot enough to melt not warm enough to hurt your skin. The experienced esthetician will have mind-body techniques such as breathing suggestions and other ways to calm the pain receptors.
+  </p>
+  <p>
+    There is also an expert gesture to tear off the wax in a swift motion. If done quickly and effectively, this part of the process causes brief and minimal pain.
+  </p>
+</div>
 
-## Why Choose Rejuvenate You
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Difference Between a Brazilian & Bikini Wax</h2>
 
-FIRST-TIME CLIENT SPECIAL
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_bad5dd22-73c2-4151-af44-9623a61de5f0_difference-between-brazilian-and-bikini-wax.jpeg"
+      alt="Difference between Brazilian and bikini wax"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div>
+    <p class="mb-4">
+      You can also choose to use a bikini full wax. The bikini full waxing procedure removes the hair from around the mons pubis area. The mons pubis area covers the lower abdomen and extends to the labia. The process does not include the rear area.
+    </p>
+    <p>
+      When you select the Brazilian wax method, you can tell your esthetician whether you want full coverage or want some hair to remain. For example, some women keep a small triangle, a small strip, or a square shape.
+    </p>
+  </div>
+</div>
 
-Your second Brazilian wax is 50% off if you schedule it within 4-6 weeks
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Brazilian Waxing Process in Phoenix</h2>
 
-First-Time Client Friendly • 5.0★ Rated • 15+ Years Experience"
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_1682453305760-1IACFQ520VPMLAMVJAJW_how-is-brazilian-wax-done.jpeg"
+    alt="How Brazilian wax is done"
+    class="w-full h-64 object-cover rounded-lg mb-4"
+  />
+  <p class="mb-4">
+    Here is what you can expect with your Brazilian wax session. Additionally, the wax temperature should remain comfortable. Our estheticians understand the art involved with using the appropriate temperature.
+  </p>
+</div>
 
-Smooth, confident results from Phoenix's trusted waxing experts. Our experienced estheticians make your first Brazilian wax comfortable and stress-free.
+<h3 class="text-xl font-semibold mb-4" style="color: #7B2D8E;">Preparing for Your Appointment</h3>
 
-⭐️ 5.0★ Rating (Phoenix &amp; Scottsdale)    🏆 15+ Years Experience    ✨ First-Timer Specialists    🔒 Clean, Private Studio
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ul class="space-y-3">
+    <li class="flex items-start">
+      <span class="font-bold mr-2" style="color: #7B2D8E;">1.</span>
+      <span>Take a warm shower before your Brazilian wax session. It will help to open up the pores and make it easier for the wax to adhere to the hair.</span>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-2" style="color: #7B2D8E;">2.</span>
+      <span>Exfoliate the area before Brazilian waxing. Exfoliating helps remove dead skin cells and dirt, which can otherwise lead to irritation or discomfort during Brazilian waxing.</span>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-2" style="color: #7B2D8E;">3.</span>
+      <span>Don't use any creams or lotions before Brazilian waxing. It will help ensure that the wax sticks to the hair and not your skin.</span>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-2" style="color: #7B2D8E;">4.</span>
+      <span>Trim any pubic hairs before coming in for your session. It will keep all the hair even in length, which can minimize pain during Brazilian waxing.</span>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-2" style="color: #7B2D8E;">5.</span>
+      <span>You should also make sure you have enough hair to wax. Check to see if you have at least ¼ inch of growth. Checking this will ensure that the wax can adhere to the hair.</span>
+    </li>
+  </ul>
+  <p class="mt-4 text-gray-700">
+    Using these tips will help reduce pain and discomfort as we work to create an enjoyable experience.
+  </p>
+</div>
 
-Opting for our full Brazilian wax service in Phoenix offers many advantages.
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Choose Rejuvenate You in Phoenix</h2>
 
-Consider the negative aspects of shaving. When you shave, the hair can grow thicker, itchier, and coarser. The shaving process doesn't provide a long-term solution either.
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <p class="mb-4">
+    Smooth, confident results from Phoenix's trusted waxing experts. Our experienced estheticians make your first Brazilian wax comfortable and stress-free.
+  </p>
+  <div class="grid md:grid-cols-2 gap-4">
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>15+ years of experience</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Perfect 5.0★ rating</span>
+      </li>
+    </ul>
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Clean, private studio</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>First-timer specialists</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-Additionally, the wax temperature should remain comfortable. Our estheticians understand the art involved with using the appropriate temperature.&nbsp;
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Schedule Your Brazilian Wax in Phoenix</h2>
 
-You can also choose to use a bikini full wax. The bikini full waxing procedure removes the hair from around the mons pubis area. The mons pubis area covers the lower abdomen and extends to the labia. The process does not include the rear area.&nbsp;
+<p class="text-lg mb-6">
+  Ready to experience smooth, hair-free skin? Book your Brazilian wax appointment at our Phoenix location today. Our experienced estheticians are here to provide you with the most comfortable waxing experience possible.
+</p>
 
-When you select the Brazilian wax method, you can tell your esthetician whether you want full coverage or want some hair to remain. For example, some women keep a small triangle, a small strip, or a square shape.
+<div class="text-center">
+  <a
+    href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-block px-8 py-4 rounded-lg font-bold text-white text-lg"
+    style="background-color: #7B2D8E;"
+  >
+    Book Your Brazilian Wax in Phoenix
+  </a>
+</div>
 
 </ServicePage>
