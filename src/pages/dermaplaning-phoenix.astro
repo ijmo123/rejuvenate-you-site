@@ -1,47 +1,184 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "What is dermaplaning?",
+    answer: "Dermaplaning is a physical exfoliation treatment that uses a sterile surgical scalpel to gently scrape away dead skin cells and vellus hair (peach fuzz) from the surface of your skin."
+  },
+  {
+    question: "Does dermaplaning make hair grow back thicker?",
+    answer: "No, this is a common myth. Dermaplaning does not change the structure of your hair follicles. The vellus hair will grow back at the same rate and texture as before."
+  },
+  {
+    question: "How often should I get dermaplaning?",
+    answer: "Most clients benefit from dermaplaning every 3-4 weeks, which aligns with the natural skin cell turnover cycle. Your esthetician can recommend the best schedule for your skin."
+  }
+];
 ---
 
 <ServicePage
-  title="Dermaplaning Phoenix AZ | Dermaplane Facial Treatment"
-  description="Rejuvenate your skin with our effective dermaplaning treatment in Phoenix,"
+  title="Dermaplaning Phoenix | Facial Exfoliation & Peach Fuzz Removal"
+  description="Professional dermaplaning in Phoenix, AZ. Remove dead skin cells and peach fuzz for smoother, brighter skin. Instant results with no downtime. Book today!"
+  price="$85"
+  duration="30-45 min"
+  location="phoenix"
+  faqs={faqs}
 >
 
-# Dermaplaning Phoenix AZ | Dermaplane Facial Treatment
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_02370109-1849-4534-a866-c3013ed5a1f2_dermaplaning-services.jpeg"
+    alt="Dermaplaning service at Rejuvenate You in Phoenix"
+    class="w-full h-64 md:h-96 object-cover rounded-xl"
+  />
+</div>
 
+<p class="text-lg mb-6">
+  Reveal smoother, brighter skin with our professional dermaplaning treatment in Phoenix. This gentle exfoliation removes dead skin cells and peach fuzz, leaving your skin incredibly soft and radiant.
+</p>
 
-Rejuvenate your skin with our effective dermaplaning treatment in Phoenix, 
-AZ. Improve skin texture and remove peach fuzz. Book an appointment today!
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What is Dermaplaning?</h2>
 
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_28136082-bb80-480b-8843-f8e0d964a2e1_dermaplaning.jpg"
+      alt="Dermaplaning procedure"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Dermaplaning is a physical exfoliation treatment that uses a sterile surgical scalpel to gently scrape away dead skin cells and vellus hair (peach fuzz) from the surface of your skin.
+    </p>
+    <p>
+      This non-invasive treatment reveals the fresh, healthy skin beneath and creates a smooth canvas for flawless makeup application.
+    </p>
+  </div>
+</div>
 
-## What is Dermaplaning?
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of Dermaplaning</h2>
 
-## What Does Dermaplaning Treat?
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-4">
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Instantly smoother skin</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Brighter complexion</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Removes peach fuzz</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Better product absorption</span>
+      </li>
+    </ul>
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Flawless makeup application</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Reduces appearance of scars</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Minimizes fine lines</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>No downtime</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-## Acne Scars
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What Does Dermaplaning Treat?</h2>
 
-## Absorption
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Acne scars</strong> — Reduces appearance of superficial scars</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Uneven texture</strong> — Smooths rough, dry skin</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Hyperpigmentation</strong> — Fades sun spots and discoloration</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Dull skin</strong> — Reveals brighter, more radiant complexion</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Fine lines</strong> — Softens appearance of early aging signs</span>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_dermaplaning-facial-treatment.jpg"
+      alt="Dermaplaning treatment results"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+</div>
 
-## Uneven Skin Texture or Tone (Hyperpigmentation, Sun Spots)
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
 
-If you are in search of dermaplaning in Phoenix, Rejuvenate You has you covered.
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Cleansing</strong> — Your face is thoroughly cleansed to remove makeup and oils.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Preparation</strong> — Skin is prepped and held taut for optimal treatment.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Dermaplaning</strong> — Using a sterile surgical scalpel, we gently scrape away dead skin and peach fuzz.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Treatment</strong> — Customized serums and moisturizers are applied.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">5.</span>
+      <div>
+        <strong>Protection</strong> — Sunscreen is applied to protect your fresh skin.
+      </div>
+    </li>
+  </ol>
+</div>
 
-This treatment is also known as skin resurfacing. We gently scrape off the outermost layer of your skin to reveal a fresh new layer underneath. This process can reduce the appearance of peach fuzz and leave you with a smooth complexion.&nbsp;
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Dermaplaning in Phoenix</h2>
 
-The procedure is less abrasive than microdermabrasion because it doesn't remove as much healthy tissue.
-
-It may not be suitable for everyone, though. Those with dry or sensitive skin may experience increased sensitivity after dermaplaning.
-
-Dermaplaning is a proven solution to countless skin problems. The best way to determine if this is right for you is to speak with a licensed professional.
-
-At Rejuvenate You, we will assess your skin and let you know what kind of results we think dermaplaning would achieve based on your specific concerns. This treatment is generally ideal for the following:
-
-Acne scars are the result of inflammation and infection of the skin. They can be superficial or deep, flat or raised, red, white, or purple.
-
-Dermaplaning removes acne scars by exfoliating the top layer of dead skin cells to reveal newer, healthier skin underneath. This process helps unclog pores for improved oil flow. As a result, it allows for faster cell turnover and fewer clogged pores that cause acne breakouts in the first place!
-
-The treatment makes skin smooth, bright and even in tone. Dermaplaning also allows skincare products, such as serums and sunscreen, to penetrate deeper into the skin, making them more effective.
-
-In addition, it makes makeup application smoother and more even by removing dead skin cells and hair that can cause makeup to look flaky or patchy. And the removing of vellus hair also make the skin look more smooth, soft and clean.
+<p class="text-lg">
+  Ready for smoother, brighter skin? <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" style="color: #7B2D8E;" class="font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Book your dermaplaning appointment</a> at our Phoenix location today!
+</p>
 
 </ServicePage>

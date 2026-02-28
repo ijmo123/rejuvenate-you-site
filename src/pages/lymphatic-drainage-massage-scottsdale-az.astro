@@ -1,10 +1,194 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "What is lymphatic drainage massage?",
+    answer: "Lymphatic drainage massage is a gentle, therapeutic technique that uses light, rhythmic strokes to stimulate the lymphatic system. This helps reduce fluid retention, remove toxins, and promote overall wellness."
+  },
+  {
+    question: "Is lymphatic drainage massage painful?",
+    answer: "No, lymphatic drainage massage is very gentle and relaxing. It uses light pressure—much lighter than traditional massage—so it's completely comfortable and often described as soothing."
+  },
+  {
+    question: "How often should I get lymphatic drainage massage?",
+    answer: "For general wellness, monthly sessions are beneficial. If you're addressing specific concerns like post-surgery recovery or chronic swelling, weekly sessions may be recommended initially. Your therapist will create a personalized plan."
+  }
+];
 ---
 
 <ServicePage
-  title="Lymphatic Drainage Massage Scottsdale Az"
-  description="Service from Rejuvenate You"
+  title="Lymphatic Drainage Massage Scottsdale | Detox & Wellness"
+  description="Professional lymphatic drainage massage in Scottsdale, AZ. Reduce fluid retention, detoxify, and boost your immune system. Relaxing, therapeutic treatment. Book today!"
+  price="From $95"
+  duration="60-90 min"
+  location="scottsdale"
+  faqs={faqs}
 >
-Content to be imported.
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_lymphatic-drainage-massage.jpg"
+    alt="Lymphatic drainage massage at Rejuvenate You in Scottsdale"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Experience the rejuvenating benefits of professional lymphatic drainage massage. This gentle, therapeutic treatment stimulates your lymphatic system to reduce fluid retention, remove toxins, and promote overall wellness and relaxation.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What is Lymphatic Drainage Massage?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_lymphatic-massage-therapy.jpg"
+      alt="Lymphatic drainage massage therapy"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Lymphatic drainage massage is a specialized technique that uses gentle, rhythmic strokes to stimulate the lymphatic system. Unlike traditional massage, it uses very light pressure to encourage the movement of lymph fluid throughout the body.
+    </p>
+    <p>
+      The lymphatic system is your body's natural detoxification system, responsible for removing waste, toxins, and excess fluid. When this system becomes sluggish, you may experience swelling, fatigue, and compromised immunity.
+    </p>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of Lymphatic Drainage</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-4">
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Reduces fluid retention and swelling</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Detoxifies the body</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Boosts immune system function</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Promotes relaxation and stress relief</span>
+      </li>
+    </ul>
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Improves circulation</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Supports post-surgery recovery</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Reduces appearance of cellulite</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Enhances skin health and glow</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Who Can Benefit?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span>Those experiencing fluid retention or bloating</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span>Post-surgery recovery patients</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span>Individuals with lymphedema</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span>People seeking immune system support</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span>Anyone wanting relaxation and stress relief</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span>Those looking to detoxify their body</span>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_lymphatic-wellness.jpg"
+      alt="Lymphatic drainage wellness treatment"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Consultation</strong> — We discuss your health history and wellness goals.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Preparation</strong> — You'll relax in a comfortable, private treatment room.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Treatment</strong> — Using gentle, rhythmic strokes, we stimulate lymph flow toward lymph nodes.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Aftercare</strong> — We provide hydration tips and self-care recommendations.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Aftercare Tips</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <ul class="space-y-2">
+    <li>• Drink plenty of water to help flush toxins</li>
+    <li>• Avoid alcohol and caffeine for 24 hours</li>
+    <li>• Light exercise like walking can enhance lymph flow</li>
+    <li>• Eat light, healthy meals</li>
+    <li>• Get adequate rest</li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Lymphatic Drainage Massage</h2>
+
+<p class="text-lg">
+  Ready to detoxify and rejuvenate your body? <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your lymphatic drainage massage</a> at our Scottsdale location today!
+</p>
+
 </ServicePage>

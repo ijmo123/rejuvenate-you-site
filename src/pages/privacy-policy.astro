@@ -1,10 +1,121 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Privacy Policy | Rejuvenate You',
+  description: 'Privacy policy for Rejuvenate You waxing and skincare services in Scottsdale and Phoenix, Arizona.'
+};
 ---
 
 <BaseLayout
-  title="Privacy Policy"
-  description="Service from Rejuvenate You"
+  title="Privacy Policy | Rejuvenate You"
+  description="Privacy policy for Rejuvenate You waxing and skincare services in Scottsdale and Phoenix, Arizona."
+  schema={schema}
 >
-Content to be imported.
+  <div class="max-w-3xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-8" style="color: #7B2D8E;">Privacy Policy</h1>
+    
+    <div class="prose prose-lg max-w-none">
+      <p class="text-gray-600 mb-6">
+        Last updated: February 27, 2026
+      </p>
+
+      <p class="mb-6">
+        At Rejuvenate You, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or use our services.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4" style="color: #7B2D8E;">Information We Collect</h2>
+      
+      <p class="mb-4">We may collect the following types of information:</p>
+      
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Personal Information:</strong> Name, email address, phone number, and appointment details when you book services.</li>
+        <li><strong>Payment Information:</strong> Credit card details processed securely through our payment providers (Square, GlossGenius).</li>
+        <li><strong>Website Usage:</strong> IP address, browser type, pages visited, and time spent on our website.</li>
+        <li><strong>Health Information:</strong> Skin conditions, allergies, or other health information relevant to your treatment.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4" style="color: #7B2D8E;">How We Use Your Information</h2>
+      
+      <p class="mb-4">We use your information to:</p>
+      
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Provide and manage our waxing and skincare services</li>
+        <li>Process payments and send appointment confirmations</li>
+        <li>Send appointment reminders and follow-up care instructions</li>
+        <li>Respond to your inquiries and provide customer support</li>
+        <li>Improve our website and services</li>
+        <li>Send promotional offers (with your consent)</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4" style="color: #7B2D8E;">Information Sharing</h2>
+      
+      <p class="mb-6">
+        We do not sell your personal information. We may share your information with:
+      </p>
+      
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li><strong>Service Providers:</strong> Payment processors (Square, GlossGenius) and appointment booking systems.</li>
+        <li><strong>Legal Requirements:</strong> When required by law or to protect our rights.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4" style="color: #7B2D8E;">Data Security</h2>
+      
+      <p class="mb-6">
+        We implement appropriate security measures to protect your personal information. However, no method of transmission over the internet is 100% secure. We use secure, encrypted connections (SSL) for all data transmission.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4" style="color: #7B2D8E;">Your Rights</h2>
+      
+      <p class="mb-4">You have the right to:</p>
+      
+      <ul class="list-disc pl-6 mb-6 space-y-2">
+        <li>Access the personal information we hold about you</li>
+        <li>Request correction of inaccurate information</li>
+        <li>Request deletion of your information</li>
+        <li>Opt-out of marketing communications</li>
+        <li>Request a copy of your data</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4" style="color: #7B2D8E;">Cookies and Tracking</h2>
+      
+      <p class="mb-6">
+        Our website may use cookies and similar technologies to enhance your browsing experience. You can adjust your browser settings to refuse cookies, though this may affect website functionality.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4" style="color: #7B2D8E;">Third-Party Links</h2>
+      
+      <p class="mb-6">
+        Our website may contain links to third-party sites (booking platforms, social media). We are not responsible for the privacy practices of these external sites.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4" style="color: #7B2D8E;">Children's Privacy</h2>
+      
+      <p class="mb-6">
+        Our services are not intended for individuals under 18 years of age. We do not knowingly collect personal information from children.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4" style="color: #7B2D8E;">Changes to This Policy</h2>
+      
+      <p class="mb-6">
+        We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4" style="color: #7B2D8E;">Contact Us</h2>
+      
+      <p class="mb-6">
+        If you have questions about this Privacy Policy or how we handle your data, please contact us:
+      </p>
+      
+      <div class="bg-purple-50 p-6 rounded-lg mb-8">
+        <p class="font-semibold mb-2">Rejuvenate You</p>
+        <p class="mb-1">Scottsdale: 7127 E Sahuaro Dr, Ste 103, Scottsdale, AZ 85254</p>
+        <p class="mb-1">Phoenix: 4425 E Agave Rd, Ste 106, Phoenix, AZ 85044</p>
+        <p class="mb-1">Phone: <a href="tel:4805551234" class="text-purple-700 hover:underline">(480) 555-1234</a></p>
+        <p>Email: <a href="mailto:info@rejuvenate-you.com" class="text-purple-700 hover:underline">info@rejuvenate-you.com</a></p>
+      </div>
+    </div>
+  </div>
 </BaseLayout>

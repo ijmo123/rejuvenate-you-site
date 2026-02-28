@@ -1,48 +1,153 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "How much pain should I expect from a bikini wax?",
+    answer: "Everyone has a different pain threshold, but our esthetician can reduce pain and discomfort by getting wax to the right temperature. The experienced esthetician will have mind-body techniques such as breathing suggestions and other ways to calm the pain receptors."
+  },
+  {
+    question: "What's the difference between a bikini and Brazilian wax?",
+    answer: "A bikini wax removes hair that would be visible around the bikini line. A Brazilian wax removes all or most hair from the front, back, and everything in between. With a Brazilian, you can choose to leave a small strip, triangle, or go completely bare."
+  },
+  {
+    question: "How should I prepare for my bikini wax?",
+    answer: "Make sure you have at least ¼ inch of hair growth so that the wax can properly capture the hair. You can prep your skin with a warm bath or a gentle exfoliating product the night before your appointment."
+  }
+];
 ---
 
 <ServicePage
   title="Bikini Wax Phoenix AZ | Effective Bikini Line Hair Waxing"
-  description="Get a premium bikini wax experience at Rejuvenate You. We offer"
+  description="Get a premium bikini wax experience at Rejuvenate You in Phoenix. We offer professional pubic hair removal for fresher and smoother skin. Schedule an appointment now!"
+  price="$45"
+  duration="10-15 min"
+  location="phoenix"
+  faqs={faqs}
 >
 
-# Bikini Wax Phoenix AZ | Effective Bikini Line Hair Waxing
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_3e73bab7-6149-42c4-a35d-e694cc211f04_bikini-waxing-scottsdale.jpg"
+    alt="Bikini wax service at Rejuvenate You in Phoenix"
+    class="w-full h-64 md:h-96 object-cover rounded-xl"
+  />
+</div>
 
+<p class="text-lg mb-6">
+  Get a premium bikini wax experience at Rejuvenate You in Phoenix. We offer professional bikini line hair removal for fresher and smoother skin. Schedule an appointment now!
+</p>
 
-Get a premium bikini wax experience at Rejuvenate You. We offer 
-professional pubic hair removal for fresher and smoother skin. Schedule an 
-appointment now!
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of a Bikini Wax</h2>
 
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_7bf54216-e954-4b43-9ab6-815b0706664c_benefits-of-bikini-waxing.jpg"
+      alt="Benefits of bikini waxing"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Pubic hair removal is more popular than ever, and bikini waxing is one of the most convenient and effective ways to achieve smooth skin.
+    </p>
+    <p class="mb-4">
+      The feeling of rejuvenation and renewal is a reason why most chose to get this service.
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Longer-lasting smoothness than shaving</li>
+      <li>No razor burn or irritation</li>
+      <li>Hair grows back finer over time</li>
+      <li>Confidence at the beach or pool</li>
+    </ul>
+  </div>
+</div>
 
-## Benefits of a Bikini Wax
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <p class="text-gray-700">
+    With shaving, you're cutting the hair above the root. The same hair will grow back and often develop a thick and stubbly feel as it does so. This process can be very uncomfortable, and results typically don't last more than a week.
+  </p>
+</div>
 
-## How Much Pain Should You Expect?
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">How Much Pain Should You Expect?</h2>
 
-## Difference Between a Bikini &amp; Brazilian Wax
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Everyone has a different pain threshold, but our esthetician can reduce pain and discomfort by getting wax to the right temperature. It should be hot enough to melt not warm enough to hurt your skin. The experienced esthetician will have mind-body techniques such as breathing suggestions and other ways to calm the pain receptors.
+    </p>
+    <p class="mb-4">
+      There is also an expert gesture to tear off the wax in a swift motion. If done quickly and effectively, this part of the process causes brief and minimal pain.
+    </p>
+    <p>
+      Don't hesitate to voice your concerns regarding pain and discomfort. Our esthetician will answer all your questions and make sure you have the most comfortable experience.
+    </p>
+  </div>
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_63581fe5dc4eec2e7c48d21f_waxing-service-scottsdale.jpeg"
+      alt="Professional bikini waxing"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+</div>
 
-## The Process
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Difference Between a Bikini & Brazilian Wax</h2>
 
-## Schedule Your Visit Today
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-6">
+    <div>
+      <h3 class="font-bold text-lg mb-2" style="color: #7B2D8E;">Bikini Wax</h3>
+      <p class="text-gray-700">
+        Removes hair that would be visible around the bikini line. This is a great option for those who want to clean up the sides without going completely bare.
+      </p>
+    </div>
+    <div>
+      <h3 class="font-bold text-lg mb-2" style="color: #7B2D8E;">Brazilian Wax</h3>
+      <p class="text-gray-700">
+        Removes all or most hair from the front, back, and everything in between. You can choose to leave a small strip, triangle, or go completely bare.
+      </p>
+    </div>
+  </div>
+</div>
 
-Schedule your next bikini wax in Phoenix with Rejuvenate You. Your choice to take off as much or as little hair as you want from the front, not including the cheeks.
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
 
-Pubic hair removal is more popular than ever, and bikini waxing is one of the most convenient and effective ways to achieve smooth skin.
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Consultation</strong> — We discuss your preferences and any concerns.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Preparation</strong> — The area is cleansed and prepped for waxing.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Waxing</strong> — Using quality hard wax, we remove unwanted hair efficiently.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Aftercare</strong> — Soothing products are applied and we provide care instructions.
+      </div>
+    </li>
+  </ol>
+</div>
 
-The feeling of rejuvenation and renewal is a reason why most chose to get this service.&nbsp;
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Schedule Your Bikini Wax in Phoenix</h2>
 
-With shaving, you’re cutting the hair above the root. The same hair will grow back and often develop a thick and stubbly feel as it does so. This process can be very uncomfortable, and results typically don’t last more than a week.
-
-Another benefit of waxing is that removing hair at the root can weaken your hair follicles over time. If you adopt bikini waxing as a part of your self-care routine, your hair will eventually take longer to grow and might even grow back thinner.
-
-Everyone has a different pain threshold, but our esthetician can reduce pain and discomfort by getting wax to the right temperature. It should be hot enough to melt not warm enough to hurt your skin. The experienced esthetician will have mind-body techniques such as breathing suggestions and other ways to calm the pain receptors.
-
-There is also an expert gesture to tear off the wax in a swift motion. If done quickly and effectively, this part of the process causes brief and minimal pain.&nbsp;
-
-Don’t hesitate to voice your concerns regarding pain and discomfort. Our esthetician will answer all your questions and make sure you have the most comfortable experience.
-
-You can also opt for a bikini full wax. This procedure removes the hair that grows in the mons pubis area, from the lower abdomen to the labia but does not cover the anus also known as the butt strip. Some chose to leave a small amount of hair with smooth and orderly edging.
-
-Make sure you have enough hair growth before scheduling your appointment. You need to have at least ¼” of growth so that the wax can properly capture the hair.
+<p class="text-lg">
+  Ready for smooth, confident skin? <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" style="color: #7B2D8E;" class="font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Book your bikini wax appointment</a> at our Phoenix location today!
+</p>
 
 </ServicePage>
