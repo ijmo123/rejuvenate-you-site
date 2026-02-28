@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookingCTA from '../../components/BookingCTA.astro';
+
+const pageTitle = 'Our Services | Waxing & Skin Treatments | Rejuvenate You Scottsdale';
+const pageDescription = 'Full menu of waxing and skincare services in Scottsdale, AZ. Brazilian wax, bikini wax, men\'s waxing, microneedling, dermaplaning, and more. Book online.';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Brazilian Wax",
+      "url": "https://www.rejuvenate-you.com/brazilian-wax-scottsdale"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Bikini Wax",
+      "url": "https://www.rejuvenate-you.com/bikini-wax-scottsdale"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Microneedling",
+      "url": "https://www.rejuvenate-you.com/microneedling-scottsdale-az"
+    }
+  ]
+};
+
+const womensServices = [
+  { name: "Brazilian Wax", price: "$60", url: "/brazilian-wax-scottsdale", desc: "Remove all unwanted hair with our premium Brazilian wax service." },
+  { name: "Bikini Wax", price: "$45", url: "/bikini-wax-scottsdale", desc: "Professional pubic hair removal for fresher and smoother skin." },
+  { name: "Eyebrow Wax", price: "$21", url: "/eyebrow-waxing-scottsdale", desc: "Shape and define your brows with expert precision." },
+  { name: "Full Face Wax", price: "$45", url: "/full-face-waxing-scottsdale", desc: "Complete facial hair removal for smooth, radiant skin." },
+  { name: "Underarm Wax", price: "$25", url: "/underarm-wax-scottsdale", desc: "Quick and effective underarm hair removal." },
+  { name: "Full Leg Wax", price: "$70", url: "/full-leg-wax-scottsdale", desc: "Complete leg waxing from thigh to ankle." },
+];
+
+const mensServices = [
+  { name: "Men's Brazilian", price: "$80", url: "/male-waxing-scottsdale", desc: "Professional male Brazilian waxing service." },
+  { name: "Back Wax", price: "$60", url: "/back-wax-scottsdale", desc: "Full back hair removal for smooth skin." },
+  { name: "Chest Wax", price: "$30", url: "/male-waxing-scottsdale", desc: "Chest hair removal and grooming." },
+  { name: "Male Face Wax", price: "$45", url: "/full-face-waxing-scottsdale", desc: "Complete facial grooming for men." },
+  { name: "Ear Hair Wax", price: "$15", url: "/ear-hair-waxing-scottsdale", desc: "Quick ear hair removal." },
+  { name: "Nose Hair Wax", price: "$15", url: "/nose-hair-waxing-scottsdale", desc: "Nose hair waxing for men." },
+];
+
+const skinServices = [
+  { name: "Microneedling", price: "From $200", url: "/microneedling-scottsdale-az", desc: "Treat early signs of skin laxity, fine lines, and dull skin tones." },
+  { name: "Dermaplaning", price: "$85", url: "/dermaplaning-scottsdale", desc: "Exfoliating treatment that removes dead skin cells and peach fuzz." },
+];
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} schema={schema} currentLocation="scottsdale">
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Services in Scottsdale</h1>
+      <p class="text-xl max-w-3xl mx-auto text-purple-100">
+        Full range of waxing and skincare services for both men and women
+      </p>
+      <p class="mt-4 text-purple-200">
+        📍 7127 E Sahuaro Dr, Ste 103, Scottsdale, AZ 85254 | 📞 <a href="tel:4807476996" class="underline hover:text-white">(480) 747-6996</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Women's Waxing -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Women's Waxing Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {womensServices.map((service) => (
+            <a href={service.url} class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">{service.name}</h3>
+                <p class="text-2xl font-bold text-gray-900 mb-4">{service.price}</p>
+                <p class="text-gray-600 mb-4">{service.desc}</p>
+                <span class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Men's Waxing -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Men's Waxing Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {mensServices.map((service) => (
+            <a href={service.url} class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">{service.name}</h3>
+                <p class="text-2xl font-bold text-gray-900 mb-4">{service.price}</p>
+                <p class="text-gray-600 mb-4">{service.desc}</p>
+                <span class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- Skin Treatments -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Skin Treatments</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {skinServices.map((service) => (
+            <a href={service.url} class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">{service.name}</h3>
+                <p class="text-2xl font-bold text-gray-900 mb-4">{service.price}</p>
+                <p class="text-gray-600 mb-4">{service.desc}</p>
+                <span class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Special Offer -->
+  <section class="py-16 bg-purple-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-4" style="color: #7B2D8E;">First-Time Client Special</h2>
+      <p class="text-xl mb-2">
+        <span class="font-bold" style="color: #7B2D8E;">50% off your second Brazilian wax</span>
+      </p>
+      <p class="text-gray-600 mb-8">
+        Book your second Brazilian wax within 4-6 weeks and save 50%!
+      </p>
+      <a 
+        href="https://rejuvenateyouwaxing.glossgenius.com/services"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block px-8 py-3 rounded-lg font-bold text-white hover:shadow-lg transition"
+        style="background-color: #7B2D8E;"
+      >
+        Book Scottsdale
+      </a>
+    </div>
+  </section>
+
+  <!-- Switch Location -->
+  <section class="py-8 bg-white border-t">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-gray-600">
+        Looking for our Phoenix location? 
+        <a href="/phoenix/services" class="font-semibold hover:underline" style="color: #7B2D8E;">View Phoenix Services →</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
