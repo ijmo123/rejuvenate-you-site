@@ -1,35 +1,134 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact Rejuvenate You | Book Your Consultation',
+  description: 'Contact Rejuvenate You in Scottsdale or Phoenix to schedule your consultation. Phone, email, and online booking available.'
+};
 ---
 
 <BaseLayout
   title="Contact Rejuvenate You | Book Your Consultation"
-  description="Have questions or ready to get started? Contact Rejuvenate You to schedule"
+  description="Have questions or ready to get started? Contact Rejuvenate You to schedule your consultation and begin your journey to refreshed confidence."
+  schema={schema}
 >
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold mb-4 text-center" style="color: #7B2D8E;">Contact Us</h1>
+    <p class="text-xl text-gray-600 mb-12 text-center">
+      Have questions or ready to get started? Contact Rejuvenate You to schedule your consultation and begin your journey to refreshed confidence.
+    </p>
 
-# Contact Rejuvenate You | Book Your Consultation
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- Scottsdale Location -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-purple-600 text-white p-6">
+          <h2 class="text-2xl font-bold mb-2">Scottsdale</h2>
+        </div>
+        <div class="p-6 space-y-4">
+          <div>
+            <h3 class="font-semibold text-gray-700 mb-1">Address</h3>
+            <p class="text-gray-600">
+              7127 E Sahuaro Dr, Ste 103<br>
+              Scottsdale, AZ 85254
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-700 mb-1">Phone</h3>
+            <p>
+              <a href="tel:4805551234" class="font-bold" style="color: #7B2D8E;">(480) 555-1234</a>
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-700 mb-1">Hours</h3>
+            <ul class="space-y-1 text-gray-600 text-sm">
+              <li class="flex justify-between">
+                <span>Mon - Fri</span>
+                <span>9 AM - 7 PM</span>
+              </li>
+              <li class="flex justify-between">
+                <span>Saturday</span>
+                <span>9 AM - 2 PM</span>
+              </li>
+              <li class="flex justify-between">
+                <span>Sunday</span>
+                <span>Closed</span>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://rejuvenateyouwaxing.glossgenius.com/services"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block w-full text-center px-6 py-3 rounded-lg font-bold text-white mt-4"
+            style="background-color: #7B2D8E;"
+          >
+            Book Scottsdale
+          </a>
+        </div>
+      </div>
 
+      <!-- Phoenix Location -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="bg-purple-600 text-white p-6">
+          <h2 class="text-2xl font-bold mb-2">Phoenix</h2>
+        </div>
+        <div class="p-6 space-y-4">
+          <div>
+            <h3 class="font-semibold text-gray-700 mb-1">Address</h3>
+            <p class="text-gray-600">
+              4425 E Agave Rd, Ste 106<br>
+              Phoenix, AZ 85044
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-700 mb-1">Phone</h3>
+            <p>
+              <a href="tel:4805551234" class="font-bold" style="color: #7B2D8E;">(480) 555-1234</a>
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-700 mb-1">Hours</h3>
+            <ul class="space-y-1 text-gray-600 text-sm">
+              <li class="flex justify-between">
+                <span>Mon - Fri</span>
+                <span>9 AM - 7 PM</span>
+              </li>
+              <li class="flex justify-between">
+                <span>Saturday</span>
+                <span>9 AM - 2 PM</span>
+              </li>
+              <li class="flex justify-between">
+                <span>Sunday</span>
+                <span>Closed</span>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block w-full text-center px-6 py-3 rounded-lg font-bold text-white mt-4"
+            style="background-color: #7B2D8E;"
+          >
+            Book Phoenix
+          </a>
+        </div>
+      </div>
+    </div>
 
-Have questions or ready to get started? Contact Rejuvenate You to schedule 
-your consultation and begin your journey to refreshed confidence.
-
-
-## Contact us
-
-SCOTTSDALE
-
-Monday 9 AM - 7 PM
-
-Tuesday 9 AM - 7 PM
-
-Wednesday 9 AM - 7 PM
-
-Thursday 9 AM - 7 PM
-
-Friday 9 AM - 7 PM
-
-Saturday 9 AM - 2 PM
-
-PHOENIX
-
+    <!-- Email Section -->
+    <div class="bg-purple-50 rounded-xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Email Us</h2>
+      <p class="text-gray-600 mb-4">Have questions? Send us an email and we'll get back to you within 24 hours.</p>
+      <a 
+        href="mailto:info@rejuvenate-you.com" 
+        class="text-lg font-bold"
+        style="color: #7B2D8E;"
+      >
+        info@rejuvenate-you.com
+      </a>
+    </div>
+  </div>
 </BaseLayout>
