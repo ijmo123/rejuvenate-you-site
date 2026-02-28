@@ -38,8 +38,8 @@ const locationName = currentLocation === 'phoenix' ? 'Phoenix' :
                      currentLocation === 'scottsdale' ? 'Scottsdale' : '';
 ---
 
-<header id="main-header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
-    <nav id="main-nav" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 transition-all duration-300">
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         <div class="flex justify-between items-center">
             <!-- Logo - goes to location-specific home -->
             <div class="flex items-center space-x-2">
@@ -152,48 +152,12 @@ const locationName = currentLocation === 'phoenix' ? 'Phoenix' :
 </header>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
-
-        // Collapse header on scroll
-        const header = document.getElementById('main-header');
-        const nav = document.getElementById('main-nav');
-
-        function handleScroll() {
-            const scrollY = window.scrollY || window.pageYOffset;
-            
-            if (scrollY > 100) {
-                // Scrolled down - make header compact
-                if (header) {
-                    header.classList.remove('py-4');
-                    header.classList.add('py-1');
-                }
-                if (nav) {
-                    nav.classList.remove('py-4');
-                    nav.classList.add('py-2');
-                }
-            } else {
-                // At top - full size
-                if (header) {
-                    header.classList.add('py-4');
-                    header.classList.remove('py-1');
-                }
-                if (nav) {
-                    nav.classList.add('py-4');
-                    nav.classList.remove('py-2');
-                }
-            }
-        }
-
-        window.addEventListener('scroll', handleScroll);
-        // Initial check
-        handleScroll();
-    });
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
 </script>
