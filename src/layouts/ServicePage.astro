@@ -9,6 +9,7 @@ interface Props {
   faqs?: Array<{ question: string; answer: string }>;
   price?: string;
   duration?: string;
+  currentLocation?: 'scottsdale' | 'phoenix' | null;
 }
 
 const {
@@ -17,7 +18,8 @@ const {
   location = 'both',
   faqs = [],
   price,
-  duration
+  duration,
+  currentLocation = null
 } = Astro.props;
 
 const schema = {
@@ -48,6 +50,7 @@ if (price) {
   title={title}
   description={description}
   schema={schema}
+  currentLocation={currentLocation}
 >
   <div class="max-w-4xl mx-auto px-4 py-12">
     <article>
