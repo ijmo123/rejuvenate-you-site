@@ -1,10 +1,163 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "What areas are included in male face waxing?",
+    answer: "Male face waxing typically includes cheeks, upper lip, chin, sideburns, and neck. We can customize the service to target specific areas based on your needs and preferences."
+  },
+  {
+    question: "How long does male face waxing last?",
+    answer: "Male face waxing typically lasts 2-4 weeks. Facial hair grows faster than body hair, so more frequent maintenance is needed for the face."
+  },
+  {
+    question: "Will face waxing make my hair grow back thicker?",
+    answer: "No, this is a myth. Waxing does not change the structure of your hair follicles. Over time, regular waxing can actually lead to finer, sparser regrowth."
+  }
+];
 ---
 
 <ServicePage
-  title="Male Face Waxing Scottsdale"
-  description="Service from Rejuvenate You"
+  title="Male Face Waxing Scottsdale | Men's Facial Hair Removal"
+  description="Professional male face waxing in Scottsdale. Clean up cheeks, chin, sideburns, and neck. Smooth, polished results for men. Book your appointment today!"
+  price="From $25"
+  duration="15-25 min"
+  location="scottsdale"
+  faqs={faqs}
 >
-Content to be imported.
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_48810a57-ab63-45e9-99c9-98a055c66970_male+face+waxing+scottsdale.jpeg"
+    alt="Male face waxing service at Rejuvenate You in Scottsdale"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Achieve a smooth, polished look with professional male face waxing. Whether you want to clean up your hairline, remove unwanted cheek hair, or achieve completely smooth skin, our face waxing services deliver clean, masculine results.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Male Face Waxing Options</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="bg-purple-50 p-6 rounded-lg">
+    <h3 class="font-bold text-lg mb-3" style="color: #7B2D8E;">Full Face Wax</h3>
+    <p class="text-2xl font-bold mb-2">$45</p>
+    <p class="text-gray-700">Complete facial hair removal including cheeks, chin, upper lip, and sideburns.</p>
+  </div>
+  <div class="bg-purple-50 p-6 rounded-lg">
+    <h3 class="font-bold text-lg mb-3" style="color: #7B2D8E;">Partial Face Wax</h3>
+    <p class="text-xl font-bold mb-2">From $25</p>
+    <p class="text-gray-700">Target specific areas: cheeks, chin, sideburns, or upper lip only.</p>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Men Choose Face Waxing</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Cleaner appearance</strong> — Remove unwanted cheek or neck hair</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Defined hairline</strong> — Clean up sideburns and edges</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Smoother skin</strong> — Better than daily shaving</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>No razor burn</strong> — Avoid irritation from shaving</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-purple-600 mr-2 text-lg">✓</span>
+        <span><strong>Longer-lasting</strong> — Results last 2-4 weeks</span>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_7dc2819b-8823-40a2-9a76-61ec8f7bde46_male+eyebrow+waxing.jpeg"
+      alt="Male face waxing treatment"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Consultation</strong> — We discuss your goals and which areas you want treated.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Cleansing</strong> — Your face is thoroughly cleaned to remove oils.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Waxing</strong> — Using gentle hard wax, we carefully remove unwanted hair.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Soothing</strong> — Calming products are applied to reduce any redness.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Common Treatment Areas</h2>
+
+<div class="grid md:grid-cols-2 gap-4 mb-8">
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-semibold mb-2" style="color: #7B2D8E;">Cheeks</h3>
+    <p class="text-gray-700 text-sm">Remove unwanted hair on the cheeks for smoother skin and a cleaner look.</p>
+  </div>
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-semibold mb-2" style="color: #7B2D8E;">Sideburns</h3>
+    <p class="text-gray-700 text-sm">Clean up and shape sideburns for a more defined facial structure.</p>
+  </div>
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-semibold mb-2" style="color: #7B2D8E;">Chin & Upper Lip</h3>
+    <p class="text-gray-700 text-sm">Remove unwanted hairs for a polished, well-groomed appearance.</p>
+  </div>
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-semibold mb-2" style="color: #7B2D8E;">Neck</h3>
+    <p class="text-gray-700 text-sm">Clean up the neckline for a sharper, more maintained look.</p>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Before Your Appointment</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ul class="space-y-2">
+    <li>• Let facial hair grow to at least ¼ inch</li>
+    <li>• Avoid shaving for at least 2 weeks before</li>
+    <li>• Come with a clean face (no products)</li>
+    <li>• Avoid retinol or exfoliants for 5-7 days prior</li>
+    <li>• Skip alcohol and caffeine before your appointment</li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Male Face Waxing</h2>
+
+<p class="text-lg">
+  Get the smooth, polished look you want. <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your male face waxing appointment</a> at our Scottsdale location today! Professional, discreet service for men.
+</p>
+
 </ServicePage>

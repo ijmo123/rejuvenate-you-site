@@ -9,13 +9,7 @@ const { location = 'both', variant = 'default' } = Astro.props;
 const scottsdalUrl = 'https://rejuvenateyouwaxing.glossgenius.com/services';
 const phoenixUrl = 'https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start';
 
-const baseStyle = variant === 'default'
-    ? 'text-white hover:shadow-lg transition'
-    : 'text-purple-700 border-2 border-purple-700 hover:bg-purple-50 transition';
-
-const bgStyle = variant === 'default'
-    ? 'style="background-color: #7B2D8E;"'
-    : 'style="background-color: transparent;"';
+const isDefault = variant === 'default';
 ---
 
 <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
@@ -24,8 +18,8 @@ const bgStyle = variant === 'default'
             href={scottsdalUrl}
             target="_blank"
             rel="noopener noreferrer"
-            class={`px-8 py-3 rounded-lg font-bold ${baseStyle}`}
-            set:html={bgStyle ? `style="${bgStyle.replace(/style="/g, '').replace(/"$/g, '')}"` : ''}
+            class={`px-8 py-3 rounded-lg font-bold transition shadow-md hover:shadow-lg ${isDefault ? 'text-white' : 'text-purple-700 border-2 border-purple-700 hover:bg-purple-50'}`}
+            style={isDefault ? 'background-color: #7B2D8E;' : ''}
         >
             Book Scottsdale
         </a>
@@ -36,17 +30,10 @@ const bgStyle = variant === 'default'
             href={phoenixUrl}
             target="_blank"
             rel="noopener noreferrer"
-            class={`px-8 py-3 rounded-lg font-bold ${baseStyle}`}
-            set:html={bgStyle ? `style="${bgStyle.replace(/style="/g, '').replace(/"$/g, '')}"` : ''}
+            class={`px-8 py-3 rounded-lg font-bold transition shadow-md hover:shadow-lg ${isDefault ? 'text-white' : 'text-purple-700 border-2 border-purple-700 hover:bg-purple-50'}`}
+            style={isDefault ? 'background-color: #7B2D8E;' : ''}
         >
             Book Phoenix
         </a>
     ) : null}
 </div>
-
-<style define:vars={{ primaryColor: '#7B2D8E', accentColor: '#D4A574' }}>
-    a[href*="glossgenius"],
-    a[href*="squareup"] {
-        background-color: var(--primaryColor);
-    }
-</style>

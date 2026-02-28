@@ -1,10 +1,128 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "Does neck hair waxing hurt?",
+    answer: "Neck hair waxing causes minimal discomfort. The neck area is relatively tolerant of waxing, and our gentle technique ensures a comfortable experience with smooth results."
+  },
+  {
+    question: "How often should I get my neck waxed?",
+    answer: "Most clients schedule neck waxing every 4-6 weeks. This keeps the neck area looking clean and well-maintained between haircuts."
+  },
+  {
+    question: "Can women get neck waxing too?",
+    answer: "Absolutely! While neck waxing is popular with men for maintaining clean hairlines, women can also benefit from neck waxing to remove unwanted hairs at the nape of the neck."
+  }
+];
 ---
 
 <ServicePage
-  title="Neck Waxing Scottsdale"
-  description="Service from Rejuvenate You"
+  title="Neck Waxing Scottsdale | Neck Hair Removal for Men & Women"
+  description="Professional neck waxing in Scottsdale. Clean up hairline and remove unwanted neck hair. Smooth, polished results for men and women. Book today!"
+  price="$20"
+  duration="10-15 min"
+  location="scottsdale"
+  faqs={faqs}
 >
-Content to be imported.
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_bb63f58a-ae84-4903-a602-e8a0f43de43d_neck-waxing-treatment.jpeg"
+    alt="Neck waxing service at Rejuvenate You in Scottsdale"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Keep your neckline looking sharp and clean with professional neck waxing. Whether you're maintaining a clean hairline between haircuts or removing unwanted neck hair, our neck waxing service delivers smooth, long-lasting results.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Choose Neck Waxing?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_ccc72480-e45d-451a-a701-1001544839a0_neck-waxing-scottsdale-az.jpeg"
+      alt="Neck waxing in Scottsdale AZ"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      A clean neckline makes any hairstyle look more polished and professional. Neck waxing is the perfect solution for:
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Maintaining clean lines between haircuts</li>
+      <li>Removing stubborn neck hair that shaving misses</li>
+      <li>Avoiding razor burn and irritation</li>
+      <li>Longer-lasting results than shaving</li>
+      <li>Smoother skin texture</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">For Men and Women</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-6">
+    <div>
+      <h3 class="font-bold text-lg mb-3" style="color: #7B2D8E;">For Men</h3>
+      <p class="text-gray-700">
+        Maintain that fresh-from-the-barber look longer. Neck waxing cleans up the hairline on the back and sides of your neck, keeping you looking well-groomed between haircuts.
+      </p>
+    </div>
+    <div>
+      <h3 class="font-bold text-lg mb-3" style="color: #7B2D8E;">For Women</h3>
+      <p class="text-gray-700">
+        Remove unwanted hairs at the nape of your neck that can be visible when hair is styled up. Perfect for keeping your neck smooth and hair-free.
+      </p>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Consultation</strong> — We determine the exact area you want treated and discuss any concerns.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Cleansing</strong> — The neck area is thoroughly cleaned and prepped.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Precision Waxing</strong> — Using gentle hard wax, we carefully remove unwanted hairs.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Finishing</strong> — Soothing products are applied to calm the skin.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Perfect Pairing</h2>
+
+<p class="text-lg mb-6">
+  Neck waxing pairs perfectly with <a href="/full-face-waxing-scottsdale" style="color: #7B2D8E;" class="font-semibold hover:underline">full face waxing</a>, <a href="/ear-hair-waxing-scottsdale" style="color: #7B2D8E;" class="font-semibold hover:underline">ear hair waxing</a>, or <a href="/eyebrow-waxing-scottsdale" style="color: #7B2D8E;" class="font-semibold hover:underline">eyebrow waxing</a> for complete grooming. Many clients also add it to their haircut appointments for a fully polished look.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Neck Waxing</h2>
+
+<p class="text-lg">
+  Keep your neckline looking sharp. <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your neck waxing appointment</a> at our Scottsdale location today! Only $20 for clean, professional results.
+</p>
+
 </ServicePage>

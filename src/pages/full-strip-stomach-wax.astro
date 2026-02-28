@@ -1,10 +1,163 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "What is full stomach waxing?",
+    answer: "Full stomach waxing (also called full strip stomach wax) removes all hair from the entire stomach area, from just below the chest to the bikini line. This creates completely smooth skin across the midsection."
+  },
+  {
+    question: "Does stomach waxing hurt?",
+    answer: "Stomach waxing causes moderate discomfort, but most clients find it manageable. The stomach area is less sensitive than bikini areas, and the results are worth the brief discomfort."
+  },
+  {
+    question: "How long does stomach waxing last?",
+    answer: "Stomach waxing typically lasts 4-6 weeks. Results vary depending on individual hair growth cycles."
+  }
+];
 ---
 
-<BaseLayout
-  title="Full Strip Stomach Wax"
-  description="Service from Rejuvenate You"
+<ServicePage
+  title="Full Stomach Wax Scottsdale | Stomach Hair Removal"
+  description="Professional full stomach waxing in Scottsdale. Remove all hair from your midsection for smooth, confident skin. For men and women. Book today!"
+  price="$35"
+  duration="15-20 min"
+  location="scottsdale"
+  faqs={faqs}
 >
-Content to be imported.
-</BaseLayout>
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_04ee1a0f-d7fb-4d58-847f-afc3c1e9bdcb_full-stomach-waxing.jpeg"
+    alt="Full stomach waxing service at Rejuvenate You in Scottsdale"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Achieve completely smooth skin across your entire midsection with our full stomach waxing service. This treatment removes all hair from the stomach area, from just below the chest to the bikini line, leaving you confident and hair-free.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What is Full Stomach Waxing?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Full stomach waxing removes all unwanted hair from the entire stomach area. This includes:
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Center line (treasure trail)</li>
+      <li>Upper stomach</li>
+      <li>Lower stomach</li>
+      <li>Sides of the abdomen</li>
+    </ul>
+    <p class="mt-4">
+      The result is completely smooth, hair-free skin across your entire midsection.
+    </p>
+  </div>
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_5e946403-a59b-4b47-88e5-6af22206f29d_wax-for-stomach-hair.jpeg"
+      alt="Stomach hair waxing"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">For Men and Women</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-6">
+    <div>
+      <h3 class="font-bold text-lg mb-3" style="color: #7B2D8E;">For Men</h3>
+      <p class="text-gray-700">
+        Remove the "treasure trail," chest hair that extends to the stomach, or all stomach hair for a completely smooth torso. Popular with bodybuilders, swimmers, and men who prefer a hair-free midsection.
+      </p>
+    </div>
+    <div>
+      <h3 class="font-bold text-lg mb-3" style="color: #7B2D8E;">For Women</h3>
+      <p class="text-gray-700">
+        Remove unwanted stomach hair for smooth, feminine skin. This is especially popular before beach season or special occasions when you want to feel completely confident.
+      </p>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Consultation</strong> — We discuss exactly which areas you want treated.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Cleansing</strong> — The stomach area is thoroughly cleaned.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Waxing</strong> — We work in sections to efficiently remove all unwanted hair.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Finishing</strong> — Soothing products are applied to calm the skin.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of Stomach Waxing</h2>
+
+<div class="grid md:grid-cols-2 gap-4 mb-8">
+  <ul class="space-y-2">
+    <li class="flex items-center">
+      <span class="text-purple-600 mr-2">✓</span>
+      <span>Completely smooth midsection</span>
+    </li>
+    <li class="flex items-center">
+      <span class="text-purple-600 mr-2">✓</span>
+      <span>Results last 4-6 weeks</span>
+    </li>
+    <li class="flex items-center">
+      <span class="text-purple-600 mr-2">✓</span>
+      <span>No daily shaving</span>
+    </li>
+  </ul>
+  <ul class="space-y-2">
+    <li class="flex items-center">
+      <span class="text-purple-600 mr-2">✓</span>
+      <span>Finer regrowth over time</span>
+    </li>
+    <li class="flex items-center">
+      <span class="text-purple-600 mr-2">✓</span>
+      <span>Confidence at the beach/pool</span>
+    </li>
+    <li class="flex items-center">
+      <span class="text-purple-600 mr-2">✓</span>
+      <span>Clean, professional look</span>
+    </li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Popular Combinations</h2>
+
+<p class="text-lg mb-6">
+  Many clients combine stomach waxing with <a href="/brazilian-wax-scottsdale" style="color: #7B2D8E;" class="font-semibold hover:underline">Brazilian waxing</a> or <a href="/bikini-wax-scottsdale" style="color: #7B2D8E;" class="font-semibold hover:underline">bikini waxing</a> for a completely smooth torso and bikini area. Men often add <a href="/male-waxing-scottsdale" style="color: #7B2D8E;" class="font-semibold hover:underline">chest and back waxing</a> for full upper body grooming.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Stomach Wax</h2>
+
+<p class="text-lg">
+  Get the smooth, confident midsection you want. <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your full stomach waxing appointment</a> at our Scottsdale location today! Only $35 for complete smoothness.
+</p>
+
+</ServicePage>

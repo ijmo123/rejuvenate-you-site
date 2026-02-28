@@ -1,10 +1,113 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "Does ear hair waxing hurt?",
+    answer: "Ear hair waxing is quick and causes minimal discomfort. The wax is applied only to the outer ear area, not inside the ear canal, making it a safe and relatively painless procedure."
+  },
+  {
+    question: "How often should I get my ears waxed?",
+    answer: "Most clients schedule ear hair waxing every 4-6 weeks, though this varies depending on how quickly your hair grows."
+  },
+  {
+    question: "Is ear waxing safe?",
+    answer: "Yes, when performed by a professional. We only wax the outer ear and never insert wax into the ear canal. This is a safe, effective way to remove unsightly ear hair."
+  }
+];
 ---
 
 <ServicePage
-  title="Ear Hair Waxing Scottsdale"
-  description="Service from Rejuvenate You"
+  title="Ear Hair Waxing Scottsdale | Men's Ear Hair Removal"
+  description="Professional ear hair waxing in Scottsdale. Safe, quick removal of unsightly ear hair. Clean, precise results for men. Book your appointment today!"
+  price="$15"
+  duration="5-10 min"
+  location="scottsdale"
+  faqs={faqs}
 >
-Content to be imported.
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_e44d6da5-be58-48f9-b936-c001d4202df5_ear-hair-waxing.jpeg"
+    alt="Ear hair waxing service at Rejuvenate You in Scottsdale"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Eliminate unsightly ear hair with our quick and effective ear hair waxing service. This simple treatment removes hair from the outer ear area, leaving you looking well-groomed and polished.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Get Your Ears Waxed?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_a57befb1-29d1-4923-acad-9f18eabea2c0_ear-hair-removal-wax.jpeg"
+      alt="Ear hair removal waxing"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Ear hair is a common concern for many men. While it's completely natural, removing it creates a cleaner, more polished appearance.
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Quick and virtually painless</li>
+      <li>Lasts 4-6 weeks</li>
+      <li>More effective than trimming</li>
+      <li>No more visible ear hair</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Assessment</strong> — We examine the outer ear area to identify hair for removal.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Cleansing</strong> — The area is cleaned to ensure proper wax adherence.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Application</strong> — Warm wax is carefully applied to the outer ear only.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Removal</strong> — Quick, precise removal for clean results.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Safe and Professional</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <p class="mb-4">
+    <strong>Important:</strong> We only wax the outer ear (the pinna). We never insert wax or any tools into the ear canal. This ensures your safety and comfort throughout the procedure.
+  </p>
+  <p>
+    Our experienced estheticians use gentle techniques specifically designed for this sensitive area.
+  </p>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Ear Hair Waxing</h2>
+
+<p class="text-lg">
+  Quick, affordable, and effective. <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your ear hair waxing appointment</a> at our Scottsdale location today! Only $15 for clean, polished results.
+</p>
+
 </ServicePage>

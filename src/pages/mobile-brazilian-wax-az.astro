@@ -1,10 +1,191 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "How does mobile waxing work?",
+    answer: "Our mobile waxing service brings the full Rejuvenate You experience to your location. We arrive with all necessary equipment, set up a private, professional space, and provide the same quality waxing service you'd receive at our studio."
+  },
+  {
+    question: "What areas do you serve for mobile waxing?",
+    answer: "We provide mobile waxing services throughout the greater Phoenix and Scottsdale area. Travel fees may apply depending on your location. Contact us to confirm service to your area."
+  },
+  {
+    question: "Do you bring everything needed?",
+    answer: "Yes! We bring all necessary equipment including a professional treatment table, high-quality wax, linens, and all sanitation supplies. You just need to provide a private space with adequate room for setup."
+  }
+];
 ---
 
 <ServicePage
-  title="Mobile Brazilian Wax Az"
-  description="Service from Rejuvenate You"
+  title="Mobile Brazilian Wax Phoenix & Scottsdale | At-Home Waxing"
+  description="Mobile Brazilian waxing in Phoenix and Scottsdale. Professional at-home waxing service. We come to you for private, convenient hair removal. Book today!"
+  price="From $100"
+  duration="30-45 min"
+  location="both"
+  faqs={faqs}
 >
-Content to be imported.
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_1bdd1caf-9bdc-4a0d-a6ba-8250490f9122_mobile-brazilian-wax.jpeg"
+    alt="Mobile Brazilian waxing service in Phoenix and Scottsdale"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Can't make it to our studio? No problem! Our mobile waxing service brings professional hair removal directly to your home, hotel, or office. Enjoy the same expert service in the comfort and privacy of your own space.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Mobile Brazilian Wax</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_ac466307-155f-45f7-81ca-365d159a5ce6_mobile-brazilian-wax-scottsdale.jpeg"
+      alt="Mobile waxing service Scottsdale"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Our most requested mobile service! Get the same professional Brazilian wax you'd receive at our studio, performed in the privacy of your own space.
+    </p>
+    <div class="bg-purple-50 p-4 rounded-lg">
+      <p class="font-semibold" style="color: #7B2D8E;">Mobile Brazilian Wax: $100+</p>
+      <p class="text-sm text-gray-600">(Includes travel fee within central Phoenix/Scottsdale)</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Choose Mobile Waxing?</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-4">
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Ultimate privacy and comfort</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>No travel needed</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Same professional quality</span>
+      </li>
+    </ul>
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Perfect for busy schedules</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Great for groups/parties</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Hotel & vacation rental friendly</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">How It Works</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Book Your Appointment</strong> — Call or text to schedule. We'll confirm your location and any travel fees.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>We Arrive</strong> — Our esthetician arrives with all equipment 10-15 minutes before your scheduled time.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Setup</strong> — We quickly set up a professional treatment area in your private space (bedroom, bathroom, etc.).
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Your Service</strong> — Receive the same expert waxing service you'd get at our studio.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">5.</span>
+      <div>
+        <strong>Cleanup</strong> — We pack up and leave your space exactly as we found it.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What You Need to Provide</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <p class="mb-4">We bring everything except:</p>
+  <ul class="space-y-2">
+    <li>• A private room with adequate space (about 6x6 feet)</li>
+    <li>• Good lighting</li>
+    <li>• Access to a bathroom/sink for hand washing</li>
+    <li>• Electrical outlet (if available)</li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Service Areas</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-semibold mb-2" style="color: #7B2D8E;">Phoenix Metro</h3>
+    <p class="text-gray-700 text-sm">Central Phoenix, Arcadia, Biltmore, North Phoenix</p>
+  </div>
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-semibold mb-2" style="color: #7B2D8E;">Scottsdale</h3>
+    <p class="text-gray-700 text-sm">Old Town, Central Scottsdale, North Scottsdale, Paradise Valley</p>
+  </div>
+</div>
+
+<p class="text-sm text-gray-600 mb-8">
+  *Travel fees apply for locations outside central Phoenix/Scottsdale. Contact us for a quote.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Mobile Waxing Services & Pricing</h2>
+
+<div class="grid md:grid-cols-2 gap-4 mb-8">
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-semibold mb-1">Brazilian Wax</h3>
+    <p class="text-xl font-bold" style="color: #7B2D8E;">$100+</p>
+  </div>
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-semibold mb-1">Bikini Wax</h3>
+    <p class="text-xl font-bold" style="color: #7B2D8E;">$85+</p>
+  </div>
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-semibold mb-1">Men's Brazilian</h3>
+    <p class="text-xl font-bold" style="color: #7B2D8E;">$120+</p>
+  </div>
+  <div class="bg-purple-50 p-4 rounded-lg">
+    <h3 class="font-semibold mb-1">Full Body Wax</h3>
+    <p class="text-xl font-bold" style="color: #7B2D8E;">Quote</p>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Mobile Waxing</h2>
+
+<p class="text-lg">
+  Ready for convenient, professional waxing at your location? <a href="tel:4807476996" style="color: #7B2D8E;" class="font-semibold hover:underline">Call or text (480) 747-6996</a> to book your mobile appointment. Same-day appointments may be available!
+</p>
+
 </ServicePage>

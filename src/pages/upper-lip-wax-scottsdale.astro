@@ -1,10 +1,154 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "Does upper lip waxing hurt?",
+    answer: "Upper lip waxing causes brief, minimal discomfort. The area is sensitive but the treatment is very quick. Any redness typically subsides within an hour."
+  },
+  {
+    question: "How long does upper lip waxing last?",
+    answer: "Upper lip waxing typically lasts 3-4 weeks. Facial hair grows faster than body hair, so more frequent maintenance is needed for the upper lip area."
+  },
+  {
+    question: "Will waxing my upper lip cause more hair to grow?",
+    answer: "No, this is a myth. Waxing does not cause more hair growth. In fact, regular waxing can eventually lead to finer, sparser regrowth over time."
+  }
+];
 ---
 
 <ServicePage
-  title="Upper Lip Wax Scottsdale"
-  description="Service from Rejuvenate You"
+  title="Upper Lip Wax Scottsdale | Facial Hair Removal"
+  description="Professional upper lip waxing in Scottsdale. Quick removal of unwanted facial hair above the lip. Smooth results for women. Book your appointment today!"
+  price="$15"
+  duration="5-10 min"
+  location="scottsdale"
+  faqs={faqs}
 >
-Content to be imported.
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_0c04e8fc-19ee-46d7-99d0-56d00574cd17_upper+lip+wax.jpeg"
+    alt="Upper lip waxing service at Rejuvenate You in Scottsdale"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Achieve a smooth, hair-free upper lip with our quick and effective lip waxing service. This popular treatment removes unwanted facial hair above the lip, leaving your skin soft and smooth with results that last for weeks.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Choose Upper Lip Waxing?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_1c4b9379-d3b2-47d6-9507-e29d1f1475a6_rejuvenate+you+upper+lip+wax.jpeg"
+      alt="Upper lip wax treatment"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Upper lip hair is a common concern for many women. While it's completely natural, removing it creates a smoother appearance and can boost confidence.
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Quick treatment — just 5-10 minutes</li>
+      <li>Results last 3-4 weeks</li>
+      <li>No more daily shaving or bleaching</li>
+      <li>Smoother makeup application</li>
+      <li>Affordable maintenance</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Waxing vs. Other Methods</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-4 rounded-lg">
+      <h3 class="font-bold mb-2" style="color: #7B2D8E;">Waxing ✓</h3>
+      <ul class="text-sm text-gray-700 space-y-1">
+        <li>• Lasts 3-4 weeks</li>
+        <li>• Removes from root</li>
+        <li>• Finer regrowth</li>
+        <li>• No stubble</li>
+      </ul>
+    </div>
+    <div class="bg-white p-4 rounded-lg">
+      <h3 class="font-bold mb-2 text-gray-500">Shaving ✗</h3>
+      <ul class="text-sm text-gray-600 space-y-1">
+        <li>• Lasts 1-2 days</li>
+        <li>• Cuts hair at surface</li>
+        <li>• Stubble appears quickly</li>
+        <li>• Can cause irritation</li>
+      </ul>
+    </div>
+    <div class="bg-white p-4 rounded-lg">
+      <h3 class="font-bold mb-2 text-gray-500">Bleaching ✗</h3>
+      <ul class="text-sm text-gray-600 space-y-1">
+        <li>• Hair still visible</li>
+        <li>• Can irritate skin</li>
+        <li>• Needs frequent redo</li>
+        <li>• Doesn't remove hair</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Cleanse</strong> — The area is cleaned to remove any makeup or oils.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Protect</strong> — A light powder is applied to protect the skin.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Wax</strong> — Gentle hard wax is applied and quickly removed.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Soothe</strong> — Calming product applied to reduce redness.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Before Your Appointment</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ul class="space-y-2">
+    <li>• Let hair grow to at least ¼ inch</li>
+    <li>• Avoid retinol products for 5-7 days before</li>
+    <li>• Come with clean skin (no makeup)</li>
+    <li>• Avoid sun exposure for 24 hours before</li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Perfect Add-On</h2>
+
+<p class="text-lg mb-6">
+  Upper lip waxing pairs perfectly with <a href="/eyebrow-waxing-scottsdale" style="color: #7B2D8E;" class="font-semibold hover:underline">eyebrow waxing</a> or <a href="/full-face-waxing-scottsdale" style="color: #7B2D8E;" class="font-semibold hover:underline">full face waxing</a> for complete facial grooming. Many clients book these services together for a polished, put-together look.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Upper Lip Wax</h2>
+
+<p class="text-lg">
+  Smooth, confident skin is just minutes away. <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your upper lip waxing appointment</a> at our Scottsdale location today! Only $15 for weeks of smooth, hair-free skin.
+</p>
+
 </ServicePage>

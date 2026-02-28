@@ -1,10 +1,184 @@
 ---
-import ServicePage from '../layouts/ServicePage.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BookingCTA from '../components/BookingCTA.astro';
+
+const pageTitle = 'Mobile Waxing Service Phoenix & Scottsdale | At-Home Waxing';
+const pageDescription = 'Professional mobile waxing service throughout Phoenix and Scottsdale. We come to your home or hotel for private, convenient hair removal. Book today!';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mobile Waxing Service",
+  "description": "Professional mobile waxing service in Phoenix and Scottsdale. At-home hair removal services.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Rejuvenate You",
+    "telephone": "+1-480-747-6996"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Phoenix and Scottsdale, AZ"
+  }
+};
 ---
 
-<ServicePage
-  title="Mobile Waxing Service Az"
-  description="Service from Rejuvenate You"
->
-Content to be imported.
-</ServicePage>
+<BaseLayout title={pageTitle} description={pageDescription} schema={schema}>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Mobile Waxing Service</h1>
+          <p class="text-xl mb-6 text-purple-100">
+            Professional waxing brought to your door. Serving Phoenix and Scottsdale with convenient, private at-home hair removal services.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a 
+              href="tel:4807476996"
+              class="inline-block px-8 py-4 rounded-lg font-bold text-purple-900 bg-white hover:bg-purple-50 transition text-center"
+            >
+              Call to Book
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <img 
+            src="/images/6358773dfa2fa42351f2e029_5e6afb63-1975-4096-830b-1d99918351c4_mobile-waxing-service-az.jpeg"
+            alt="Mobile waxing service in Arizona"
+            class="rounded-xl shadow-2xl"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-12 text-center" style="color: #7B2D8E;">Mobile Services</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-purple-50 rounded-xl p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #7B2D8E;">
+            <span class="text-3xl">🏠</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #7B2D8E;">At-Home Brazilian</h3>
+          <p class="text-gray-600 mb-4">
+            Professional Brazilian waxing in the comfort and privacy of your own home.
+          </p>
+          <p class="text-2xl font-bold" style="color: #7B2D8E;">$100+</p>
+        </div>
+
+        <div class="bg-purple-50 rounded-xl p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #7B2D8E;">
+            <span class="text-3xl">🏨</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #7B2D8E;">Hotel Service</h3>
+          <p class="text-gray-600 mb-4">
+            Visiting Phoenix or Scottsdale? We come to your hotel room for convenient grooming.
+          </p>
+          <p class="text-2xl font-bold" style="color: #7B2D8E;">$100+</p>
+        </div>
+
+        <div class="bg-purple-50 rounded-xl p-8 text-center">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #7B2D8E;">
+            <span class="text-3xl">👥</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3" style="color: #7B2D8E;">Group Sessions</h3>
+          <p class="text-gray-600 mb-4">
+            Perfect for bridal parties, girls' weekends, or groups. Everyone gets pampered together.
+          </p>
+          <p class="text-2xl font-bold" style="color: #7B2D8E;">Quote</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-16 bg-purple-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-12 text-center" style="color: #7B2D8E;">How Mobile Waxing Works</h2>
+      
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center text-white font-bold" style="background-color: #7B2D8E;">1</div>
+          <h4 class="font-semibold mb-2">Book</h4>
+          <p class="text-sm text-gray-600">Call or text to schedule your mobile appointment</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center text-white font-bold" style="background-color: #7B2D8E;">2</div>
+          <h4 class="font-semibold mb-2">Arrival</h4>
+          <p class="text-sm text-gray-600">We arrive 10-15 min early to set up equipment</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center text-white font-bold" style="background-color: #7B2D8E;">3</div>
+          <h4 class="font-semibold mb-2">Treatment</h4>
+          <p class="text-sm text-gray-600">Receive expert waxing in your private space</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center text-white font-bold" style="background-color: #7B2D8E;">4</div>
+          <h4 class="font-semibold mb-2">Done</h4>
+          <p class="text-sm text-gray-600">We clean up and leave no trace behind</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Service Areas</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-purple-50 p-6 rounded-xl">
+          <h3 class="text-xl font-bold mb-4" style="color: #7B2D8E;">Phoenix</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Central Phoenix</li>
+            <li>• Arcadia</li>
+            <li>• Biltmore</li>
+            <li>• North Phoenix</li>
+            <li>• Ahwatukee</li>
+          </ul>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-xl">
+          <h3 class="text-xl font-bold mb-4" style="color: #7B2D8E;">Scottsdale</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li>• Old Town Scottsdale</li>
+            <li>• Central Scottsdale</li>
+            <li>• North Scottsdale</li>
+            <li>• Paradise Valley</li>
+            <li>• McCormick Ranch</li>
+          </ul>
+        </div>
+      </div>
+      
+      <p class="text-center text-gray-600 mt-8">
+        Contact us if you're outside these areas — we may still be able to accommodate your request with a travel fee.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6">Book Your Mobile Waxing Appointment</h2>
+      <p class="text-xl mb-8 text-purple-100">
+        Professional waxing at your convenience. Call or text to schedule your mobile service today.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="tel:4807476996"
+          class="inline-block px-8 py-4 rounded-lg font-bold text-purple-900 bg-white hover:bg-purple-50 transition"
+        >
+          Call (480) 747-6996
+        </a>
+        <a 
+          href="tel:6023744415"
+          class="inline-block px-8 py-4 rounded-lg font-bold border-2 border-white hover:bg-white/10 transition"
+        >
+          Call (602) 374-4415
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
