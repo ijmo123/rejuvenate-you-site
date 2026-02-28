@@ -1,63 +1,45 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = 'Page Not Found | Rejuvenate You';
+const pageDescription = 'Sorry, the page you are looking for could not be found. Visit our homepage to explore our waxing and skincare services in Scottsdale and Phoenix.';
 ---
 
-<BaseLayout
-  title="Page Not Found - Rejuvenate You"
-  description="The page you're looking for couldn't be found. Return to Rejuvenate You for waxing and beauty services in Scottsdale and Phoenix."
->
-  <div class="min-h-screen flex items-center justify-center px-4 py-12">
-    <div class="max-w-md text-center">
-      <!-- Error Code -->
-      <div class="mb-8">
-        <h1 class="text-8xl font-bold mb-4" style="color: #7B2D8E;">404</h1>
-        <p class="text-2xl font-semibold text-gray-900 mb-2">Page Not Found</p>
-        <p class="text-gray-600">Sorry, we couldn't find the page you're looking for.</p>
-      </div>
-
-      <!-- Illustration -->
-      <div class="mb-8">
-        <div class="text-6xl mb-4">🔍</div>
-        <p class="text-gray-500">The page may have been moved or removed.</p>
-      </div>
-
-      <!-- Navigation Links -->
-      <div class="space-y-3 mb-8">
-        <a
-          href="/"
-          class="block w-full px-6 py-3 rounded-lg font-bold text-white text-center transition hover:shadow-lg"
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <div class="min-h-[60vh] flex items-center justify-center px-4">
+    <div class="text-center max-w-2xl">
+      <h1 class="text-6xl md:text-8xl font-bold mb-4" style="color: #7B2D8E;">404</h1>
+      <p class="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">Page Not Found</p>
+      <p class="text-lg text-gray-600 mb-8">
+        Sorry, we couldn't find the page you're looking for. It might have been moved or no longer exists.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="/" 
+          class="inline-flex items-center justify-center px-8 py-3 rounded-lg font-bold text-white hover:shadow-lg transition"
           style="background-color: #7B2D8E;"
         >
-          Return to Home
+          Go Home
         </a>
-        <a
-          href="/services"
-          class="block w-full px-6 py-3 rounded-lg font-semibold text-purple-700 border-2 border-purple-700 text-center transition hover:bg-purple-50"
+        <a 
+          href="/services" 
+          class="inline-flex items-center justify-center px-8 py-3 rounded-lg font-bold border-2 hover:bg-gray-50 transition"
+          style="color: #7B2D8E; border-color: #7B2D8E;"
         >
-          View Our Services
-        </a>
-        <a
-          href="/blog"
-          class="block w-full px-6 py-3 rounded-lg font-semibold text-purple-700 border-2 border-purple-700 text-center transition hover:bg-purple-50"
-        >
-          Read Our Blog
+          View Services
         </a>
       </div>
-
-      <!-- Locations -->
-      <div class="bg-purple-50 rounded-lg p-6 text-left">
-        <p class="text-sm font-semibold text-gray-600 mb-3">Visit Us</p>
-        <div class="space-y-2 text-sm text-gray-700">
-          <div>
-            <p class="font-semibold" style="color: #7B2D8E;">Scottsdale</p>
-            <p>7127 E Sahuaro Dr, Ste 103</p>
-            <p>Scottsdale, AZ 85254</p>
-          </div>
-          <div class="pt-2 border-t border-purple-200">
-            <p class="font-semibold" style="color: #7B2D8E;">Phoenix</p>
-            <p>727 E Bethany Home Rd</p>
-            <p>Phoenix, AZ 85014</p>
-          </div>
+      
+      <div class="mt-12 pt-8 border-t border-gray-200">
+        <p class="text-gray-500 mb-4">Or visit one of our locations:</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center text-sm">
+          <a href="/scottsdale" class="text-purple-700 hover:underline">
+            📍 Scottsdale Location
+          </a>
+          <a href="/phoenix" class="text-purple-700 hover:underline">
+            📍 Phoenix Location
+          </a>
         </div>
       </div>
     </div>
