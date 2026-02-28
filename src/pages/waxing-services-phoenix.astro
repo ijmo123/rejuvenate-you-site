@@ -2,55 +2,55 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingCTA from '../components/BookingCTA.astro';
 
-const pageTitle = 'Waxing Services Scottsdale, AZ | Full Body Waxing | Rejuvenate You';
-const pageDescription = 'Professional waxing services in Scottsdale, AZ. Brazilian wax, bikini wax, men\'s waxing, eyebrow waxing, and full body waxing. Book your appointment today!';
+const pageTitle = 'Waxing Services Phoenix, AZ | Full Body Waxing | Rejuvenate You';
+const pageDescription = 'Professional waxing services in Phoenix, AZ. Brazilian wax, bikini wax, men\'s waxing, eyebrow waxing, and full body waxing. First-time client specials available. Book today!';
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Waxing Services Scottsdale",
-  "description": "Professional waxing services in Scottsdale, AZ for men and women",
+  "name": "Waxing Services Phoenix",
+  "description": "Professional waxing services in Phoenix, AZ for men and women",
   "provider": {
     "@type": "LocalBusiness",
     "name": "Rejuvenate You",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "7127 E Sahuaro Dr, Ste 103",
-      "addressLocality": "Scottsdale",
+      "streetAddress": "727 E Bethany Home Rd, suite d-224",
+      "addressLocality": "Phoenix",
       "addressRegion": "AZ",
-      "postalCode": "85254"
+      "postalCode": "85014"
     },
     "telephone": "+1-623-980-3867"
   },
   "areaServed": {
     "@type": "City",
-    "name": "Scottsdale"
+    "name": "Phoenix"
   }
 };
 
 const womensServices = [
-  { name: "Brazilian Wax", price: "$60", url: "/brazilian-wax-scottsdale", desc: "Complete hair removal from front to back. Leave nothing behind or keep a landing strip, triangle, or square — it's up to you." },
-  { name: "Bikini Wax", price: "$45", url: "/bikini-wax-scottsdale", desc: "Clean up the bikini line for a neat, tidy appearance. Perfect for beach days and everyday confidence." },
-  { name: "Eyebrow Wax", price: "$21", url: "/eyebrow-waxing-scottsdale", desc: "Shape and define your brows to complement your face shape. Includes consultation for your perfect look." },
-  { name: "Upper Lip Wax", price: "$15", url: "/upper-lip-wax-scottsdale", desc: "Quick removal of unwanted upper lip hair for a smooth finish." },
-  { name: "Full Face Wax", price: "$45", url: "/full-face-waxing-scottsdale", desc: "Complete facial waxing including brows, lip, chin, and cheeks. Perfect before special events." },
-  { name: "Chin Wax", price: "$15", url: "/full-face-waxing-scottsdale", desc: "Remove unwanted chin hair quickly and effectively." },
-  { name: "Underarm Wax", price: "$25", url: "/underarm-wax-scottsdale", desc: "Stay fresh and confident with smooth underarms that last for weeks." },
-  { name: "Full Leg Wax", price: "$70", url: "/full-leg-wax-scottsdale", desc: "Silky smooth legs from thigh to ankle. No more daily shaving." },
-  { name: "Half Leg Wax", price: "$45", url: "/full-leg-wax-scottsdale", desc: "Lower leg waxing from knee to ankle — great for quick touch-ups." },
-  { name: "Full Arm Wax", price: "$45", url: "/full-arm-wax-scottsdale", desc: "Remove unwanted arm hair from shoulder to wrist for smooth, confident arms." },
-  { name: "Stomach Wax", price: "$25", url: "/stomach-wax-scottsdale", desc: "Remove hair from the stomach area for a smooth, polished look." },
+  { name: "Brazilian Wax", price: "$60", url: "/brazilian-wax-phoenix", desc: "Complete hair removal from front to back. Leave nothing behind or keep a landing strip, triangle, or square — it's up to you." },
+  { name: "Bikini Wax", price: "$45", url: "/bikini-wax-phoenix", desc: "Clean up the bikini line for a neat, tidy appearance. Perfect for beach days and everyday confidence." },
+  { name: "Eyebrow Wax", price: "$21", url: "/eyebrow-waxing-phoenix", desc: "Shape and define your brows to complement your face shape. Includes consultation for your perfect look." },
+  { name: "Upper Lip Wax", price: "$15", url: "/upper-lip-wax-phoenix", desc: "Quick removal of unwanted upper lip hair for a smooth finish." },
+  { name: "Full Face Wax", price: "$45", url: "/full-face-waxing-phoenix", desc: "Complete facial waxing including brows, lip, chin, and cheeks. Perfect before special events." },
+  { name: "Chin Wax", price: "$15", url: "/full-face-waxing-phoenix", desc: "Remove unwanted chin hair quickly and effectively." },
+  { name: "Underarm Wax", price: "$25", url: "/underarm-wax-phoenix", desc: "Stay fresh and confident with smooth underarms that last for weeks." },
+  { name: "Full Leg Wax", price: "$70", url: "/full-leg-wax-phoenix", desc: "Silky smooth legs from thigh to ankle. No more daily shaving." },
+  { name: "Half Leg Wax", price: "$45", url: "/full-leg-wax-phoenix", desc: "Lower leg waxing from knee to ankle — great for quick touch-ups." },
+  { name: "Full Arm Wax", price: "$45", url: "/full-arm-wax-phoenix", desc: "Remove unwanted arm hair from shoulder to wrist for smooth, confident arms." },
+  { name: "Stomach Wax", price: "$25", url: "/stomach-wax-phoenix", desc: "Remove hair from the stomach area for a smooth, polished look." },
 ];
 
 const mensServices = [
-  { name: "Men's Brazilian", price: "$80", url: "/male-waxing-scottsdale", desc: "Complete grooming for the modern man. Confidence from front to back." },
-  { name: "Back Wax", price: "$60", url: "/back-wax-scottsdale", desc: "Full back hair removal for a smooth, clean look. Perfect for the beach or gym." },
-  { name: "Chest Wax", price: "$30", url: "/chest-wax-scottsdale", desc: "Show off a well-defined physique with smooth, hair-free chest." },
-  { name: "Male Face Wax", price: "$45", url: "/male-face-waxing-scottsdale", desc: "Professional brow shaping, cheek cleanup, and sideburn grooming for men." },
-  { name: "Nose Hair Wax", price: "$15", url: "/nose-hair-waxing-scottsdale", desc: "Quick, effective nose hair removal. Lasts much longer than trimming." },
-  { name: "Ear Hair Wax", price: "$15", url: "/ear-hair-waxing-scottsdale", desc: "Remove unwanted ear hair for a polished appearance." },
-  { name: "Underarm Wax", price: "$25", url: "/underarm-wax-scottsdale", desc: "Stay fresh and reduce odor with smooth underarms." },
-  { name: "Full Arm Wax", price: "$45", url: "/full-arm-wax-scottsdale", desc: "Complete arm waxing from shoulder to wrist." },
+  { name: "Men's Brazilian", price: "$80", url: "/mens-waxing-phoenix", desc: "Complete grooming for the modern man. Confidence from front to back." },
+  { name: "Back Wax", price: "$60", url: "/back-wax-phoenix", desc: "Full back hair removal for a smooth, clean look. Perfect for the beach or gym." },
+  { name: "Chest Wax", price: "$30", url: "/chest-wax-phoenix", desc: "Show off a well-defined physique with smooth, hair-free chest." },
+  { name: "Male Face Wax", price: "$45", url: "/male-face-waxing-phoenix", desc: "Professional brow shaping, cheek cleanup, and sideburn grooming for men." },
+  { name: "Nose Hair Wax", price: "$15", url: "/nose-hair-waxing-phoenix", desc: "Quick, effective nose hair removal. Lasts much longer than trimming." },
+  { name: "Ear Hair Wax", price: "$15", url: "/ear-hair-waxing-phoenix", desc: "Remove unwanted ear hair for a polished appearance." },
+  { name: "Underarm Wax", price: "$25", url: "/underarm-wax-phoenix", desc: "Stay fresh and reduce odor with smooth underarms." },
+  { name: "Full Arm Wax", price: "$45", url: "/full-arm-wax-phoenix", desc: "Complete arm waxing from shoulder to wrist." },
 ];
 
 const faqs = [
@@ -73,20 +73,28 @@ const faqs = [
 ];
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} schema={schema} currentLocation="scottsdale">
+<BaseLayout title={pageTitle} description={pageDescription} schema={schema} currentLocation="phoenix">
   <!-- Hero Section -->
   <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white py-16 md:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">Waxing Services in Scottsdale</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Waxing Services in Phoenix</h1>
       <p class="text-xl max-w-3xl mx-auto text-purple-100">
-        Are you looking for smooth, hair-free skin without the hassle of constant shaving? At Rejuvenate You, we offer top-notch waxing services in Scottsdale, AZ that transform your grooming routine.
+        Are you looking for smooth, hair-free skin without the hassle of constant shaving? At Rejuvenate You, we offer top-notch waxing services in Phoenix, AZ that transform your grooming routine.
       </p>
+      
+      <!-- First-Timer Special Banner -->
+      <div class="mt-8 bg-white/10 backdrop-blur rounded-xl p-6 max-w-2xl mx-auto border border-white/20">
+        <p class="text-lg font-semibold text-yellow-300">🎉 FIRST-TIME CLIENT SPECIAL</p>
+        <p class="text-xl mt-2">Get <span class="font-bold text-yellow-300">50% OFF</span> your second Brazilian wax</p>
+        <p class="text-sm text-purple-200 mt-1">when you book within 4-6 weeks</p>
+      </div>
+
       <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
         <a 
-          href="https://rejuvenateyouwaxing.glossgenius.com/services"
+          href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-block px-8 py-4 rounded-lg font-bold text-white hover:shadow-lg transition bg-white text-purple-900"
+          class="inline-block px-8 py-4 rounded-lg font-bold bg-white text-purple-900 hover:shadow-lg transition"
         >
           Book Your Appointment
         </a>
@@ -97,22 +105,50 @@ const faqs = [
     </div>
   </section>
 
+  <!-- Trust Badges -->
+  <section class="py-8 bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="text-center p-4">
+          <p class="text-3xl mb-1">⭐</p>
+          <p class="font-bold" style="color: #7B2D8E;">5.0★ Rating</p>
+          <p class="text-sm text-gray-600">19 Reviews</p>
+        </div>
+        <div class="text-center p-4">
+          <p class="text-3xl mb-1">🏆</p>
+          <p class="font-bold" style="color: #7B2D8E;">15+ Years</p>
+          <p class="text-sm text-gray-600">Experience</p>
+        </div>
+        <div class="text-center p-4">
+          <p class="text-3xl mb-1">✨</p>
+          <p class="font-bold" style="color: #7B2D8E;">First-Timer</p>
+          <p class="text-sm text-gray-600">Specialists</p>
+        </div>
+        <div class="text-center p-4">
+          <p class="text-3xl mb-1">🔒</p>
+          <p class="font-bold" style="color: #7B2D8E;">Clean, Private</p>
+          <p class="text-sm text-gray-600">Studio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Benefits Section -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold mb-12 text-center" style="color: #7B2D8E;">Benefits of Professional Waxing</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center p-6 bg-purple-50 rounded-xl">
+        <div class="text-center p-6 bg-white rounded-xl shadow-sm">
           <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center text-3xl">⏰</div>
           <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Longer-Lasting Results</h3>
           <p class="text-gray-600">Unlike shaving that lasts days, waxing removes hair from the root for smooth skin that lasts 3-6 weeks.</p>
         </div>
-        <div class="text-center p-6 bg-purple-50 rounded-xl">
+        <div class="text-center p-6 bg-white rounded-xl shadow-sm">
           <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center text-3xl">✨</div>
           <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Finer Regrowth</h3>
           <p class="text-gray-600">Regular waxing leads to finer, sparser hair growth over time. Your hair becomes softer and easier to remove.</p>
         </div>
-        <div class="text-center p-6 bg-purple-50 rounded-xl">
+        <div class="text-center p-6 bg-white rounded-xl shadow-sm">
           <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 rounded-full flex items-center justify-center text-3xl">🛡️</div>
           <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">No Razor Burn</h3>
           <p class="text-gray-600">Say goodbye to cuts, nicks, and razor burn. Waxing provides smooth results without the irritation of daily shaving.</p>
@@ -122,7 +158,7 @@ const faqs = [
   </section>
 
   <!-- Women's Services -->
-  <section id="services" class="py-16 bg-gray-50">
+  <section id="services" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold mb-4 text-center" style="color: #7B2D8E;">Women's Waxing Services</h2>
       <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Our skilled wax specialists are dedicated to providing top-notch treatments that leave you feeling confident and smooth.</p>
@@ -142,14 +178,14 @@ const faqs = [
   </section>
 
   <!-- Men's Services -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-purple-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold mb-4 text-center" style="color: #7B2D8E;">Men's Waxing Services</h2>
       <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">We understand that grooming is essential for the modern man. Our wax specialists provide top-notch treatments for a confident, well-groomed appearance.</p>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {mensServices.map((service) => (
-          <a href={service.url} class="bg-purple-50 rounded-xl border border-purple-100 hover:shadow-lg transition p-6 group">
+          <a href={service.url} class="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-lg transition p-6 group">
             <div class="flex justify-between items-start mb-3">
               <h3 class="text-lg font-bold group-hover:text-purple-700 transition" style="color: #7B2D8E;">{service.name}</h3>
               <span class="text-xl font-bold text-gray-900">{service.price}</span>
@@ -162,11 +198,11 @@ const faqs = [
   </section>
 
   <!-- What to Expect -->
-  <section class="py-16 bg-purple-50">
+  <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">What to Expect During Your Waxing Appointment</h2>
       <div class="space-y-6">
-        <div class="bg-white p-6 rounded-xl shadow-sm">
+        <div class="bg-gray-50 p-6 rounded-xl">
           <div class="flex items-start">
             <span class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center font-bold text-purple-700 mr-4">1</span>
             <div>
@@ -175,7 +211,7 @@ const faqs = [
             </div>
           </div>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
+        <div class="bg-gray-50 p-6 rounded-xl">
           <div class="flex items-start">
             <span class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center font-bold text-purple-700 mr-4">2</span>
             <div>
@@ -184,7 +220,7 @@ const faqs = [
             </div>
           </div>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm">
+        <div class="bg-gray-50 p-6 rounded-xl">
           <div class="flex items-start">
             <span class="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center font-bold text-purple-700 mr-4">3</span>
             <div>
@@ -198,7 +234,7 @@ const faqs = [
   </section>
 
   <!-- Aftercare Section -->
-  <section class="py-16 bg-white">
+  <section class="py-16 bg-gray-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Preparing for Your Appointment</h2>
       <div class="grid md:grid-cols-2 gap-8">
@@ -227,12 +263,12 @@ const faqs = [
   </section>
 
   <!-- FAQs -->
-  <section class="py-16 bg-gray-50">
+  <section class="py-16 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Frequently Asked Questions</h2>
       <div class="space-y-4">
         {faqs.map((faq) => (
-          <details class="group bg-white border border-gray-200 rounded-xl cursor-pointer hover:border-purple-300 transition">
+          <details class="group bg-gray-50 border border-gray-200 rounded-xl cursor-pointer hover:border-purple-300 transition">
             <summary class="flex items-center justify-between p-6 font-semibold text-gray-900 group-open:text-purple-700">
               <span>{faq.question}</span>
               <span class="text-xl group-open:rotate-180 transition-transform">▼</span>
@@ -251,33 +287,33 @@ const faqs = [
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl font-bold mb-4">Ready to Experience Smooth Skin?</h2>
       <p class="text-xl text-purple-200 mb-8">
-        Book your waxing appointment at our Scottsdale studio today. Same-day appointments often available.
+        Book your waxing appointment at our Phoenix studio today. Same-day appointments often available.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a 
-          href="https://rejuvenateyouwaxing.glossgenius.com/services"
+          href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-block px-8 py-4 rounded-lg font-bold bg-white text-purple-900 hover:shadow-lg transition"
         >
-          Book Scottsdale Appointment
+          Book Phoenix Appointment
         </a>
         <a href="tel:6239803867" class="inline-block px-8 py-4 rounded-lg font-bold border-2 border-white text-white hover:bg-white hover:text-purple-900 transition">
           Call (623) 980-3867
         </a>
       </div>
       <p class="mt-6 text-purple-300">
-        📍 7127 E Sahuaro Dr, Ste 103, Scottsdale, AZ 85254
+        📍 727 E Bethany Home Rd, suite d-224, Phoenix, AZ 85014
       </p>
     </div>
   </section>
 
   <!-- Switch Location -->
-  <section class="py-8 bg-white border-t">
+  <section class="py-8 bg-gray-50 border-t">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <p class="text-gray-600">
-        Looking for our Phoenix location? 
-        <a href="/waxing-services-phoenix" class="font-semibold hover:underline" style="color: #7B2D8E;">View Phoenix Waxing Services →</a>
+        Looking for our Scottsdale location? 
+        <a href="/waxing-services-scottsdale" class="font-semibold hover:underline" style="color: #7B2D8E;">View Scottsdale Waxing Services →</a>
       </p>
     </div>
   </section>
