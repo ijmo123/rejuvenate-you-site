@@ -1,0 +1,45 @@
+---
+interface FAQItem {
+    question: string;
+    answer: string;
+}
+
+interface Props {
+    faqs: FAQItem[];
+    title?: string;
+}
+
+const { faqs, title = 'Frequently Asked Questions' } = Astro.props;
+---
+
+<section class="py-12 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">
+            {title}
+        </h2>
+
+        <div class="space-y-4">
+            {faqs.map((faq, index) => (
+                <details class="group border border-gray-200 rounded-lg p-6 cursor-pointer hover:border-purple-300 transition">
+                    <summary class="flex items-center justify-between font-semibold text-gray-900 group-open:text-purple-700">
+                        <span>{faq.question}</span>
+                        <span class="text-xl group-open:rotate-180 transition-transform">▼</span>
+                    </summary>
+                    <div class="mt-4 text-gray-700 space-y-2">
+                        <p set:html={faq.answer} />
+                    </div>
+                </details>
+            ))}
+        </div>
+    </div>
+</section>
+
+<style>
+    details[open] > summary {
+        margin-bottom: 1rem;
+    }
+
+    details summary::-webkit-details-marker {
+        display: none;
+    }
+</style>
