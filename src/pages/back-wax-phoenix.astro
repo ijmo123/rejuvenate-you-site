@@ -1,0 +1,102 @@
+---
+import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "Does back waxing hurt?",
+    answer: "Back waxing can cause moderate discomfort, but most men find it very manageable. The back is less sensitive than other areas, and our experienced estheticians work efficiently to minimize discomfort."
+  },
+  {
+    question: "How long does back waxing take?",
+    answer: "Back waxing typically takes 20-30 minutes depending on the amount of hair and the size of the area being treated."
+  },
+  {
+    question: "How long do the results last?",
+    answer: "Back waxing results typically last 4-6 weeks. With regular waxing, hair may grow back finer and sparser over time."
+  }
+];
+---
+
+<ServicePage
+  title="Back Wax Phoenix | Men's Back Hair Removal"
+  description="Professional back waxing in Phoenix, AZ. Remove unwanted back hair for smooth, confident skin. Popular with bodybuilders, swimmers, and men who prefer a hair-free back. Book today!"
+  price="$60"
+  duration="20-30 min"
+  location="phoenix"
+  faqs={faqs}
+>
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_7dc2819b-8823-40a2-9a76-61ec8f7bde46_male+eyebrow+waxing.jpeg"
+    alt="Back waxing service at Rejuvenate You in Phoenix"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Achieve a smooth, hair-free back with our professional back waxing service in Phoenix. Popular with athletes, bodybuilders, and men who simply prefer a cleaner look, our back waxing delivers smooth results that last for weeks.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Choose Back Waxing?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Back hair is difficult to manage on your own. Professional waxing offers:
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Complete coverage—entire back including shoulders</li>
+      <li>Results last 4-6 weeks</li>
+      <li>Smoother than shaving or trimming</li>
+      <li>No stubble or regrowth for weeks</li>
+      <li>Professional results you can't achieve at home</li>
+    </ul>
+  </div>
+  <div class="bg-purple-50 p-6 rounded-lg flex items-center justify-center">
+    <div class="text-center">
+      <span class="text-6xl">💪</span>
+      <p class="mt-4 text-gray-600">Smooth, defined<br>back muscles</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Consultation</strong> — We discuss the exact area you want treated.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Preparation</strong> — The back is cleansed and prepped for waxing.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Waxing</strong> — We work in sections for thorough, efficient hair removal.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Finishing</strong> — Soothing products applied to calm the skin.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Back Wax in Phoenix</h2>
+
+<p class="text-lg">
+  Get the smooth, confident back you want. <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" style="color: #7B2D8E;" class="font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Book your back waxing appointment</a> at our Phoenix location today! Only $60 for smooth results that last.
+</p>
+
+</ServicePage>

@@ -1,0 +1,106 @@
+---
+import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "Does full leg waxing hurt?",
+    answer: "Full leg waxing can cause moderate discomfort, but our experienced estheticians use techniques to minimize pain. The discomfort is brief and most clients find the smooth results well worth it."
+  },
+  {
+    question: "How long does full leg waxing take?",
+    answer: "Full leg waxing typically takes 45-60 minutes for both legs. This includes the upper leg, lower leg, knees, and feet."
+  },
+  {
+    question: "How long do the results last?",
+    answer: "Full leg waxing results typically last 4-6 weeks. With regular waxing, hair may grow back finer and sparser over time, extending the time between appointments."
+  }
+];
+---
+
+<ServicePage
+  title="Full Leg Wax Phoenix | Complete Leg Hair Removal"
+  description="Professional full leg waxing in Phoenix, AZ. Complete hair removal from thigh to ankle. Smooth, long-lasting results. Book your appointment today!"
+  price="$70"
+  duration="45-60 min"
+  location="phoenix"
+  faqs={faqs}
+>
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_16da6a34-b6ce-4108-ba29-b3efd83e74d6_benefits-of-butt-wax.jpeg"
+    alt="Full leg waxing service at Rejuvenate You in Phoenix"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Achieve completely smooth legs with our professional full leg waxing service in Phoenix. From thigh to ankle, we remove all unwanted hair, leaving your skin silky smooth and ready for anything—shorts, dresses, or just feeling confident.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What's Included in a Full Leg Wax?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Our full leg waxing service covers the entire leg for complete smoothness:
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Upper thighs (front and back)</li>
+      <li>Knees</li>
+      <li>Lower legs (front and back)</li>
+      <li>Ankles</li>
+      <li>Tops of feet and toes</li>
+    </ul>
+  </div>
+  <div class="bg-purple-50 p-6 rounded-lg flex items-center justify-center">
+    <div class="text-center">
+      <span class="text-6xl">🦵</span>
+      <p class="mt-4 text-gray-600">Smooth legs<br>from top to toe</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of Full Leg Waxing</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-4">
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Results last 4-6 weeks</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>No daily shaving</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Smoother than shaving</span>
+      </li>
+    </ul>
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Finer regrowth over time</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>No razor burn</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Confidence in any outfit</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Full Leg Wax in Phoenix</h2>
+
+<p class="text-lg">
+  Get the smooth, confident legs you want. <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" style="color: #7B2D8E;" class="font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Book your full leg waxing appointment</a> at our Phoenix location today! Only $70 for complete smoothness that lasts.
+</p>
+
+</ServicePage>

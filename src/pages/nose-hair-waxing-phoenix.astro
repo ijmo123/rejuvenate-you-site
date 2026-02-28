@@ -1,0 +1,119 @@
+---
+import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "Does nose hair waxing hurt?",
+    answer: "Nose hair waxing is quick and the discomfort is brief. Most clients find it much more tolerable than they expected, and the results last much longer than trimming."
+  },
+  {
+    question: "Is it safe to wax nose hair?",
+    answer: "Yes, when done professionally. We only wax the visible hairs at the entrance of the nostrils. We never wax deep inside the nose, which protects the cilia that help filter air."
+  },
+  {
+    question: "How long does nose hair waxing last?",
+    answer: "Nose hair waxing typically lasts 3-4 weeks, much longer than daily trimming. You'll enjoy clean nostrils without the daily maintenance."
+  }
+];
+---
+
+<ServicePage
+  title="Nose Hair Waxing Phoenix | Men's Nose Hair Removal"
+  description="Professional nose hair waxing in Phoenix, AZ. Quick removal of visible nose hair for a clean, groomed appearance. Safe and effective. Book today!"
+  price="$15"
+  duration="5-10 min"
+  location="phoenix"
+  faqs={faqs}
+>
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_2daaaac5-c5ba-4429-be52-118373763506_nosewaxing.jpg"
+    alt="Nose hair waxing service at Rejuvenate You in Phoenix"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Say goodbye to unsightly nose hair with our quick and effective nose hair waxing service in Phoenix. This simple treatment removes visible hairs at the nostril entrance, giving you a clean, well-groomed appearance that lasts for weeks.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Wax Instead of Trim?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      While trimming is a daily chore, waxing provides long-lasting results. Here's why our clients prefer waxing:
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Results last 3-4 weeks vs. daily trimming</li>
+      <li>No more stubbly, prickly nose hairs</li>
+      <li>Removes hair from the root</li>
+      <li>Clean, polished appearance</li>
+      <li>Quick and affordable</li>
+    </ul>
+  </div>
+  <div class="bg-purple-50 p-6 rounded-lg flex items-center justify-center">
+    <div class="text-center">
+      <span class="text-6xl">👃</span>
+      <p class="mt-4 text-gray-600">Clean, groomed<br>appearance</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Prep</strong> — We cleanse the area around the nostrils.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Application</strong> — A small amount of warm wax is applied to the visible hairs at the nostril entrance using a safe applicator.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Quick Removal</strong> — The wax and hairs are removed in one swift motion.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Soothing</strong> — A calming product is applied to minimize any redness.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Safety First</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <p class="mb-4">
+    <strong>Important:</strong> We only remove visible hairs at the entrance of the nostrils. We never wax deep inside the nose. This protects the cilia (tiny hairs) that help filter dust and particles from the air you breathe.
+  </p>
+  <p>
+    Our trained estheticians use professional techniques and high-quality wax specifically designed for sensitive areas.
+  </p>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Perfect Add-On Service</h2>
+
+<p class="text-lg mb-6">
+  Nose hair waxing is the perfect add-on to any other service. Many clients combine it with ear hair waxing, eyebrow waxing, or their regular haircut appointments for complete grooming.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Nose Hair Waxing in Phoenix</h2>
+
+<p class="text-lg">
+  Quick, affordable, and long-lasting. <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" style="color: #7B2D8E;" class="font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Book your nose hair waxing appointment</a> at our Phoenix location today! Only $15 for weeks of clean, groomed confidence.
+</p>
+
+</ServicePage>

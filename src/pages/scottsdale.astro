@@ -1,203 +1,119 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import BookingCTA from '../components/BookingCTA.astro';
+interface Props {
+    currentLocation?: 'scottsdale' | 'phoenix' | null;
+}
 
-const pageTitle = 'Waxing & Microneedling in Scottsdale | Rejuvenate You';
-const pageDescription = 'Professional waxing and microneedling in Scottsdale. 15+ years experience, 5.0★ rating. Brazilian, men\'s waxing, facials. Book online.';
+const { currentLocation = null } = Astro.props;
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Rejuvenate You - Scottsdale",
-  "image": "https://www.rejuvenate-you.com/images/scottsdale-location.jpg",
-  "@id": "https://www.rejuvenate-you.com/scottsdale",
-  "url": "https://www.rejuvenate-you.com/scottsdale",
-  "telephone": "+1-480-747-6996",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "7127 E Sahuaro Dr, Ste 103",
-    "addressLocality": "Scottsdale",
-    "addressRegion": "AZ",
-    "postalCode": "85254",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 33.5694,
-    "longitude": -111.9244
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
-      "closes": "19:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "09:00",
-      "closes": "14:00"
-    }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "63"
-  },
-  "serviceType": ["Brazilian Waxing", "Body Waxing", "Microneedling", "Dermaplaning"]
-};
+// Determine links based on location
+const homeLink = currentLocation === 'phoenix' ? '/phoenix' : 
+                 currentLocation === 'scottsdale' ? '/scottsdale' : '/';
+const servicesLink = currentLocation === 'phoenix' ? '/phoenix/services' : 
+                     currentLocation === 'scottsdale' ? '/scottsdale/services' : '/services';
+const aboutLink = currentLocation === 'phoenix' ? '/phoenix/about' : 
+                  currentLocation === 'scottsdale' ? '/scottsdale/about' : '/about';
+const blogLink = currentLocation === 'phoenix' ? '/phoenix/blog' : 
+                 currentLocation === 'scottsdale' ? '/scottsdale/blog' : '/blog';
+const contactLink = currentLocation === 'phoenix' ? '/phoenix/contact' : 
+                    currentLocation === 'scottsdale' ? '/scottsdale/contact' : '/contact-us';
 
-const services = [
-  { name: "Brazilian Wax", price: "$60", url: "/brazilian-wax-scottsdale" },
-  { name: "Bikini Wax", price: "$45", url: "/bikini-wax-scottsdale" },
-  { name: "Men's Waxing", price: "From $30", url: "/male-waxing-scottsdale" },
-  { name: "Eyebrow Waxing", price: "$21", url: "/eyebrow-waxing-scottsdale" },
-  { name: "Full Face Waxing", price: "$45", url: "/full-face-waxing-scottsdale" },
-  { name: "Microneedling", price: "From $200", url: "/microneedling-scottsdale-az" },
-  { name: "Dermaplaning", price: "$85", url: "/dermaplaning-scottsdale" },
-  { name: "Lymphatic Drainage Massage", price: "Call for pricing", url: "/lymphatic-drainage-massage-scottsdale-az" }
-];
+// Location info
+const isPhoenix = currentLocation === 'phoenix';
+const isScottsdale = currentLocation === 'scottsdale';
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription} schema={schema}>
-  <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white py-16 md:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl font-bold mb-6">Rejuvenate You Scottsdale</h1>
-          <p class="text-xl mb-6 text-purple-100">
-            Welcome to Rejuvenate You in Scottsdale! We've been serving the Scottsdale community with expert waxing and skin care services for over 15 years.
-          </p>
-          <div class="flex items-center mb-6">
-            <span class="text-yellow-400 text-2xl mr-2">★★★★★</span>
-            <span class="text-purple-100">5.0 rating (63 reviews)</span>
-          </div>
-          <a 
-            href="https://rejuvenateyouwaxing.glossgenius.com/services"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-block px-8 py-4 rounded-lg font-bold text-purple-900 bg-white hover:bg-purple-50 transition shadow-lg"
-          >
-            Book Appointment
-          </a>
-        </div>
-        <div class="hidden md:block">
-          <img 
-            src="/images/6358773dfa2fa42351f2e029_46598252-ff89-4700-80f2-2e535177697e_brazilian-waxing-scottsdale.jpg"
-            alt="Rejuvenate You Scottsdale location"
-            class="rounded-xl shadow-2xl"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Location Info -->
-  <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12">
-        
-        <!-- Address & Hours -->
-        <div>
-          <h2 class="text-3xl font-bold mb-6" style="color: #7B2D8E;">Our Scottsdale Location</h2>
-          <div class="bg-purple-50 p-8 rounded-xl mb-8">
-            <address class="not-italic">
-              <p class="text-lg font-semibold mb-2">Rejuvenate You</p>
-              <p class="text-gray-700 mb-1">7127 E Sahuaro Dr, Ste 103</p>
-              <p class="text-gray-700 mb-4">Scottsdale, AZ 85254</p>
-              <p class="text-xl font-bold" style="color: #7B2D8E;">
-                <a href="tel:4807476996" class="hover:underline">(480) 747-6996</a>
-              </p>
-            </address>
-          </div>
-
-          <h3 class="text-xl font-bold mb-4" style="color: #7B2D8E;">Hours</h3>
-          <div class="bg-gray-50 p-6 rounded-xl">
-            <table class="w-full">
-              <tbody>
-                <tr class="border-b border-gray-200">
-                  <td class="py-2 font-medium">Monday - Friday</td>
-                  <td class="py-2 text-right">9:00 AM - 7:00 PM</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="py-2 font-medium">Saturday</td>
-                  <td class="py-2 text-right">9:00 AM - 2:00 PM</td>
-                </tr>
-                <tr>
-                  <td class="py-2 font-medium">Sunday</td>
-                  <td class="py-2 text-right">Closed</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Map Placeholder -->
-        <div>
-          <h2 class="text-3xl font-bold mb-6" style="color: #7B2D8E;">Find Us</h2>
-          <div class="bg-gray-100 rounded-xl h-96 flex items-center justify-center border-2 border-dashed border-gray-300">
-            <div class="text-center text-gray-500">
-              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-              <p class="text-lg font-medium">Google Map Embed</p>
-              <p class="text-sm">7127 E Sahuaro Dr, Ste 103<br>Scottsdale, AZ 85254</p>
+<footer class="bg-gray-900 text-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Location 1: Scottsdale -->
+            <div class={isPhoenix ? 'opacity-60' : ''}>
+                <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Scottsdale</h3>
+                <address class="not-italic space-y-2 text-sm">
+                    <p>7127 E Sahuaro Dr, Ste 103</p>
+                    <p>Scottsdale, AZ 85254</p>
+                    <p class="mt-4">
+                        <a href="tel:4807476996" class="hover:text-purple-400 transition">
+                            (480) 747-6996
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://rejuvenateyouwaxing.glossgenius.com/services" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                            Book Scottsdale
+                        </a>
+                    </p>
+                </address>
             </div>
-          </div>
+
+            <!-- Location 2: Phoenix -->
+            <div class={isScottsdale ? 'opacity-60' : ''}>
+                <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Phoenix</h3>
+                <address class="not-italic space-y-2 text-sm">
+                    <p>Phoenix, AZ</p>
+                    <p class="mt-4">
+                        <a href="tel:6023744415" class="hover:text-purple-400 transition">
+                            (602) 374-4415
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                            Book Phoenix
+                        </a>
+                    </p>
+                </address>
+            </div>
+
+            <!-- Links & Info -->
+            <div>
+                <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <a href={homeLink} class="hover:text-purple-400 transition">Home</a>
+                    </li>
+                    <li>
+                        <a href={servicesLink} class="hover:text-purple-400 transition">Services</a>
+                    </li>
+                    <li>
+                        <a href={aboutLink} class="hover:text-purple-400 transition">About Us</a>
+                    </li>
+                    <li>
+                        <a href={blogLink} class="hover:text-purple-400 transition">Blog</a>
+                    </li>
+                    <li>
+                        <a href={contactLink} class="hover:text-purple-400 transition">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy" class="hover:text-purple-400 transition">Privacy Policy</a>
+                    </li>
+                </ul>
+                
+                <!-- Switch Location -->
+                <h4 class="text-sm font-bold mt-6 mb-2" style="color: #D4A574;">Switch Location</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <a href="/scottsdale" class={`hover:text-purple-400 transition ${isScottsdale ? 'text-purple-400 font-semibold' : ''}`}>
+                            {isScottsdale ? '→ ' : ''}Scottsdale
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/phoenix" class={`hover:text-purple-400 transition ${isPhoenix ? 'text-purple-400 font-semibold' : ''}`}>
+                            {isPhoenix ? '→ ' : ''}Phoenix
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-      </div>
+        <div class="border-t border-gray-800 mt-8 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400">
+                    © 2024 Rejuvenate You. All rights reserved.
+                </p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition">Facebook</a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition">Instagram</a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition">Google</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-
-  <!-- Services -->
-  <section class="py-16 bg-purple-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Services in Scottsdale</h2>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {services.map((service) => (
-          <a 
-            href={service.url}
-            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition border border-gray-100"
-          >
-            <h3 class="font-bold mb-2" style="color: #7B2D8E;">{service.name}</h3>
-            <p class="text-xl font-bold text-gray-900">{service.price}</p>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Book Online -->
-  <section class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-bold mb-6" style="color: #7B2D8E;">Book Your Scottsdale Appointment</h2>
-      <p class="text-lg text-gray-600 mb-8">
-        Ready to experience the Rejuvenate difference? Book online or call us today.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a 
-          href="https://rejuvenateyouwaxing.glossgenius.com/services"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block px-8 py-4 rounded-lg font-bold text-white hover:shadow-lg transition"
-          style="background-color: #7B2D8E;"
-        >
-          Book Online
-        </a>
-        <a 
-          href="tel:4807476996"
-          class="inline-block px-8 py-4 rounded-lg font-bold border-2 hover:bg-gray-50 transition"
-          style="color: #7B2D8E; border-color: #7B2D8E;"
-        >
-          Call (480) 747-6996
-        </a>
-      </div>
-    </div>
-  </section>
-</BaseLayout>
+</footer>

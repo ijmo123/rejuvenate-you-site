@@ -1,31 +1,66 @@
 ---
 interface Props {
-    currentLocation?: 'scottsdale' | 'phoenix';
+    currentLocation?: 'scottsdale' | 'phoenix' | null;
 }
 
-const { currentLocation = 'scottsdale' } = Astro.props;
+const { currentLocation = null } = Astro.props;
+
+// Determine home link based on location context
+const homeLink = currentLocation === 'phoenix' ? '/phoenix' : 
+                 currentLocation === 'scottsdale' ? '/scottsdale' : '/';
+
+// Determine services link based on location
+const servicesLink = currentLocation === 'phoenix' ? '/phoenix/services' : 
+                     currentLocation === 'scottsdale' ? '/scottsdale/services' : 
+                     '/services';
+
+// Determine about link based on location  
+const aboutLink = currentLocation === 'phoenix' ? '/phoenix/about' : 
+                  currentLocation === 'scottsdale' ? '/scottsdale/about' : 
+                  '/about';
+
+// Determine blog link based on location
+const blogLink = currentLocation === 'phoenix' ? '/phoenix/blog' : 
+                 currentLocation === 'scottsdale' ? '/scottsdale/blog' : 
+                 '/blog';
+
+// Determine contact link based on location
+const contactLink = currentLocation === 'phoenix' ? '/phoenix/contact' : 
+                    currentLocation === 'scottsdale' ? '/scottsdale/contact' : 
+                    '/contact-us';
+
+// Booking URL based on location
+const bookingUrl = currentLocation === 'phoenix' 
+    ? 'https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start'
+    : 'https://rejuvenateyouwaxing.glossgenius.com/services';
+
+const locationName = currentLocation === 'phoenix' ? 'Phoenix' : 
+                     currentLocation === 'scottsdale' ? 'Scottsdale' : '';
 ---
 
 <header class="bg-white shadow-md sticky top-0 z-50">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div class="flex justify-between items-center">
-            <!-- Logo -->
+            <!-- Logo - goes to location-specific home -->
             <div class="flex items-center space-x-2">
-                <a href="/" class="flex items-center space-x-2">
+                <a href={homeLink} class="flex items-center space-x-2">
                     <div class="w-10 h-10 rounded-full" style="background-color: #7B2D8E;"></div>
-                    <span class="font-bold text-lg text-gray-900">Rejuvenate You</span>
+                    <div>
+                        <span class="font-bold text-lg text-gray-900">Rejuvenate You</span>
+                        {locationName && <span class="block text-xs text-purple-600 font-medium">{locationName}</span>}
+                    </div>
                 </a>
             </div>
 
             <!-- Navigation Links -->
             <div class="hidden md:flex items-center space-x-1">
-                <a href="/services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-purple-700">
+                <a href={servicesLink} class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-purple-700">
                     Services
                 </a>
-                <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-purple-700">
+                <a href={aboutLink} class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-purple-700">
                     About
                 </a>
-                <a href="/blog" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-purple-700">
+                <a href={blogLink} class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-purple-700">
                     Blog
                 </a>
 
@@ -38,32 +73,30 @@ const { currentLocation = 'scottsdale' } = Astro.props;
                         </svg>
                     </button>
                     <div class="hidden group-hover:block absolute left-0 mt-0 w-48 bg-white rounded-md shadow-lg py-2 z-20">
-                        <a href="/scottsdale" class="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50">
+                        <a href="/scottsdale" class={`block px-4 py-2 text-sm hover:bg-purple-50 ${currentLocation === 'scottsdale' ? 'text-purple-700 font-semibold bg-purple-50' : 'text-gray-700'}`}>
                             Scottsdale
                         </a>
-                        <a href="/phoenix" class="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50">
+                        <a href="/phoenix" class={`block px-4 py-2 text-sm hover:bg-purple-50 ${currentLocation === 'phoenix' ? 'text-purple-700 font-semibold bg-purple-50' : 'text-gray-700'}`}>
                             Phoenix
                         </a>
                     </div>
                 </div>
 
-                <a href="/contact-us" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-purple-700">
+                <a href={contactLink} class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-purple-700">
                     Contact
                 </a>
             </div>
 
-            <!-- Book Now Button -->
+            <!-- Book Now Button - location specific only -->
             <div class="flex items-center space-x-4">
                 <a
-                    href={currentLocation === 'phoenix'
-                        ? 'https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start'
-                        : 'https://rejuvenateyouwaxing.glossgenius.com/services'}
+                    href={bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     class="hidden md:inline-flex px-4 py-2 rounded-md text-sm font-bold text-white hover:shadow-lg transition"
                     style="background-color: #7B2D8E;"
                 >
-                    Book Now
+                    Book {locationName || 'Now'}
                 </a>
 
                 <!-- Mobile Menu Button -->
@@ -77,34 +110,32 @@ const { currentLocation = 'scottsdale' } = Astro.props;
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
-            <a href="/services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
+            <a href={servicesLink} class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
                 Services
             </a>
-            <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
+            <a href={aboutLink} class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
                 About
             </a>
-            <a href="/blog" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
+            <a href={blogLink} class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
                 Blog
             </a>
-            <a href="/scottsdale" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
+            <a href="/scottsdale" class={`block px-3 py-2 rounded-md text-base font-medium hover:text-purple-700 ${currentLocation === 'scottsdale' ? 'text-purple-700 font-semibold' : 'text-gray-700'}`}>
                 Scottsdale
             </a>
-            <a href="/phoenix" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
+            <a href="/phoenix" class={`block px-3 py-2 rounded-md text-base font-medium hover:text-purple-700 ${currentLocation === 'phoenix' ? 'text-purple-700 font-semibold' : 'text-gray-700'}`}>
                 Phoenix
             </a>
-            <a href="/contact-us" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
+            <a href={contactLink} class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-purple-700">
                 Contact
             </a>
             <a
-                href={currentLocation === 'phoenix'
-                    ? 'https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start'
-                    : 'https://rejuvenateyouwaxing.glossgenius.com/services'}
+                href={bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 class="block w-full px-4 py-2 rounded-md text-center font-bold text-white text-base mt-4"
                 style="background-color: #7B2D8E;"
             >
-                Book Now
+                Book {locationName || 'Now'}
             </a>
         </div>
     </nav>

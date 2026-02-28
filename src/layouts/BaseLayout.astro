@@ -9,6 +9,7 @@ export interface Props {
   canonical?: string;
   ogImage?: string;
   schema?: any;
+  currentLocation?: 'scottsdale' | 'phoenix' | null;
 }
 
 const {
@@ -16,7 +17,8 @@ const {
   description = 'Professional waxing and beauty services in Scottsdale and Phoenix, Arizona',
   canonical,
   ogImage,
-  schema
+  schema,
+  currentLocation = null
 } = Astro.props;
 
 const currentUrl = Astro.url.href;
@@ -55,10 +57,10 @@ const currentUrl = Astro.url.href;
   {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
 </head>
 <body class="bg-white">
-  <Header />
+  <Header currentLocation={currentLocation} />
   <main class="min-h-screen">
     <slot />
   </main>
-  <Footer />
+  <Footer currentLocation={currentLocation} />
 </body>
 </html>

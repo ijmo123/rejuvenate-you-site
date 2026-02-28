@@ -1,0 +1,113 @@
+---
+import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "Does underarm waxing hurt?",
+    answer: "Underarm waxing causes brief discomfort, but it's very quick—usually just a few minutes. Any redness typically subsides within an hour or two."
+  },
+  {
+    question: "How long does underarm waxing last?",
+    answer: "Underarm waxing typically lasts 2-4 weeks. Results vary depending on individual hair growth cycles."
+  },
+  {
+    question: "Will waxing make my underarm hair grow back thicker?",
+    answer: "No, this is a myth. Regular waxing can actually lead to finer, sparser regrowth over time as hair follicles weaken."
+  }
+];
+---
+
+<ServicePage
+  title="Underarm Wax Scottsdale | Armpit Hair Removal"
+  description="Professional underarm waxing in Scottsdale. Quick, effective armpit hair removal for smooth, confident underarms. No more daily shaving. Book today!"
+  price="$25"
+  duration="10-15 min"
+  location="scottsdale"
+  faqs={faqs}
+>
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_04ee1a0f-d7fb-4d58-847f-afc3c1e9bdcb_full-stomach-waxing.jpeg"
+    alt="Underarm waxing service at Rejuvenate You in Scottsdale"
+    class="w-full h-64 md:h-80 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Say goodbye to daily shaving with our quick and effective underarm waxing service. Enjoy smooth, hair-free underarms for weeks with professional results that last much longer than shaving.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Choose Underarm Waxing?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Underarm waxing offers significant advantages over daily shaving:
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Results last 2-4 weeks vs. daily shaving</li>
+      <li>No razor burn or irritation</li>
+      <li>Finer, softer regrowth over time</li>
+      <li>Reduced odor (hair traps bacteria)</li>
+      <li>No more cuts or nicks</li>
+    </ul>
+  </div>
+  <div class="bg-purple-50 p-6 rounded-lg flex items-center justify-center">
+    <div class="text-center">
+      <span class="text-6xl">✨</span>
+      <p class="mt-4 text-gray-600">Smooth, confident<br>underarms</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Cleanse</strong> — The underarm area is cleaned to remove deodorant and oils.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Application</strong> — Warm wax is applied in the direction of hair growth.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Removal</strong> — Quick, precise removal for smooth results.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Soothe</strong> — Calming products applied to minimize redness.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Before Your Appointment</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ul class="space-y-2">
+    <li>• Let hair grow to at least ¼ inch</li>
+    <li>• Avoid deodorant on the day of your appointment</li>
+    <li>• Exfoliate gently 24 hours before</li>
+    <li>• Avoid applying deodorant for 24 hours after waxing</li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Underarm Wax in Scottsdale</h2>
+
+<p class="text-lg">
+  Ditch the razor for smooth, long-lasting results. <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your underarm waxing appointment</a> at our Scottsdale location today! Only $25 for weeks of smooth confidence.
+</p>
+
+</ServicePage>

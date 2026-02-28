@@ -1,41 +1,62 @@
 ---
+interface Props {
+    currentLocation?: 'scottsdale' | 'phoenix' | null;
+}
+
+const { currentLocation = null } = Astro.props;
+
+// Determine links based on location
+const homeLink = currentLocation === 'phoenix' ? '/phoenix' : 
+                 currentLocation === 'scottsdale' ? '/scottsdale' : '/';
+const servicesLink = currentLocation === 'phoenix' ? '/phoenix/services' : 
+                     currentLocation === 'scottsdale' ? '/scottsdale/services' : '/services';
+const aboutLink = currentLocation === 'phoenix' ? '/phoenix/about' : 
+                  currentLocation === 'scottsdale' ? '/scottsdale/about' : '/about';
+const blogLink = currentLocation === 'phoenix' ? '/phoenix/blog' : 
+                 currentLocation === 'scottsdale' ? '/scottsdale/blog' : '/blog';
+const contactLink = currentLocation === 'phoenix' ? '/phoenix/contact' : 
+                    currentLocation === 'scottsdale' ? '/scottsdale/contact' : '/contact-us';
+
+// Location info
+const isPhoenix = currentLocation === 'phoenix';
+const isScottsdale = currentLocation === 'scottsdale';
 ---
 
 <footer class="bg-gray-900 text-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Location 1: Scottsdale -->
-            <div>
+            <div class={isPhoenix ? 'opacity-60' : ''}>
                 <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Scottsdale</h3>
                 <address class="not-italic space-y-2 text-sm">
                     <p>7127 E Sahuaro Dr, Ste 103</p>
                     <p>Scottsdale, AZ 85254</p>
                     <p class="mt-4">
-                        <a href="tel:+14805551234" class="hover:text-purple-400 transition">
-                            (480) 555-1234
+                        <a href="tel:4807476996" class="hover:text-purple-400 transition">
+                            (480) 747-6996
                         </a>
                     </p>
                     <p>
                         <a href="https://rejuvenateyouwaxing.glossgenius.com/services" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
-                            Book Online
+                            Book Scottsdale
                         </a>
                     </p>
                 </address>
             </div>
 
             <!-- Location 2: Phoenix -->
-            <div>
+            <div class={isScottsdale ? 'opacity-60' : ''}>
                 <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Phoenix</h3>
                 <address class="not-italic space-y-2 text-sm">
                     <p>Phoenix, AZ</p>
                     <p class="mt-4">
-                        <a href="tel:+16025551234" class="hover:text-purple-400 transition">
-                            (602) 555-1234
+                        <a href="tel:6023744415" class="hover:text-purple-400 transition">
+                            (602) 374-4415
                         </a>
                     </p>
                     <p>
                         <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
-                            Book Online
+                            Book Phoenix
                         </a>
                     </p>
                 </address>
@@ -46,19 +67,37 @@
                 <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Quick Links</h3>
                 <ul class="space-y-2 text-sm">
                     <li>
-                        <a href="/services" class="hover:text-purple-400 transition">Services</a>
+                        <a href={homeLink} class="hover:text-purple-400 transition">Home</a>
                     </li>
                     <li>
-                        <a href="/about" class="hover:text-purple-400 transition">About Us</a>
+                        <a href={servicesLink} class="hover:text-purple-400 transition">Services</a>
                     </li>
                     <li>
-                        <a href="/blog" class="hover:text-purple-400 transition">Blog</a>
+                        <a href={aboutLink} class="hover:text-purple-400 transition">About Us</a>
                     </li>
                     <li>
-                        <a href="/contact-us" class="hover:text-purple-400 transition">Contact</a>
+                        <a href={blogLink} class="hover:text-purple-400 transition">Blog</a>
+                    </li>
+                    <li>
+                        <a href={contactLink} class="hover:text-purple-400 transition">Contact</a>
                     </li>
                     <li>
                         <a href="/privacy-policy" class="hover:text-purple-400 transition">Privacy Policy</a>
+                    </li>
+                </ul>
+                
+                <!-- Switch Location -->
+                <h4 class="text-sm font-bold mt-6 mb-2" style="color: #D4A574;">Switch Location</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>
+                        <a href="/scottsdale" class={`hover:text-purple-400 transition ${isScottsdale ? 'text-purple-400 font-semibold' : ''}`}>
+                            {isScottsdale ? '→ ' : ''}Scottsdale
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/phoenix" class={`hover:text-purple-400 transition ${isPhoenix ? 'text-purple-400 font-semibold' : ''}`}>
+                            {isPhoenix ? '→ ' : ''}Phoenix
+                        </a>
                     </li>
                 </ul>
             </div>
