@@ -1,10 +1,10 @@
 ---
-title: "How Painful Is Waxing, Really? &mdash; Rejuvenate You"
+title: "How Painful Is Waxing, Really? — Rejuvenate You"
 description: "Discover the truth about waxing pain: How painful is waxing? Find out if 
 waxing is painful and how to minimize discomfort."
 ---
 
-# How Painful Is Waxing, Really? &mdash; Rejuvenate You
+# How Painful Is Waxing, Really? — Rejuvenate You
 
 
 Discover the truth about waxing pain: How painful is waxing? Find out if 

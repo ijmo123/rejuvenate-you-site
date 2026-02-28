@@ -1,10 +1,10 @@
 ---
-title: "Brazilian Wax Before and After | Rejuvenate You &mdash; Rejuvenate You"
+title: "Brazilian Wax Before and After | Rejuvenate You — Rejuvenate You"
 description: "See the results of brazilian wax before and after experience. Learn the 
 process of our before and after Brazilian wax. Schedule your appointment!"
 ---
 
-# Brazilian Wax Before and After | Rejuvenate You &mdash; Rejuvenate You
+# Brazilian Wax Before and After | Rejuvenate You — Rejuvenate You
 
 
 See the results of brazilian wax before and after experience. Learn the 

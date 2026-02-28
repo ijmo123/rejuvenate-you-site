@@ -1,10 +1,10 @@
 ---
-title: "What Is Lymphatic Drainage Facial? | Comprehensive Guide &mdash; Rejuvenate You"
+title: "What Is Lymphatic Drainage Facial? | Comprehensive Guide — Rejuvenate You"
 description: "Discover the benefits of lymphatic drainage facial. Learn what a lymphatic 
 drainage facial is and how it enhances skin health."
 ---
 
-# What Is Lymphatic Drainage Facial? | Comprehensive Guide &mdash; Rejuvenate You
+# What Is Lymphatic Drainage Facial? | Comprehensive Guide — Rejuvenate You
 
 
 Discover the benefits of lymphatic drainage facial. Learn what a lymphatic 

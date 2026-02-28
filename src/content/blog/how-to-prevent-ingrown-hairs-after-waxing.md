@@ -1,11 +1,11 @@
 ---
-title: "How to Prevent Ingrown Hairs After Waxing &mdash; Rejuvenate You"
+title: "How to Prevent Ingrown Hairs After Waxing — Rejuvenate You"
 description: "Does waxing prevent ingrown hairs? Learn effective methods on how to 
 prevent ingrown hairs after waxing and discover if waxing helps prevent 
 them."
 ---
 
-# How to Prevent Ingrown Hairs After Waxing &mdash; Rejuvenate You
+# How to Prevent Ingrown Hairs After Waxing — Rejuvenate You
 
 
 Does waxing prevent ingrown hairs? Learn effective methods on how to 

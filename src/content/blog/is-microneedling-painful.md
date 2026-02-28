@@ -1,10 +1,10 @@
 ---
-title: "Is Microneedling Painful &amp; How Painful Is It? &mdash; Rejuvenate You"
+title: "Is Microneedling Painful &amp; How Painful Is It? — Rejuvenate You"
 description: "Discover the truth: Is microneedling painful? Learn firsthand experiences 
 and expert insights on how painful microneedling really is."
 ---
 
-# Is Microneedling Painful &amp; How Painful Is It? &mdash; Rejuvenate You
+# Is Microneedling Painful &amp; How Painful Is It? — Rejuvenate You
 
 
 Discover the truth: Is microneedling painful? Learn firsthand experiences 

@@ -1,10 +1,10 @@
 ---
-title: "How Long Does a Brazilian Wax Last? &mdash; Rejuvenate You"
+title: "How Long Does a Brazilian Wax Last? — Rejuvenate You"
 description: "How long does a Brazilian wax last? Discover what to expect during a 
 Brazilian wax and how often you should get them."
 ---
 
-# How Long Does a Brazilian Wax Last? &mdash; Rejuvenate You
+# How Long Does a Brazilian Wax Last? — Rejuvenate You
 
 
 How long does a Brazilian wax last? Discover what to expect during a 

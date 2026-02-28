@@ -1,10 +1,10 @@
 ---
-title: "How to Handle Hair Sensory Issues: Expert Tips &mdash; Rejuvenate You"
+title: "How to Handle Hair Sensory Issues: Expert Tips — Rejuvenate You"
 description: "Help ease hair sensory issues with expert tips, tools, and techniques to 
 make brushing and grooming more comfortable for sensitive children."
 ---
 
-# How to Handle Hair Sensory Issues: Expert Tips &mdash; Rejuvenate You
+# How to Handle Hair Sensory Issues: Expert Tips — Rejuvenate You
 
 
 Help ease hair sensory issues with expert tips, tools, and techniques to 

@@ -1,10 +1,10 @@
 ---
-title: "Best Time to Wax Before Vacation &mdash; Rejuvenate You"
+title: "Best Time to Wax Before Vacation — Rejuvenate You"
 description: "Planning a vacation? Discover when to wax before vacation and get expert 
 advice on the best time to get waxed for a smooth and carefree trip."
 ---
 
-# Best Time to Wax Before Vacation &mdash; Rejuvenate You
+# Best Time to Wax Before Vacation — Rejuvenate You
 
 
 Planning a vacation? Discover when to wax before vacation and get expert 

@@ -1,9 +1,9 @@
 ---
-title: "waxing &mdash; Our Blog to Rejuvenate You"
+title: "waxing — Our Blog to Rejuvenate You"
 description: ""
 ---
 
-# waxing &mdash; Our Blog to Rejuvenate You
+# waxing — Our Blog to Rejuvenate You
 
 
 

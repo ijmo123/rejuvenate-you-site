@@ -1,10 +1,10 @@
 ---
-title: "How Is a Brazilian Wax Done &mdash; Rejuvenate You"
+title: "How Is a Brazilian Wax Done — Rejuvenate You"
 description: "How is a Brazilian wax done? Discover what to expect during a Brazilian wax 
 and how to prepare for your appointment."
 ---
 
-# How Is a Brazilian Wax Done &mdash; Rejuvenate You
+# How Is a Brazilian Wax Done — Rejuvenate You
 
 
 How is a Brazilian wax done? Discover what to expect during a Brazilian wax 

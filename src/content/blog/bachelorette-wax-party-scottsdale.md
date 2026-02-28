@@ -1,11 +1,11 @@
 ---
-title: "Bachelorette Wax Party | NEW Trend Alert! &mdash; Rejuvenate You"
+title: "Bachelorette Wax Party | NEW Trend Alert! — Rejuvenate You"
 description: "Discover the hottest trend for bachelorette celebrations: the ultimate wax 
 party experience! Elevate your bridal bash with a fun and fabulous waxing 
 party!"
 ---
 
-# Bachelorette Wax Party | NEW Trend Alert! &mdash; Rejuvenate You
+# Bachelorette Wax Party | NEW Trend Alert! — Rejuvenate You
 
 
 Discover the hottest trend for bachelorette celebrations: the ultimate wax 

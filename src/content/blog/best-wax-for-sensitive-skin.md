@@ -1,10 +1,10 @@
 ---
-title: "Best Wax for Sensitive Skin &mdash; Rejuvenate You"
+title: "Best Wax for Sensitive Skin — Rejuvenate You"
 description: "Discover the best wax for sensitive skin. Learn expert tips on waxing for 
 sensitive skin to ensure a smooth, irritation-free experience."
 ---
 
-# Best Wax for Sensitive Skin &mdash; Rejuvenate You
+# Best Wax for Sensitive Skin — Rejuvenate You
 
 
 Discover the best wax for sensitive skin. Learn expert tips on waxing for 

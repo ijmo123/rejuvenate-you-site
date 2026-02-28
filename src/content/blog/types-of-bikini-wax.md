@@ -1,11 +1,11 @@
 ---
-title: "Different Types of Bikini Wax | A Comprehensive Guide &mdash; Rejuvenate You"
+title: "Different Types of Bikini Wax | A Comprehensive Guide — Rejuvenate You"
 description: "Discover the various types of bikini wax available, from basic to daring. 
 Learn about the different types of bikini wax and choose what's best for 
 you."
 ---
 
-# Different Types of Bikini Wax | A Comprehensive Guide &mdash; Rejuvenate You
+# Different Types of Bikini Wax | A Comprehensive Guide — Rejuvenate You
 
 
 Discover the various types of bikini wax available, from basic to daring. 

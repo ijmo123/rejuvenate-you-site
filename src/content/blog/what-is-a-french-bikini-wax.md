@@ -1,10 +1,10 @@
 ---
-title: "What Is a French Bikini Wax &amp; What Makes It Different? &mdash; Rejuvenate You"
+title: "What Is a French Bikini Wax &amp; What Makes It Different? — Rejuvenate You"
 description: "What is a French bikini wax? Discover the nuances of a French bikini wax, 
 detailing what sets it apart from traditional bikini waxes."
 ---
 
-# What Is a French Bikini Wax &amp; What Makes It Different? &mdash; Rejuvenate You
+# What Is a French Bikini Wax &amp; What Makes It Different? — Rejuvenate You
 
 
 What is a French bikini wax? Discover the nuances of a French bikini wax, 

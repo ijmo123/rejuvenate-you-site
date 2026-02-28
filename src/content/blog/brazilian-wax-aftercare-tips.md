@@ -1,11 +1,11 @@
 ---
-title: "Brazilian Wax Aftercare Tips | Rejuvenate You &mdash; Rejuvenate You"
+title: "Brazilian Wax Aftercare Tips | Rejuvenate You — Rejuvenate You"
 description: "Discover essential Brazilian wax aftercare tips for the best results. Learn 
 effective aftercare for Brazilian wax to ensure smooth, irritation-free 
 skin."
 ---
 
-# Brazilian Wax Aftercare Tips | Rejuvenate You &mdash; Rejuvenate You
+# Brazilian Wax Aftercare Tips | Rejuvenate You — Rejuvenate You
 
 
 Discover essential Brazilian wax aftercare tips for the best results. Learn 

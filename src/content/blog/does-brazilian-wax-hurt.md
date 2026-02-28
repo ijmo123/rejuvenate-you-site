@@ -1,10 +1,10 @@
 ---
-title: "Does a Brazilian Wax Hurt? How Painful Is It? &mdash; Rejuvenate You"
+title: "Does a Brazilian Wax Hurt? How Painful Is It? — Rejuvenate You"
 description: "Find out the truth about Brazilian waxing and whether it hurts. Discover 
 the exceptional waxing service provided by Rejuvenate-You in Scottsdale."
 ---
 
-# Does a Brazilian Wax Hurt? How Painful Is It? &mdash; Rejuvenate You
+# Does a Brazilian Wax Hurt? How Painful Is It? — Rejuvenate You
 
 
 Find out the truth about Brazilian waxing and whether it hurts. Discover 

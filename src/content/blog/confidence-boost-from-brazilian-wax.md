@@ -1,11 +1,11 @@
 ---
-title: "Boost Your Confidence With a Brazilian Wax &mdash; Rejuvenate You"
+title: "Boost Your Confidence With a Brazilian Wax — Rejuvenate You"
 description: "Discover the confidence boost that comes from Brazilian waxing! Learn how 
 this beauty treatment can leave you feeling fresh, smooth, and 
 self-assured."
 ---
 
-# Boost Your Confidence With a Brazilian Wax &mdash; Rejuvenate You
+# Boost Your Confidence With a Brazilian Wax — Rejuvenate You
 
 
 Discover the confidence boost that comes from Brazilian waxing! Learn how 

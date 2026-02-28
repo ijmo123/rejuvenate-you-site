@@ -1,10 +1,10 @@
 ---
-title: "Hard Wax Vs. Soft Wax: Which Is Better? &mdash; Rejuvenate You"
+title: "Hard Wax Vs. Soft Wax: Which Is Better? — Rejuvenate You"
 description: "Learn the differences between hard wax vs soft wax. Understand how soft wax 
 vs hard wax compares for your hair removal needs."
 ---
 
-# Hard Wax Vs. Soft Wax: Which Is Better? &mdash; Rejuvenate You
+# Hard Wax Vs. Soft Wax: Which Is Better? — Rejuvenate You
 
 
 Learn the differences between hard wax vs soft wax. Understand how soft wax 

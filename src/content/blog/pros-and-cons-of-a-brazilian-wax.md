@@ -1,10 +1,10 @@
 ---
-title: "Pros and Cons of a Brazilian Wax: Is It Right for You? &mdash; Rejuvenate You"
+title: "Pros and Cons of a Brazilian Wax: Is It Right for You? — Rejuvenate You"
 description: "Learn the pros and cons of a Brazilian wax, including benefits, risks, and 
 what to expect before and after your first waxing session."
 ---
 
-# Pros and Cons of a Brazilian Wax: Is It Right for You? &mdash; Rejuvenate You
+# Pros and Cons of a Brazilian Wax: Is It Right for You? — Rejuvenate You
 
 
 Learn the pros and cons of a Brazilian wax, including benefits, risks, and 

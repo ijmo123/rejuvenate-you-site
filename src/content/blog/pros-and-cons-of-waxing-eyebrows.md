@@ -1,10 +1,10 @@
 ---
-title: "Pros and Cons of Waxing Eyebrows with Hard Wax  &mdash; Rejuvenate You"
+title: "Pros and Cons of Waxing Eyebrows with Hard Wax  — Rejuvenate You"
 description: "Discover the pros and cons of waxing eyebrows. Learn about eyebrow waxing 
 pros and cons with hard wax for smooth, defined results."
 ---
 
-# Pros and Cons of Waxing Eyebrows with Hard Wax  &mdash; Rejuvenate You
+# Pros and Cons of Waxing Eyebrows with Hard Wax  — Rejuvenate You
 
 
 Discover the pros and cons of waxing eyebrows. Learn about eyebrow waxing 

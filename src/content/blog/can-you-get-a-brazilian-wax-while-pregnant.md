@@ -1,10 +1,10 @@
 ---
-title: "Can You Get a Brazilian Wax While Pregnant? &mdash; Rejuvenate You"
+title: "Can You Get a Brazilian Wax While Pregnant? — Rejuvenate You"
 description: "Can you get a Brazilian wax while pregnant? Find out the precautions and 
 considerations for a comfortable experience during pregnancy."
 ---
 
-# Can You Get a Brazilian Wax While Pregnant? &mdash; Rejuvenate You
+# Can You Get a Brazilian Wax While Pregnant? — Rejuvenate You
 
 
 Can you get a Brazilian wax while pregnant? Find out the precautions and 

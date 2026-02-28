@@ -1,10 +1,10 @@
 ---
-title: "How to Get Rid of Acne Scars Quickly &amp; Effectively  &mdash; Rejuvenate You"
+title: "How to Get Rid of Acne Scars Quickly &amp; Effectively  — Rejuvenate You"
 description: "Learn how to get rid of acne scars with proven methods. Discover the best 
 treatment to remove acne scars without surgery."
 ---
 
-# How to Get Rid of Acne Scars Quickly &amp; Effectively  &mdash; Rejuvenate You
+# How to Get Rid of Acne Scars Quickly &amp; Effectively  — Rejuvenate You
 
 
 Learn how to get rid of acne scars with proven methods. Discover the best 

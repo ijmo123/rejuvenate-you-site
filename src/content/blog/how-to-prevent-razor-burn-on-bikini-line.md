@@ -1,10 +1,10 @@
 ---
-title: "How To Prevent Razor Burn on Bikini Line &mdash; Rejuvenate You"
+title: "How To Prevent Razor Burn on Bikini Line — Rejuvenate You"
 description: "Discover effective tips on how to prevent razor burn on the bikini line and 
 achieve a smooth, irritation-free shave. Say goodbye to razor burn!"
 ---
 
-# How To Prevent Razor Burn on Bikini Line &mdash; Rejuvenate You
+# How To Prevent Razor Burn on Bikini Line — Rejuvenate You
 
 
 Discover effective tips on how to prevent razor burn on the bikini line and 

@@ -1,10 +1,10 @@
 ---
-title: "Can You Get Waxed on Your Period? &mdash; Rejuvenate You"
+title: "Can You Get Waxed on Your Period? — Rejuvenate You"
 description: "Can you get waxed on your period? Learn whether or not you can get waxed on 
 your period and the potential risks involved."
 ---
 
-# Can You Get Waxed on Your Period? &mdash; Rejuvenate You
+# Can You Get Waxed on Your Period? — Rejuvenate You
 
 
 Can you get waxed on your period? Learn whether or not you can get waxed on 

@@ -1,10 +1,10 @@
 ---
-title: "Top 3 Best Treatments for Deep Wrinkles | Which Is Best?  &mdash; Rejuvenate You"
+title: "Top 3 Best Treatments for Deep Wrinkles | Which Is Best?  — Rejuvenate You"
 description: "Find the best treatment for deep wrinkles to rejuvenate your skin. Explore 
 the best treatments for deep wrinkles to see which option works for you."
 ---
 
-# Top 3 Best Treatments for Deep Wrinkles | Which Is Best?  &mdash; Rejuvenate You
+# Top 3 Best Treatments for Deep Wrinkles | Which Is Best?  — Rejuvenate You
 
 
 Find the best treatment for deep wrinkles to rejuvenate your skin. Explore 

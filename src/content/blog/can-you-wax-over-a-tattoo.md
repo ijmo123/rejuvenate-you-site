@@ -1,10 +1,10 @@
 ---
-title: "Can You Wax Over a Tattoo? Key Insights &mdash; Rejuvenate You"
+title: "Can You Wax Over a Tattoo? Key Insights — Rejuvenate You"
 description: "Can you wax over a tattoo? Learn whether or not it's safe to wax hair over 
 a tattoo with our expert tips and insights."
 ---
 
-# Can You Wax Over a Tattoo? Key Insights &mdash; Rejuvenate You
+# Can You Wax Over a Tattoo? Key Insights — Rejuvenate You
 
 
 Can you wax over a tattoo? Learn whether or not it's safe to wax hair over 

@@ -1,10 +1,10 @@
 ---
-title: "Comparing Bikini Wax Pros and Cons for First-Timers &mdash; Rejuvenate You"
+title: "Comparing Bikini Wax Pros and Cons for First-Timers — Rejuvenate You"
 description: "Discover the bikini wax pros and cons. Learn the real pros and cons of 
 waxing bikini area to decide if it's the right hair removal method for you."
 ---
 
-# Comparing Bikini Wax Pros and Cons for First-Timers &mdash; Rejuvenate You
+# Comparing Bikini Wax Pros and Cons for First-Timers — Rejuvenate You
 
 
 Discover the bikini wax pros and cons. Learn the real pros and cons of 

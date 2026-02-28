@@ -1,10 +1,10 @@
 ---
-title: "Bikini Wax Aftercare Tips &mdash; Rejuvenate You"
+title: "Bikini Wax Aftercare Tips — Rejuvenate You"
 description: "Discover essential bikini wax aftercare tips for smooth skin. Learn the 
 best aftercare for bikini wax to achieve optimal results."
 ---
 
-# Bikini Wax Aftercare Tips &mdash; Rejuvenate You
+# Bikini Wax Aftercare Tips — Rejuvenate You
 
 
 Discover essential bikini wax aftercare tips for smooth skin. Learn the 

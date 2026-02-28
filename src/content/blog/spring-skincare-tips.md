@@ -1,10 +1,10 @@
 ---
-title: "Spring Skincare Tips for Arizona Weather &mdash; Rejuvenate You"
+title: "Spring Skincare Tips for Arizona Weather — Rejuvenate You"
 description: "Get practical spring skincare tips to prep your skin for Arizona’s dry heat 
 and sun. Learn smart skincare for spring that actually works well."
 ---
 
-# Spring Skincare Tips for Arizona Weather &mdash; Rejuvenate You
+# Spring Skincare Tips for Arizona Weather — Rejuvenate You
 
 
 Get practical spring skincare tips to prep your skin for Arizona’s dry heat 

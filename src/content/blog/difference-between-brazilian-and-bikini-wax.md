@@ -1,11 +1,11 @@
 ---
-title: "What&#39;s the Difference Between Brazilian and Bikini Wax &mdash; Rejuvenate You"
+title: "What&#39;s the Difference Between Brazilian and Bikini Wax — Rejuvenate You"
 description: "Discover the differences between Brazilian and bikini waxing. We'll explain 
 what they involve, the areas covered, and what to expect. Whether you're 
 new to waxing or an expert, we've got you covered."
 ---
 
-# What&#39;s the Difference Between Brazilian and Bikini Wax &mdash; Rejuvenate You
+# What&#39;s the Difference Between Brazilian and Bikini Wax — Rejuvenate You
 
 
 Discover the differences between Brazilian and bikini waxing. We'll explain 

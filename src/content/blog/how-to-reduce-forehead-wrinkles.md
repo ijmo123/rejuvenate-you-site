@@ -1,10 +1,10 @@
 ---
-title: "Reduce Forehead Wrinkles With Expert Treatments &mdash; Rejuvenate You"
+title: "Reduce Forehead Wrinkles With Expert Treatments — Rejuvenate You"
 description: "Learn how to reduce forehead wrinkles with proven treatments. Discover how 
 to reduce wrinkles on forehead safely and effectively."
 ---
 
-# Reduce Forehead Wrinkles With Expert Treatments &mdash; Rejuvenate You
+# Reduce Forehead Wrinkles With Expert Treatments — Rejuvenate You
 
 
 Learn how to reduce forehead wrinkles with proven treatments. Discover how 

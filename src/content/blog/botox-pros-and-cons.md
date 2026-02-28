@@ -1,10 +1,10 @@
 ---
-title: "Botox Pros and Cons &mdash; Rejuvenate You"
+title: "Botox Pros and Cons — Rejuvenate You"
 description: "Explore the pros and cons of Botox for informed decisions. Learn about the 
 benefits and risks with our comprehensive guide on Botox pros and cons."
 ---
 
-# Botox Pros and Cons &mdash; Rejuvenate You
+# Botox Pros and Cons — Rejuvenate You
 
 
 Explore the pros and cons of Botox for informed decisions. Learn about the 

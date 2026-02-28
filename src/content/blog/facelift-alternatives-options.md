@@ -1,10 +1,10 @@
 ---
-title: "Facelift Alternatives: 4 Effective Non-Surgical Options &mdash; Rejuvenate You"
+title: "Facelift Alternatives: 4 Effective Non-Surgical Options — Rejuvenate You"
 description: "Explore 4 non-surgical facelift alternatives for rejuvenating your 
 appearance without surgery. Read more about it!"
 ---
 
-# Facelift Alternatives: 4 Effective Non-Surgical Options &mdash; Rejuvenate You
+# Facelift Alternatives: 4 Effective Non-Surgical Options — Rejuvenate You
 
 
 Explore 4 non-surgical facelift alternatives for rejuvenating your 

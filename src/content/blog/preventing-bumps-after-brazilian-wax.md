@@ -1,10 +1,10 @@
 ---
-title: "Bumps After Brazilian Wax: Causes &amp; Solutions &mdash; Rejuvenate You"
+title: "Bumps After Brazilian Wax: Causes &amp; Solutions — Rejuvenate You"
 description: "Learn the causes of bumps after a Brazilian wax and discover effective tips 
 to treat bumps after waxing to keep your skin smooth and clear."
 ---
 
-# Bumps After Brazilian Wax: Causes &amp; Solutions &mdash; Rejuvenate You
+# Bumps After Brazilian Wax: Causes &amp; Solutions — Rejuvenate You
 
 
 Learn the causes of bumps after a Brazilian wax and discover effective tips 
