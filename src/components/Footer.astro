@@ -28,10 +28,8 @@ const isScottsdale = currentLocation === 'scottsdale';
             <!-- Location 1: Scottsdale -->
             <div class={isPhoenix ? 'opacity-60' : ''}>
                 <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Scottsdale</h3>
-                <address class="not-italic space-y-2 text-sm">
-                    <p>7127 E Sahuaro Dr, Ste 103</p>
-                    <p>Scottsdale, AZ 85254</p>
-                    <p class="mt-4">
+                <div class="space-y-2 text-sm">
+                    <p>
                         <a href="tel:6239803867" class="hover:text-purple-400 transition">
                             (623) 980-3867
                         </a>
@@ -41,15 +39,14 @@ const isScottsdale = currentLocation === 'scottsdale';
                             Book Scottsdale
                         </a>
                     </p>
-                </address>
+                </div>
             </div>
 
             <!-- Location 2: Phoenix -->
             <div class={isScottsdale ? 'opacity-60' : ''}>
                 <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Phoenix</h3>
-                <address class="not-italic space-y-2 text-sm">
-                    <p>Phoenix, AZ</p>
-                    <p class="mt-4">
+                <div class="space-y-2 text-sm">
+                    <p>
                         <a href="tel:6239803867" class="hover:text-purple-400 transition">
                             (623) 980-3867
                         </a>
@@ -59,7 +56,7 @@ const isScottsdale = currentLocation === 'scottsdale';
                             Book Phoenix
                         </a>
                     </p>
-                </address>
+                </div>
             </div>
 
             <!-- Links & Info -->
