@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BookingCTA from '../components/BookingCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
 
-const pageTitle = 'Waxing & Microneedling in Phoenix | Rejuvenate You';
-const pageDescription = 'Professional waxing and microneedling in Phoenix. 15+ years experience, 5.0★ rating. Brazilian, men\'s waxing, facials. Book online.';
+const pageTitle = 'Rejuvenate You Phoenix | Brazilian Wax & Microneedling';
+const pageDescription = 'Experience the least painful Brazilian wax in Phoenix. 15+ years expertise, 5.0★ rating. Full body waxing, microneedling & dermaplaning. Book now!';
 
 const schema = {
   "@context": "https://schema.org",
@@ -28,148 +29,319 @@ const schema = {
   "serviceType": ["Brazilian Waxing", "Body Waxing", "Microneedling", "Dermaplaning"]
 };
 
+const faqs = [
+  {
+    question: "Does Brazilian waxing hurt?",
+    answer: "We specialize in the <strong>least painful Brazilian wax experience</strong>. Using guided breathing techniques, strategic speed, and precision detail work, we minimize discomfort. Many clients are surprised by how manageable it is!"
+  },
+  {
+    question: "What is The Rejuvenate Method™?",
+    answer: "Our proprietary service flow includes: (1) Warm greeting to establish safety, (2) Guided breathing before first pull, (3) Strategic speed + precision detail, (4) Thorough finish check, and (5) Empowered closing language to reinforce your confidence."
+  },
+  {
+    question: "How long does a Brazilian wax take?",
+    answer: "Our Brazilian waxes are performed quickly and efficiently—typically 15-20 minutes. We respect your time while ensuring thorough, detailed results."
+  },
+  {
+    question: "Do you offer waxing for men?",
+    answer: "Yes! We provide full body waxing services for men including Brazilian (male waxing), chest, back, face, and more. Our skilled technicians ensure a comfortable, professional experience for all clients."
+  },
+  {
+    question: "Where in Phoenix are you located?",
+    answer: "Our Phoenix location serves the greater Phoenix area. Call (602) 374-4415 or book online for appointment availability and specific address details."
+  }
+];
+
 const services = [
-  { name: "Brazilian Wax", price: "$60", url: "/brazilian-wax-phoenix" },
-  { name: "Bikini Wax", price: "$45", url: "/bikini-wax-phoenix" },
-  { name: "Men's Waxing", price: "From $30", url: "/male-face-waxing-phoenix" },
-  { name: "Full Face Wax", price: "$45", url: "/full-face-waxing-phoenix" },
-  { name: "Microneedling", price: "From $200", url: "/microneedling-phoenix" },
-  { name: "Dermaplaning", price: "$85", url: "/dermaplaning-phoenix" }
+  { name: "Brazilian Wax", price: "$60", url: "/brazilian-wax-phoenix", icon: "✨" },
+  { name: "Bikini Wax", price: "$45", url: "/bikini-wax-phoenix", icon: "👙" },
+  { name: "Men's Brazilian", price: "$80", url: "/male-waxing-phoenix", icon: "💪" },
+  { name: "Microneedling", price: "From $200", url: "/microneedling-phoenix", icon: "🔬" },
+  { name: "Dermaplaning", price: "$85", url: "/dermaplaning-phoenix", icon: "✨" },
+  { name: "Full Face Wax", price: "$45", url: "/full-face-waxing-phoenix", icon: "😊" }
 ];
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription} schema={schema}>
   <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white py-16 md:py-24">
+  <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white py-20 md:py-32">
+    <div class="absolute inset-0 opacity-10 bg-[url('/images/hero-pattern.jpg')] bg-cover bg-center"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        Renew Your Skin.<br />
+        <span class="text-purple-200">Refresh Your Mindset.</span>
+      </h1>
+      <p class="text-xl md:text-2xl mb-4 max-w-3xl mx-auto text-purple-100">
+        Experience the <span class="font-semibold text-white">least painful Brazilian wax</span> in Phoenix.
+      </p>
+      <p class="text-lg mb-8 text-purple-200">
+        15+ years expertise • 5.0★ rating • Professional & comfortable
+      </p>
+      <a 
+        href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center px-8 py-4 rounded-lg font-bold text-purple-900 bg-white hover:bg-purple-50 transition shadow-lg"
+      >
+        Book Phoenix Appointment
+      </a>
+      <p class="mt-6 text-sm text-purple-300">
+        New clients: <span class="font-semibold text-white">50% off your second visit!</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Location Info Bar -->
+  <section class="py-6 bg-purple-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl font-bold mb-6">Rejuvenate You Phoenix</h1>
-          <p class="text-xl mb-6 text-purple-100">
-            Professional waxing and skin care services in Phoenix. Experience the same exceptional 5-star service at our Phoenix location.
-          </p>
-          <div class="flex items-center mb-6">
-            <span class="text-yellow-400 text-2xl mr-2">★★★★★</span>
-            <span class="text-purple-100">5.0 rating (19 reviews)</span>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-center">
+        <span class="text-purple-800 font-semibold">📍 Phoenix, AZ</span>
+        <span class="hidden md:block text-purple-400">|</span>
+        <a href="tel:6023744415" class="text-purple-800 font-semibold hover:underline">📞 (602) 374-4415</a>
+        <span class="hidden md:block text-purple-400">|</span>
+        <a href="/scottsdale" class="text-purple-600 hover:text-purple-800 underline">Also in Scottsdale →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #7B2D8E;">
+          Our Services in Phoenix
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Full body waxing & skin rejuvenation tailored for both male and female clients.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        {services.slice(0, 3).map((service) => (
+          <a href={service.url} class="bg-purple-50 rounded-xl p-8 text-center hover:shadow-lg transition">
+            <div class="text-4xl mb-4">{service.icon}</div>
+            <h3 class="text-xl font-bold mb-3" style="color: #7B2D8E;">{service.name}</h3>
+            <p class="text-2xl font-bold text-gray-900 mb-4">{service.price}</p>
+            <span class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</span>
+          </a>
+        ))}
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 mt-8">
+        {services.slice(3).map((service) => (
+          <a href={service.url} class="bg-purple-50 rounded-xl p-8 text-center hover:shadow-lg transition">
+            <div class="text-4xl mb-4">{service.icon}</div>
+            <h3 class="text-xl font-bold mb-3" style="color: #7B2D8E;">{service.name}</h3>
+            <p class="text-2xl font-bold text-gray-900 mb-4">{service.price}</p>
+            <span class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</span>
+          </a>
+        ))}
+        <a href="/services" class="bg-gray-50 rounded-xl p-8 text-center hover:shadow-lg transition border-2 border-dashed border-gray-300 flex flex-col justify-center">
+          <div class="text-4xl mb-4">📋</div>
+          <h3 class="text-xl font-bold mb-3" style="color: #7B2D8E;">View All Services</h3>
+          <p class="text-gray-600">See our complete menu of waxing and skincare services.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Rejuvenate Method -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #7B2D8E;">
+          The Rejuvenate Method™
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Our proprietary 5-step process designed for maximum comfort and confidence.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-5 gap-6">
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center text-white font-bold" style="background-color: #7B2D8E;">1</div>
+          <h4 class="font-semibold mb-2">Warm Greeting</h4>
+          <p class="text-sm text-gray-600">Establish safety and comfort from the start</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center text-white font-bold" style="background-color: #7B2D8E;">2</div>
+          <h4 class="font-semibold mb-2">Guided Breathing</h4>
+          <p class="text-sm text-gray-600">Techniques to ease tension before treatment</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center text-white font-bold" style="background-color: #7B2D8E;">3</div>
+          <h4 class="font-semibold mb-2">Speed + Precision</h4>
+          <p class="text-sm text-gray-600">Strategic, efficient technique with detail work</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center text-white font-bold" style="background-color: #7B2D8E;">4</div>
+          <h4 class="font-semibold mb-2">Thorough Check</h4>
+          <p class="text-sm text-gray-600">Ensuring complete, flawless results</p>
+        </div>
+        <div class="text-center">
+          <div class="w-12 h-12 mx-auto mb-4 rounded-full flex items-center justify-center text-white font-bold" style="background-color: #7B2D8E;">5</div>
+          <h4 class="font-semibold mb-2">Empowered Close</h4>
+          <p class="text-sm text-gray-600">Reinforcing your confidence</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Both Locations -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #7B2D8E;">
+          Two Valley Locations
+        </h2>
+        <p class="text-xl text-gray-600">
+          Same exceptional 5-star service at both locations.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Phoenix (Current) -->
+        <div class="border-4 border-purple-500 rounded-xl p-8 bg-purple-50">
+          <div class="text-center mb-4">
+            <span class="inline-block px-4 py-1 rounded-full text-sm font-bold text-white" style="background-color: #7B2D8E;">You Are Here</span>
           </div>
+          <h3 class="text-2xl font-bold mb-2 text-center" style="color: #7B2D8E;">Phoenix</h3>
+          <address class="not-italic text-gray-600 mb-4 text-center">
+            Phoenix, AZ
+          </address>
+          <p class="text-gray-600 mb-6 text-center">
+            <strong>📞 (602) 374-4415</strong>
+          </p>
           <a 
             href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-block px-8 py-4 rounded-lg font-bold text-purple-900 bg-white hover:bg-purple-50 transition shadow-lg"
+            class="block w-full text-center px-6 py-3 rounded-lg font-bold text-white hover:shadow-lg transition"
+            style="background-color: #7B2D8E;"
           >
-            Book Appointment
+            Book Phoenix
           </a>
         </div>
-        <div class="hidden md:block">
-          <img 
-            src="/images/6358773dfa2fa42351f2e029_46598252-ff89-4700-80f2-2e535177697e_brazilian-waxing-scottsdale.jpg"
-            alt="Rejuvenate You Phoenix location"
-            class="rounded-xl shadow-2xl"
-          />
+
+        <!-- Scottsdale -->
+        <div class="border-2 border-gray-200 rounded-xl p-8 hover:border-purple-300 transition">
+          <h3 class="text-2xl font-bold mb-2 text-center" style="color: #7B2D8E;">Scottsdale</h3>
+          <address class="not-italic text-gray-600 mb-4 text-center">
+            7127 E Sahuaro Dr, Ste 103<br />
+            Scottsdale, AZ 85254
+          </address>
+          <p class="text-gray-600 mb-6 text-center">
+            <strong>📞 (480) 747-6996</strong>
+          </p>
+          <a 
+            href="/scottsdale"
+            class="block w-full text-center px-6 py-3 rounded-lg font-bold border-2 hover:bg-gray-50 transition"
+            style="color: #7B2D8E; border-color: #7B2D8E;"
+          >
+            Visit Scottsdale Page
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Location Info -->
-  <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12">
-        
-        <!-- Address & Hours -->
-        <div>
-          <h2 class="text-3xl font-bold mb-6" style="color: #7B2D8E;">Our Phoenix Location</h2>
-          <div class="bg-purple-50 p-8 rounded-xl mb-8">
-            <address class="not-italic">
-              <p class="text-lg font-semibold mb-2">Rejuvenate You</p>
-              <p class="text-gray-700 mb-4">Phoenix, AZ</p>
-              <p class="text-xl font-bold" style="color: #7B2D8E;">
-                <a href="tel:6023744415" class="hover:underline">(602) 374-4415</a>
-              </p>
-            </address>
-          </div>
-
-          <h3 class="text-xl font-bold mb-4" style="color: #7B2D8E;">Hours</h3>
-          <div class="bg-gray-50 p-6 rounded-xl">
-            <table class="w-full">
-              <tbody>
-                <tr class="border-b border-gray-200">
-                  <td class="py-2 font-medium">Monday - Friday</td>
-                  <td class="py-2 text-right">By Appointment</td>
-                </tr>
-                <tr class="border-b border-gray-200">
-                  <td class="py-2 font-medium">Saturday</td>
-                  <td class="py-2 text-right">By Appointment</td>
-                </tr>
-                <tr>
-                  <td class="py-2 font-medium">Sunday</td>
-                  <td class="py-2 text-right">Closed</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Map Placeholder -->
-        <div>
-          <h2 class="text-3xl font-bold mb-6" style="color: #7B2D8E;">Find Us</h2>
-          <div class="bg-gray-100 rounded-xl h-96 flex items-center justify-center border-2 border-dashed border-gray-300">
-            <div class="text-center text-gray-500">
-              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-              <p class="text-lg font-medium">Google Map Embed</p>
-              <p class="text-sm">Phoenix, AZ</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
+  <!-- Testimonials -->
   <section class="py-16 bg-purple-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Services in Phoenix</h2>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {services.map((service) => (
-          <a 
-            href={service.url}
-            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition border border-gray-100"
-          >
-            <h3 class="font-bold mb-2" style="color: #7B2D8E;">{service.name}</h3>
-            <p class="text-xl font-bold text-gray-900">{service.price}</p>
-          </a>
-        ))}
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: #7B2D8E;">
+          What Phoenix Clients Say
+        </h2>
+        <p class="text-xl text-gray-600">
+          5.0★ rating • 19+ reviews
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="flex text-yellow-400 mb-3">★★★★★</div>
+          <p class="text-gray-700 mb-4">
+            "Found Rejuvenate You Phoenix and I'm so glad I did! The Brazilian was quick and much less painful than my previous experiences."
+          </p>
+          <p class="font-semibold text-sm" style="color: #7B2D8E;">— Amanda R., Phoenix</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="flex text-yellow-400 mb-3">★★★★★</div>
+          <p class="text-gray-700 mb-4">
+            "As a guy, I was nervous about my first wax. They made me feel completely comfortable. Professional, fast, and great results."
+          </p>
+          <p class="font-semibold text-sm" style="color: #7B2D8E;">— Michael T., Phoenix</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="flex text-yellow-400 mb-3">★★★★★</div>
+          <p class="text-gray-700 mb-4">
+            "Love having a quality waxing option in Phoenix! The dermaplaning facial was amazing too. My skin is glowing."
+          </p>
+          <p class="font-semibold text-sm" style="color: #7B2D8E;">— Jennifer K., Phoenix</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Book Online -->
+  <!-- About Danielle -->
   <section class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-3xl font-bold mb-6" style="color: #7B2D8E;">Book Your Phoenix Appointment</h2>
-      <p class="text-lg text-gray-600 mb-8">
-        Ready to experience the Rejuvenate difference? Book online or call us today.
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6" style="color: #7B2D8E;">
+            Meet Danielle
+          </h2>
+          <p class="text-lg text-gray-700 mb-4">
+            Hi, I'm Danielle Morales, the owner of Rejuvenate You. I'm an esthetician with <strong>over 15 years of experience</strong> working in wax chains and medi-spas.
+          </p>
+          <p class="text-gray-700 mb-4">
+            I opened our Phoenix location to bring the same exceptional service to more clients across the Valley. Whether you're in Scottsdale or Phoenix, you'll receive the same 5-star experience.
+          </p>
+          <p class="text-gray-700 mb-6">
+            My goal is to provide a comfortable, efficient environment where clients feel at ease while receiving the best possible treatments. <strong>Integrity before income</strong> — always.
+          </p>
+          <a href="/about" class="inline-block px-6 py-3 rounded-lg font-bold text-white hover:shadow-lg transition" style="background-color: #7B2D8E;">
+            Read My Story
+          </a>
+        </div>
+        <div class="bg-purple-100 rounded-xl h-80 flex items-center justify-center">
+          <p class="text-purple-400 text-center">
+            <span class="block text-6xl mb-4">👩‍💼</span>
+            <span class="text-sm">Photo placeholder</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <FAQSection faqs={faqs} title="Frequently Asked Questions" />
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Ready to Feel Renewed?
+      </h2>
+      <p class="text-xl mb-8 text-purple-100">
+        Book your Phoenix appointment today and experience the Rejuvenate difference.
+      </p>
+      <p class="text-lg mb-8 text-purple-200">
+        New clients: <span class="font-semibold text-white">50% off your second visit!</span>
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a 
           href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-block px-8 py-4 rounded-lg font-bold text-white hover:shadow-lg transition"
-          style="background-color: #7B2D8E;"
+          class="inline-flex items-center justify-center px-8 py-4 rounded-lg font-bold text-purple-900 bg-white hover:bg-purple-50 transition shadow-lg"
         >
-          Book Online
+          Book Phoenix
         </a>
         <a 
           href="tel:6023744415"
-          class="inline-block px-8 py-4 rounded-lg font-bold border-2 hover:bg-gray-50 transition"
-          style="color: #7B2D8E; border-color: #7B2D8E;"
+          class="inline-flex items-center justify-center px-8 py-4 rounded-lg font-bold text-white border-2 border-white hover:bg-white/10 transition"
         >
           Call (602) 374-4415
         </a>
