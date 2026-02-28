@@ -1,12 +1,11 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-// Get all blog posts from content collection
-const blogPosts = await getCollection('blog');
+const posts = await getCollection('blog');
 
 // Sort by title for now (can add date field later)
-const sortedPosts = blogPosts.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const sortedPosts = posts.sort((a, b) => a.data.title.localeCompare(b.data.title));
 
 const schema = {
   '@context': 'https://schema.org',
@@ -49,7 +48,7 @@ const schema = {
             </div>
             <div class="p-6">
               <h2 class="text-lg font-bold mb-2 line-clamp-2" style="color: #7B2D8E;">
-                {post.data.title.replace(' | Rejuvenate You &mdash; Rejuvenate You', '').replace(' | Rejuvenate You — Rejuvenate You', '')}
+                {post.data.title.replace(' | Rejuvenate You &mdash; Rejuvenate You', '').replace(' | Rejuvenate You — Rejuvenate You', '').replace(' | Rejuvenate You', '')}
               </h2>
               <p class="text-gray-600 text-sm line-clamp-3 mb-4">
                 {post.data.description}
@@ -69,7 +68,7 @@ const schema = {
     <div class="mt-16 text-center">
       <div class="bg-purple-50 rounded-xl p-8 max-w-2xl mx-auto">
         <h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">
-          Ready to Book Your Appointment?
+          Ready to book your appointment?
         </h2>
         <p class="text-gray-600 mb-6">
           Schedule your service today at one of our Scottsdale or Phoenix locations.
