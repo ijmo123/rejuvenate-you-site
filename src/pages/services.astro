@@ -1,48 +1,297 @@
 ---
-import ServicePage from '../layouts/ServicePage.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BookingCTA from '../components/BookingCTA.astro';
+
+const pageTitle = 'Our Services | Waxing & Skin Treatments | Rejuvenate You';
+const pageDescription = 'Full menu of waxing and skincare services for both men and women. Brazilian wax, bikini wax, men\'s waxing, microneedling, dermaplaning, and more. Serving Phoenix and Scottsdale.';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Brazilian Wax",
+      "url": "https://www.rejuvenate-you.com/brazilian-wax-scottsdale"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Bikini Wax",
+      "url": "https://www.rejuvenate-you.com/bikini-wax-scottsdale"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Microneedling",
+      "url": "https://www.rejuvenate-you.com/microneedling-scottsdale-az"
+    }
+  ]
+};
 ---
 
-<ServicePage
-  title="Our Services | Waxing & Skin Treatments | Rejuvenate You"
-  description="Full menu of waxing and skincare services. Brazilian wax, men's waxing, microneedling, dermaplaning, and more. Serving Phoenix and Scottsdale."
->
+<BaseLayout title={pageTitle} description={pageDescription} schema={schema}>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
+      <p class="text-xl max-w-3xl mx-auto text-purple-100">
+        Full range of waxing and skincare services for both men and women
+      </p>
+    </div>
+  </section>
 
-# Our Services
+  <!-- Services Grid -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Women's Waxing -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Women's Waxing Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_46598252-ff89-4700-80f2-2e535177697e_brazilian-waxing-scottsdale.jpg" 
+                alt="Brazilian wax service in Scottsdale"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Brazilian Wax</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$60</p>
+              <p class="text-gray-600 mb-4">Remove all unwanted hair with our premium Brazilian wax service.</p>
+              <a href="/brazilian-wax-scottsdale" class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</a>
+            </div>
+          </div>
 
-Rejuvenate You offers a full range of waxing and skincare services for both men and women.
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_3e73bab7-6149-42c4-a35d-e694cc211f04_bikini-waxing-scottsdale.jpg" 
+                alt="Bikini wax service in Scottsdale"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Bikini Wax</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$45</p>
+              <p class="text-gray-600 mb-4">Professional pubic hair removal for fresher and smoother skin.</p>
+              <a href="/bikini-wax-scottsdale" class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</a>
+            </div>
+          </div>
 
-## Waxing Services
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_1668540552001-16ISSCXYFGHFPTR421T0_eyebrow-waxing-scottsdale.jpeg" 
+                alt="Eyebrow waxing in Scottsdale"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Eyebrow Wax</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$21</p>
+              <p class="text-gray-600 mb-4">Shape and define your brows with expert precision.</p>
+              <a href="/eyebrow-waxing-scottsdale" class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</a>
+            </div>
+          </div>
 
-### Women's Waxing
-- Brazilian Wax — $60
-- Bikini Wax — $45
-- Eyebrow Wax — $21
-- Full Face Wax — $45
-- Underarm Wax — $25
-- Full Leg Wax — $70
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_0c04e8fc-19ee-46d7-99d0-56d00574cd17_upper+lip+wax.jpeg" 
+                alt="Full face waxing in Scottsdale"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Full Face Wax</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$45</p>
+              <p class="text-gray-600 mb-4">Complete facial hair removal for smooth, radiant skin.</p>
+              <a href="/full-face-waxing-scottsdale" class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</a>
+            </div>
+          </div>
 
-### Men's Waxing
-- Men's Brazilian — $80
-- Back Wax — $60
-- Chest Wax — $30
-- Brow Wax — $21
-- Full Body Wax — Call for pricing
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_04ee1a0f-d7fb-4d58-847f-afc3c1e9bdcb_full-stomach-waxing.jpeg" 
+                alt="Stomach waxing service"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Underarm Wax</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$25</p>
+              <p class="text-gray-600 mb-4">Quick and effective underarm hair removal.</p>
+            </div>
+          </div>
 
-## Skin Treatments
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_16da6a34-b6ce-4108-ba29-b3efd83e74d6_benefits-of-butt-wax.jpeg" 
+                alt="Full leg waxing service"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Full Leg Wax</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$70</p>
+              <p class="text-gray-600 mb-4">Complete leg waxing from thigh to ankle.</p>
+            </div>
+          </div>
 
-### Microneedling
-Starting at $200
+        </div>
+      </div>
 
-### Dermaplaning
-$85
+      <!-- Men's Waxing -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Men's Waxing Services</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_0b97a288-2ff8-48eb-9130-541d093bf5e7_waxing-for-men.jpeg" 
+                alt="Men's Brazilian wax in Scottsdale"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Men's Brazilian</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$80</p>
+              <p class="text-gray-600 mb-4">Professional male Brazilian waxing service.</p>
+              <a href="/male-waxing-scottsdale" class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</a>
+            </div>
+          </div>
 
-## First-Time Client Special
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_7dc2819b-8823-40a2-9a76-61ec8f7bde46_male+eyebrow+waxing.jpeg" 
+                alt="Men's back waxing"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Back Wax</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$60</p>
+              <p class="text-gray-600 mb-4">Full back hair removal for smooth skin.</p>
+            </div>
+          </div>
 
-**50% off your second visit** when you book within 4-6 weeks!
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_1704236723356-F0ZZC66MHFKM5SDZ0PNC_mens-hair-removal.jpg" 
+                alt="Men's chest waxing"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Chest Wax</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$30</p>
+              <p class="text-gray-600 mb-4">Chest hair removal and grooming.</p>
+            </div>
+          </div>
 
-## Book Your Appointment
+        </div>
+      </div>
 
-- **Scottsdale:** [Book Online](https://rejuvenateyouwaxing.glossgenius.com/services) or call (480) 747-6996
-- **Phoenix:** [Book Online](https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start) or call (602) 374-4415
+      <!-- Skin Treatments -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center" style="color: #7B2D8E;">Skin Treatments</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_1709653948365-JTVDNSTQCA813DP45QR1_womanwitheyesclosed.jpg" 
+                alt="Microneedling treatment in Scottsdale"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Microneedling</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">Starting at $200</p>
+              <p class="text-gray-600 mb-4">Treat early signs of skin laxity, fine lines, and dull skin tones. Also effective for scar revision.</p>
+              <a href="/microneedling-scottsdale-az" class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</a>
+            </div>
+          </div>
 
-</ServicePage>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition">
+            <div class="h-48 bg-purple-100 flex items-center justify-center">
+              <img 
+                src="/images/6358773dfa2fa42351f2e029_02370109-1849-4534-a866-c3013ed5a1f2_dermaplaning-services.jpeg" 
+                alt="Dermaplaning treatment in Scottsdale"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2" style="color: #7B2D8E;">Dermaplaning</h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$85</p>
+              <p class="text-gray-600 mb-4">Exfoliating treatment that removes dead skin cells and peach fuzz.</p>
+              <a href="/dermaplaning-scottsdale" class="inline-block font-semibold hover:underline" style="color: #7B2D8E;">Learn More →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Special Offer -->
+  <section class="py-16 bg-purple-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-4" style="color: #7B2D8E;">First-Time Client Special</h2>
+      <p class="text-2xl mb-8">
+        <span class="font-bold" style="color: #7B2D8E;">50% off your second visit</span> when you book within 4-6 weeks!
+      </p>
+      <BookingCTA location="both" />
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-8" style="color: #7B2D8E;">Book Your Appointment</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-purple-50 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4" style="color: #7B2D8E;">Scottsdale</h3>
+          <p class="text-gray-600 mb-4">7127 E Sahuaro Dr, Ste 103<br>Scottsdale, AZ 85254</p>
+          <p class="text-lg font-semibold mb-4">(480) 747-6996</p>
+          <a 
+            href="https://rejuvenateyouwaxing.glossgenius.com/services"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-6 py-3 rounded-lg font-bold text-white hover:shadow-lg transition"
+            style="background-color: #7B2D8E;"
+          >
+            Book Scottsdale
+          </a>
+        </div>
+
+        <div class="bg-purple-50 rounded-xl p-8">
+          <h3 class="text-xl font-bold mb-4" style="color: #7B2D8E;">Phoenix</h3>
+          <p class="text-gray-600 mb-4">Phoenix, AZ</p>
+          <p class="text-lg font-semibold mb-4">(602) 374-4415</p>
+          <a 
+            href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-6 py-3 rounded-lg font-bold text-white hover:shadow-lg transition"
+            style="background-color: #7B2D8E;"
+          >
+            Book Phoenix
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
