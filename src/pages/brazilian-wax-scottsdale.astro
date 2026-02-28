@@ -3,23 +3,35 @@ import ServicePage from '../layouts/ServicePage.astro';
 
 const faqs = [
   {
-    question: "How painful is a Brazilian wax?",
-    answer: "Everyone has a different pain threshold, but our esthetician can reduce pain and discomfort by getting wax to the right temperature. It should be hot enough to melt not warm enough to hurt your skin. The experienced esthetician will have mind-body techniques such as breathing suggestions and other ways to calm the pain receptors."
+    question: "Does Brazilian waxing hurt?",
+    answer: "There's some discomfort, especially the first time, but our experienced estheticians use techniques that minimize pain. Most clients find it very manageable—many say it hurts less than they expected! Pain decreases with regular waxing as hair grows back finer."
+  },
+  {
+    question: "How long does a Brazilian wax take?",
+    answer: "Most Brazilian wax appointments take 15-20 minutes. We're efficient without rushing, so you get thorough results with minimal time."
+  },
+  {
+    question: "How long do Brazilian wax results last?",
+    answer: "Most clients stay smooth for 3-4 weeks. With regular waxing (every 4-6 weeks), hair grows back finer and sparser over time, making each session easier."
+  },
+  {
+    question: "Do you offer Brazilian wax for men?",
+    answer: "Yes! We offer men's Brazilian waxing at both our Phoenix and Scottsdale locations. Our estheticians are experienced with male Brazilian waxing and provide the same professional, comfortable experience."
+  },
+  {
+    question: "What kind of wax do you use?",
+    answer: "We use professional-grade hard wax for Brazilian services. Hard wax adheres to the hair, not the skin, which makes it more comfortable—especially for sensitive areas."
   },
   {
     question: "What's the difference between Brazilian and Bikini wax?",
-    answer: "When you select the Brazilian wax method, you can tell your esthetician whether you want full coverage or want some hair to remain. For example, some women keep a small triangle, a small strip, or a square shape. A bikini wax only removes hair that would be visible around the bikini line."
-  },
-  {
-    question: "How should I prepare for my Brazilian wax?",
-    answer: "Take a warm shower before your Brazilian wax session. It will help to open up the pores and make it easier for the wax to adhere to the hair. Exfoliate the area before Brazilian waxing. Don't use any creams or lotions before Brazilian waxing. Trim any pubic hairs before coming in for your session. Make sure you have at least ¼ inch of growth."
+    answer: "A Brazilian wax removes all or almost all pubic hair from the front to the back, while a bikini wax only removes hair that would be visible around the bikini line. With a Brazilian, you can also choose to leave a small triangle, strip, or square if you prefer."
   }
 ];
 ---
 
 <ServicePage
-  title="Brazilian Wax in Scottsdale AZ | Full Brazilian Waxing Service"
-  description="Remove all unwanted hair with our premium Brazilian wax service at Rejuvenate You. Experience minimal pain and discomfort. Book a consultation today!"
+  title="Brazilian Wax in Scottsdale AZ | 50% Off Second Visit"
+  description="Best Brazilian wax in Scottsdale, AZ. First-time client friendly, 50% off your second visit. 5.0★ rated with 15+ years experience. Book online today!"
   price="$60"
   duration="15-20 min"
   location="scottsdale" currentLocation="scottsdale"
@@ -36,8 +48,39 @@ const faqs = [
 </div>
 
 <p class="text-lg mb-6">
-  Remove all unwanted hair with our premium Brazilian wax service at Rejuvenate You. Experience minimal pain and discomfort. Book a consultation today!
+  Our full Brazilian wax service in Scottsdale consists of hair removal from the bikini line, labia and pubic mound. You can leave a triangle or strip of hair if you like. <strong>First-time client friendly • 5.0★ Rated • 15+ Years Experience</strong>
 </p>
+
+<!-- Special Offer Banner -->
+<div class="bg-purple-600 text-white p-6 rounded-xl mb-8 text-center">
+  <h2 class="text-2xl font-bold mb-2">🎉 FIRST-TIME CLIENT SPECIAL</h2>
+  <p class="text-lg mb-2">Your second Brazilian wax is <span class="font-bold text-yellow-300">50% OFF</span> when you schedule within 4-6 weeks</p>
+  <p class="text-sm opacity-90">First-Timer Specialists • 5.0★ Rated • 15+ Years Experience</p>
+</div>
+
+<!-- Trust Badges -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+  <div class="text-center p-4 bg-purple-50 rounded-lg">
+    <p class="text-2xl mb-1">⭐</p>
+    <p class="font-bold" style="color: #7B2D8E;">5.0★ Rating</p>
+    <p class="text-sm text-gray-600">Scottsdale & Phoenix</p>
+  </div>
+  <div class="text-center p-4 bg-purple-50 rounded-lg">
+    <p class="text-2xl mb-1">🏆</p>
+    <p class="font-bold" style="color: #7B2D8E;">15+ Years</p>
+    <p class="text-sm text-gray-600">Experience</p>
+  </div>
+  <div class="text-center p-4 bg-purple-50 rounded-lg">
+    <p class="text-2xl mb-1">✨</p>
+    <p class="font-bold" style="color: #7B2D8E;">First-Timer</p>
+    <p class="text-sm text-gray-600">Specialists</p>
+  </div>
+  <div class="text-center p-4 bg-purple-50 rounded-lg">
+    <p class="text-2xl mb-1">🔒</p>
+    <p class="font-bold" style="color: #7B2D8E;">Clean, Private</p>
+    <p class="text-sm text-gray-600">Studio</p>
+  </div>
+</div>
 
 <h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of a Brazilian Wax in Scottsdale</h2>
 
@@ -51,7 +94,7 @@ const faqs = [
   </div>
   <div class="flex flex-col justify-center">
     <p class="mb-4">
-      Opting for our full Brazilian wax service in Scottsdale offers many advantages. Consider the negative aspects of shaving. When you shave, the hair can grow thicker, itchier, and coarser. The shaving process doesn't provide a long-term solution either.
+      Opting for our full Brazilian wax service in Scottsdale offers many advantages. Brazilian waxing keeps skin smooth and free of stubble, making it easier to groom the area. Plus, Brazilian waxes can <a href="/blog/how-to-prevent-ingrown-hairs-after-waxing" class="text-purple-700 hover:underline">help with ingrown hairs</a>, reduce irritation, and improve overall hygiene.
     </p>
     <ul class="list-disc pl-5 space-y-2 text-gray-700">
       <li>Longer-lasting results than shaving</li>
@@ -66,10 +109,13 @@ const faqs = [
 
 <div class="bg-purple-50 p-6 rounded-lg mb-8">
   <p class="mb-4">
-    Everyone has a different pain threshold, but our esthetician can reduce pain and discomfort by getting wax to the right temperature. It should be hot enough to melt not warm enough to hurt your skin. The experienced esthetician will have mind-body techniques such as breathing suggestions and other ways to calm the pain receptors.
+    When it comes to Brazilian waxing, there is no need to fear pain or discomfort. Although Brazilian waxing involves some pain, it is usually manageable. The intensity of the discomfort depends on your pain threshold and how experienced you are with Brazilian waxing.
+  </p>
+  <p class="mb-4">
+    The team at our Scottsdale location has years of experience. Our estheticians will make sure you feel comfortable during the Brazilian waxing process. Depending on skin sensitivity, we will recommend pain relief solutions to help you remain as comfortable as possible.
   </p>
   <p>
-    There is also an expert gesture to tear off the wax in a swift motion. If done quickly and effectively, this part of the process causes brief and minimal pain.
+    The key to lessening pain during a Brazilian wax session is to take the necessary steps to prepare your skin. Our estheticians use mind-body techniques such as breathing suggestions and swift, expert gestures to minimize discomfort.
   </p>
 </div>
 
@@ -85,7 +131,10 @@ const faqs = [
   </div>
   <div>
     <p class="mb-4">
-      You can also choose to use a bikini full wax. The bikini full waxing procedure removes the hair from around the mons pubis area. The mons pubis area covers the lower abdomen and extends to the labia. The process does not include the rear area.
+      Our full Brazilian wax process is far more extensive than other waxing procedures. Brazilian waxes remove all pubic hair from the front to the back of your bikini line, while a basic <a href="/bikini-wax-scottsdale" class="text-purple-700 hover:underline">bikini wax</a> doesn't take away as much hair.
+    </p>
+    <p class="mb-4">
+      A bikini wax is less invasive, removing most of the hair outside a panty line. A Brazilian wax removes all or almost all pubic hair in the pelvic area. A full Brazilian wax will leave you smoother for longer periods as compared to a bikini wax.
     </p>
     <p>
       When you select the Brazilian wax method, you can tell your esthetician whether you want full coverage or want some hair to remain. For example, some women keep a small triangle, a small strip, or a square shape.
@@ -101,9 +150,6 @@ const faqs = [
     alt="How Brazilian wax is done"
     class="w-full h-64 object-cover rounded-lg mb-4"
   />
-  <p class="mb-4">
-    Here is what you can expect with your Brazilian wax session. Additionally, the wax temperature should remain comfortable. Our estheticians understand the art involved with using the appropriate temperature.
-  </p>
 </div>
 
 <h3 class="text-xl font-semibold mb-4" style="color: #7B2D8E;">Preparing for Your Appointment</h3>
@@ -136,10 +182,117 @@ const faqs = [
   </p>
 </div>
 
-<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Schedule Your Brazilian Wax Today</h2>
+<h3 class="text-xl font-semibold mb-4" style="color: #7B2D8E;">What to Expect During Your Session</h3>
 
-<p class="text-lg">
-  Ready to experience smooth, hair-free skin? <a href="/bookingselection" style="color: #7B2D8E;" class="font-semibold hover:underline">Book your Brazilian wax appointment</a> at our Scottsdale location today. Our experienced estheticians are here to provide you with the most comfortable waxing experience possible.
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <p class="mb-4">
+    First, the esthetician will clean the area with an antibacterial solution. Doing so will remove bacteria and any other contaminants that could cause irritation.
+  </p>
+  <p>
+    We divide a Brazilian wax session into two parts. The middle section near the mons pubis is typically done first, followed by the inner labia and outer edges. We apply the wax in the same direction of hair growth. Our estheticians will work quickly and efficiently to minimize any discomfort you may feel during this process.
+  </p>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Brazilian Wax Aftercare Instructions</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div class="bg-green-50 p-6 rounded-lg">
+    <h3 class="font-bold text-lg mb-3 text-green-700">✓ Do's</h3>
+    <ul class="space-y-2 text-gray-700 text-sm">
+      <li>• <strong>Chill out:</strong> Give your skin some time to recover from the waxing process. Avoid strenuous physical activity or sun exposure for at least 24 hours.</li>
+      <li>• <strong>Exfoliate with care:</strong> Gently exfoliate the waxed area 2-3 times a week to keep those pesky ingrown hairs at bay.</li>
+      <li>• <strong>Hydrate:</strong> Moisturize daily to keep your skin looking and feeling its best.</li>
+      <li>• <strong>Cool it down:</strong> If redness or irritation occurs, a cool compress or aloe vera gel will be your skin's best friend.</li>
+    </ul>
+  </div>
+  <div class="bg-red-50 p-6 rounded-lg">
+    <h3 class="font-bold text-lg mb-3 text-red-700">✗ Don'ts</h3>
+    <ul class="space-y-2 text-gray-700 text-sm">
+      <li>• <strong>Stay away from heat:</strong> Hot showers, hot tubs, saunas, and swimming are a no-go for at least 24 hours after waxing.</li>
+      <li>• <strong>Nix the nasties:</strong> Avoid any products that contain alcohol, fragrances, or dyes on the treated area.</li>
+      <li>• <strong>Cover up:</strong> Avoid tight clothing and direct sun exposure for at least 24 hours to prevent any irritation.</li>
+      <li>• <strong>Don't pick:</strong> Don't pick or scratch the treated area, as this can lead to infection and scarring.</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Why Choose Rejuvenate You in Scottsdale</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-6">
+    <div>
+      <h4 class="font-bold mb-2" style="color: #7B2D8E;">15+ Years Experience</h4>
+      <p class="text-sm text-gray-700 mb-4">Our lead esthetician Danielle has performed thousands of Brazilian waxes. You're in expert hands—no awkwardness, no judgment, just professional results.</p>
+      
+      <h4 class="font-bold mb-2" style="color: #7B2D8E;">First-Timer Specialists</h4>
+      <p class="text-sm text-gray-700">Nervous about your first Brazilian wax? That's completely normal. We specialize in making first-time clients comfortable, and we'll walk you through every step.</p>
+    </div>
+    <div>
+      <h4 class="font-bold mb-2" style="color: #7B2D8E;">5.0★ Rating</h4>
+      <p class="text-sm text-gray-700 mb-4">Both our locations maintain perfect 5-star ratings on Google. Our clients consistently praise our cleanliness, professionalism, and how comfortable we make them feel.</p>
+      
+      <h4 class="font-bold mb-2" style="color: #7B2D8E;">Fair, Transparent Pricing</h4>
+      <p class="text-sm text-gray-700">Brazilian Wax: $60 | Men's Brazilian: $80. No hidden fees, no surprises.</p>
+    </div>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What Our Scottsdale Clients Say</h2>
+
+<div class="grid md:grid-cols-3 gap-6 mb-8">
+  <div class="bg-white p-6 rounded-xl shadow-sm border">
+    <div class="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+    <p class="text-gray-700 text-sm mb-4">"I was so nervous for my first Brazilian wax, but Danielle made it so comfortable. She talked me through everything and it was way less painful than I expected. I'll definitely be back!"</p>
+    <p class="font-semibold text-sm" style="color: #7B2D8E;">— Jessica M., Scottsdale</p>
+  </div>
+  <div class="bg-white p-6 rounded-xl shadow-sm border">
+    <div class="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+    <p class="text-gray-700 text-sm mb-4">"Finally found a waxing place that actually cares about making you comfortable. Clean studio, professional service, and my skin has never been smoother."</p>
+    <p class="font-semibold text-sm" style="color: #7B2D8E;">— Amanda R., Scottsdale</p>
+  </div>
+  <div class="bg-white p-6 rounded-xl shadow-sm border">
+    <div class="text-yellow-400 mb-2">⭐⭐⭐⭐⭐</div>
+    <p class="text-gray-700 text-sm mb-4">"I've been to a few waxing spots in Scottsdale and Rejuvenate You is by far the best. Danielle is quick, which means less discomfort. Plus the first-timer discount was a nice bonus!"</p>
+    <p class="font-semibold text-sm" style="color: #7B2D8E;">— Michelle T., Scottsdale</p>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Brazilian Wax Pricing in Scottsdale</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="flex justify-between items-center py-2 border-b border-purple-200">
+    <span class="font-semibold">Brazilian Wax</span>
+    <span class="font-bold text-xl" style="color: #7B2D8E;">$60</span>
+  </div>
+  <div class="flex justify-between items-center py-2">
+    <span class="font-semibold">Men's Brazilian Wax</span>
+    <span class="font-bold text-xl" style="color: #7B2D8E;">$80</span>
+  </div>
+  <p class="mt-4 text-sm text-gray-600">
+    <strong>🎉 FIRST-TIME CLIENT SPECIAL:</strong> Your second Brazilian wax is 50% off when you schedule within 4-6 weeks!
+  </p>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Schedule Your Brazilian Wax in Scottsdale</h2>
+
+<p class="text-lg mb-4">
+  Ready to experience smooth, hair-free skin? Join thousands of satisfied Scottsdale clients. Check out our <a href="/services" class="text-purple-700 hover:underline">pricing page</a> to see a comprehensive list of all the services we offer along with their prices.
 </p>
+
+<p class="text-lg mb-6">
+  We also offer a variety of services such as <a href="/bikini-wax-scottsdale" class="text-purple-700 hover:underline">bikini wax</a>, Brazilian wax, <a href="/eyebrow-waxing-scottsdale" class="text-purple-700 hover:underline">eyebrow wax</a>, <a href="/upper-lip-wax-scottsdale" class="text-purple-700 hover:underline">lip wax</a>, <a href="/full-face-waxing-scottsdale" class="text-purple-700 hover:underline">full face wax</a>, <a href="/neck-waxing-scottsdale" class="text-purple-700 hover:underline">neck wax</a>, <a href="/dermaplaning-scottsdale" class="text-purple-700 hover:underline">dermaplaning</a>, and <a href="/microneedling-scottsdale-az" class="text-purple-700 hover:underline">microneedling</a>.
+</p>
+
+<div class="text-center">
+  <a
+    href="https://rejuvenateyouwaxing.glossgenius.com/services"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-block px-8 py-4 rounded-lg font-bold text-white text-lg"
+    style="background-color: #7B2D8E;"
+  >
+    Book Your Brazilian Wax in Scottsdale
+  </a>
+</div>
 
 </ServicePage>
