@@ -1,10 +1,169 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "What is full face waxing?",
+    answer: "Full face waxing removes unwanted facial hair from the entire face including cheeks, chin, upper lip, brows, and sideburns. It leaves your skin smooth and provides a perfect canvas for makeup application."
+  },
+  {
+    question: "How long does full face waxing take?",
+    answer: "Full face waxing typically takes 20-30 minutes depending on the amount of hair and areas being treated."
+  },
+  {
+    question: "How often should I get my face waxed?",
+    answer: "Most clients schedule face waxing every 3-4 weeks. Facial hair tends to grow faster than body hair, so more frequent maintenance may be needed."
+  }
+];
 ---
 
 <ServicePage
-  title="Full Face Waxing Phoenix"
-  description="Service from Rejuvenate You"
+  title="Full Face Waxing Phoenix | Facial Hair Removal"
+  description="Professional full face waxing in Phoenix, AZ. Remove unwanted facial hair for smooth, makeup-ready skin. Expert technique, gentle on sensitive skin. Book today!"
+  price="$45"
+  duration="20-30 min"
+  location="phoenix"
+  faqs={faqs}
 >
-Content to be imported.
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_292a2082-5ef6-443e-84a1-6240546fda3a_full+face+wax.jpeg"
+    alt="Full face waxing service at Rejuvenate You in Phoenix"
+    class="w-full h-64 md:h-96 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Achieve smooth, hair-free skin across your entire face with our professional full face waxing service in Phoenix. Perfect for creating a flawless canvas for makeup or enjoying naturally smooth skin.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What Areas Are Included?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_406cb918-b619-4c0e-a5fa-a4f31708ec85_full+face+waxing.jpeg"
+      alt="Full face waxing treatment"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Full face waxing typically includes:
+    </p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>Forehead and temples</li>
+      <li>Cheeks and sideburns</li>
+      <li>Upper lip</li>
+      <li>Chin and jawline</li>
+      <li>Between the brows</li>
+      <li>Nose (exterior)</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of Full Face Waxing</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-4">
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Smooth, hair-free skin</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Perfect makeup application</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Longer-lasting than shaving</span>
+      </li>
+    </ul>
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>No razor burn or cuts</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Removes peach fuzz</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Gentle on sensitive skin</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">The Process</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Consultation</strong> — We assess your skin and discuss any sensitivities or concerns.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Cleansing</strong> — Your face is thoroughly cleansed to remove makeup and oils.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Protection</strong> — We apply powder to protect your skin and help the wax adhere properly.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Waxing</strong> — Using gentle hard wax, we carefully remove hair from each area.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">5.</span>
+      <div>
+        <strong>Soothing</strong> — Calming products are applied to reduce any redness.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Before Your Appointment</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ul class="space-y-2">
+    <li>• Avoid retinol or exfoliating products for 5-7 days</li>
+    <li>• Stop using Accutane at least 6 months before waxing</li>
+    <li>• Avoid sun exposure for 24 hours before</li>
+    <li>• Come with clean skin (no makeup)</li>
+    <li>• Let hair grow to at least ¼ inch</li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Aftercare</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <ul class="space-y-2">
+    <li>• Avoid touching your face for 24 hours</li>
+    <li>• No makeup for 12-24 hours</li>
+    <li>• Avoid sun exposure and use SPF</li>
+    <li>• Skip exfoliating for 3 days</li>
+    <li>• Avoid saunas and hot showers for 24 hours</li>
+  </ul>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Full Face Wax in Phoenix</h2>
+
+<p class="text-lg">
+  Ready for smooth, makeup-ready skin? <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" style="color: #7B2D8E;" class="font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Book your full face waxing appointment</a> at our Phoenix location today!
+</p>
+
 </ServicePage>

@@ -1,10 +1,134 @@
 ---
 import ServicePage from '../layouts/ServicePage.astro';
+
+const faqs = [
+  {
+    question: "Is microneedling painful?",
+    answer: "Most clients experience minimal discomfort. A topical numbing cream is applied before treatment to ensure your comfort. The sensation is often described as a light vibrating or prickling feeling."
+  },
+  {
+    question: "How many microneedling sessions do I need?",
+    answer: "Most clients see optimal results after 3-6 sessions spaced 4-6 weeks apart. However, you may notice improvements after just one treatment. Your esthetician will recommend a personalized treatment plan based on your skin concerns."
+  },
+  {
+    question: "What is the downtime after microneedling?",
+    answer: "There is minimal downtime. You may experience redness similar to a mild sunburn for 24-48 hours. Most clients can return to normal activities immediately, though we recommend avoiding makeup and direct sun exposure for 24 hours."
+  }
+];
 ---
 
 <ServicePage
-  title="Microneedling Phoenix"
-  description="Service from Rejuvenate You"
+  title="Microneedling Phoenix | Collagen Stimulation Treatment"
+  description="Professional microneedling in Phoenix, AZ. Reduce fine lines, acne scars, and improve skin texture. Stimulate natural collagen production. Book today."
+  price="From $200"
+  duration="30-60 min"
+  location="phoenix"
+  faqs={faqs}
 >
-Content to be imported.
+
+<!-- Hero Image -->
+<div class="mb-8">
+  <img 
+    src="/images/6358773dfa2fa42351f2e029_8f488d5f-2499-4306-929c-5eb072fc98ad_microneedling+scottsdale+az.jpeg"
+    alt="Microneedling treatment at Rejuvenate You in Phoenix"
+    class="w-full h-64 md:h-96 object-cover rounded-xl"
+  />
+</div>
+
+<p class="text-lg mb-6">
+  Minimize unsightly blemishes by stimulating your skin's natural collagen production with our microneedling treatments in Phoenix.
+</p>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What is Microneedling?</h2>
+
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <img 
+      src="/images/6358773dfa2fa42351f2e029_a17fdc74-407f-465c-b1c3-95d741bac86e_microneedling+service+scottsdale+az.jpeg"
+      alt="Microneedling procedure"
+      class="w-full h-48 object-cover rounded-lg mb-4"
+    />
+  </div>
+  <div class="flex flex-col justify-center">
+    <p class="mb-4">
+      Microneedling is a minimally invasive treatment that uses fine needles to create micro-injuries in the skin. This triggers your body's natural healing response, stimulating collagen and elastin production.
+    </p>
+    <p>
+      This treatment is highly effective for treating early signs of skin laxity, fine lines, dull skin tones, and scars.
+    </p>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Benefits of Microneedling</h2>
+
+<div class="bg-purple-50 p-6 rounded-lg mb-8">
+  <div class="grid md:grid-cols-2 gap-4">
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Reduces fine lines and wrinkles</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Minimizes acne scars</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Improves skin texture and tone</span>
+      </li>
+    </ul>
+    <ul class="space-y-2">
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Reduces pore size</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Stimulates collagen production</span>
+      </li>
+      <li class="flex items-center">
+        <span class="text-purple-600 mr-2">✓</span>
+        <span>Minimally invasive with minimal downtime</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">What to Expect During Treatment</h2>
+
+<div class="bg-gray-50 p-6 rounded-lg mb-8">
+  <ol class="space-y-4">
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">1.</span>
+      <div>
+        <strong>Consultation</strong> — We assess your skin and discuss your concerns to create a personalized treatment plan.
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">2.</span>
+      <div>
+        <strong>Numbing</strong> — A topical numbing cream is applied for your comfort (15-30 minutes).
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">3.</span>
+      <div>
+        <strong>Treatment</strong> — The microneedling device is gently moved across your skin (20-30 minutes).
+      </div>
+    </li>
+    <li class="flex items-start">
+      <span class="font-bold mr-3 text-purple-700">4.</span>
+      <div>
+        <strong>Aftercare</strong> — Soothing serums are applied and we provide detailed aftercare instructions.
+      </div>
+    </li>
+  </ol>
+</div>
+
+<h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">Book Your Microneedling Treatment in Phoenix</h2>
+
+<p class="text-lg">
+  Ready to rejuvenate your skin? <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" style="color: #7B2D8E;" class="font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Book your microneedling appointment</a> at our Phoenix location today and start your journey to smoother, more radiant skin.
+</p>
+
 </ServicePage>

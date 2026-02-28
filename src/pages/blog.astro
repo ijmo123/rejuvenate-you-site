@@ -1,10 +1,100 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Get all blog posts from content collection
+const blogPosts = await getCollection('blog');
+
+// Sort by title for now (can add date field later)
+const sortedPosts = blogPosts.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  headline: 'Rejuvenate You Blog | Waxing & Skincare Tips',
+  description: 'Expert tips and advice on waxing, skincare, and beauty treatments from Rejuvenate You in Scottsdale and Phoenix.',
+  url: 'https://www.rejuvenate-you.com/blog/',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Rejuvenate You',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.rejuvenate-you.com/logo.png'
+    }
+  }
+};
 ---
 
 <BaseLayout
-  title="Blog"
-  description="Service from Rejuvenate You"
+  title="Rejuvenate You Blog | Waxing & Skincare Tips"
+  description="Expert tips and advice on waxing, skincare, and beauty treatments from Rejuvenate You in Scottsdale and Phoenix."
+  schema={schema}
 >
-Content to be imported.
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4" style="color: #7B2D8E;">
+        Our Blog to Rejuvenate You
+      </h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Check out our latest articles as we provide you with the latest and greatest info about our waxing and skincare services.
+      </p>
+    </header>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {sortedPosts.map((post) => (
+        <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+          <a href={`/blog/${post.slug}/`} class="block">
+            <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center">
+              <span class="text-6xl">✨</span>
+            </div>
+            <div class="p-6">
+              <h2 class="text-lg font-bold mb-2 line-clamp-2" style="color: #7B2D8E;">
+                {post.data.title.replace(' | Rejuvenate You &mdash; Rejuvenate You', '').replace(' | Rejuvenate You — Rejuvenate You', '')}
+              </h2>
+              <p class="text-gray-600 text-sm line-clamp-3 mb-4">
+                {post.data.description}
+              </p>
+              <span class="inline-flex items-center font-semibold" style="color: #7B2D8E;">
+                Read More 
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+
+    <div class="mt-16 text-center">
+      <div class="bg-purple-50 rounded-xl p-8 max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold mb-4" style="color: #7B2D8E;">
+          Ready to Book Your Appointment?
+        </h2>
+        <p class="text-gray-600 mb-6">
+          Schedule your service today at one of our Scottsdale or Phoenix locations.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://rejuvenateyouwaxing.glossgenius.com/services"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-8 py-3 rounded-lg font-bold text-white"
+            style="background-color: #7B2D8E;"
+          >
+            Book Scottsdale
+          </a>
+          <a
+            href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-8 py-3 rounded-lg font-bold text-white"
+            style="background-color: #7B2D8E;"
+          >
+            Book Phoenix
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </BaseLayout>
