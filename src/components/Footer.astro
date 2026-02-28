@@ -75,29 +75,30 @@ const isScottsdale = currentLocation === 'scottsdale';
                 )}
                 {!isPhoenix && !isScottsdale && (
                     <>
-                        <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Contact Us</h3>
-                        <div class="space-y-2 text-sm">
+                        <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Scottsdale</h3>
+                        <address class="not-italic space-y-2 text-sm">
                             <p>
+                                <a href="https://www.google.com/maps?cid=9311880125746937216" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    7127 E Sahuaro Dr, Ste 103<br>
+                                    Scottsdale, AZ 85254
+                                </a>
+                            </p>
+                            <p class="mt-4">
                                 <a href="tel:6239803867" class="hover:text-purple-400 transition">
                                     (623) 980-3867
                                 </a>
                             </p>
-                            <p class="mt-4">
+                            <p>
                                 <a href="https://rejuvenateyouwaxing.glossgenius.com/services" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
                                     Book Scottsdale
                                 </a>
                             </p>
-                            <p>
-                                <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
-                                    Book Phoenix
-                                </a>
-                            </p>
-                        </div>
+                        </address>
                     </>
                 )}
             </div>
 
-            <!-- Other Location (no address) -->
+            <!-- Other Location (or both on main home) -->
             <div class={isPhoenix ? 'opacity-60' : isScottsdale ? 'opacity-60' : ''}>
                 {isPhoenix && (
                     <>
@@ -131,6 +132,29 @@ const isScottsdale = currentLocation === 'scottsdale';
                                 </a>
                             </p>
                         </div>
+                    </>
+                )}
+                {!isPhoenix && !isScottsdale && (
+                    <>
+                        <h3 class="text-lg font-bold mb-4" style="color: #D4A574;">Phoenix</h3>
+                        <address class="not-italic space-y-2 text-sm">
+                            <p>
+                                <a href="https://www.google.com/maps?cid=7887328475959804245" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    727 E Bethany Home Rd, Ste d-224<br>
+                                    Phoenix, AZ 85014
+                                </a>
+                            </p>
+                            <p class="mt-4">
+                                <a href="tel:6239803867" class="hover:text-purple-400 transition">
+                                    (623) 980-3867
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start" target="_blank" rel="noopener noreferrer" class="hover:text-purple-400 transition">
+                                    Book Phoenix
+                                </a>
+                            </p>
+                        </address>
                     </>
                 )}
             </div>
