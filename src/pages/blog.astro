@@ -10,7 +10,7 @@ const sortedPosts = posts.sort((a, b) => a.data.title.localeCompare(b.data.title
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
-  headline: 'Rejuvenate You Blog | Waxing & Skincare Tips',
+  headline: 'Rejuvenate You Blog',
   description: 'Expert tips and advice on waxing, skincare, and beauty treatments from Rejuvenate You in Scottsdale and Phoenix.',
   url: 'https://www.rejuvenate-you.com/blog/',
   publisher: {
@@ -25,18 +25,43 @@ const schema = {
 ---
 
 <BaseLayout
-  title="Rejuvenate You Blog | Waxing & Skincare Tips"
+  title="Rejuvenate You Blog"
   description="Expert tips and advice on waxing, skincare, and beauty treatments from Rejuvenate You in Scottsdale and Phoenix."
   schema={schema}
 >
   <div class="max-w-6xl mx-auto px-4 py-12">
-    <header class="text-center mb-12">
+    <header class="text-center mb-8">
       <h1 class="text-4xl font-bold mb-4" style="color: #53009D;">
-        Our Blog to Rejuvenate You
+        Rejuvenate You Blog
       </h1>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-        Check out our latest articles as we provide you with the latest and greatest info about our waxing and skincare services.
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
+        Expert tips and advice on waxing, skincare, and beauty treatments.
       </p>
+      
+      <!-- Location Selector -->
+      <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+        <span class="text-gray-600 font-medium">Choose your location:</span>
+        <div class="flex gap-3">
+          <a 
+            href="/scottsdale/blog" 
+            class="px-6 py-2 rounded-lg font-semibold border-2 transition hover:shadow-md"
+            style="color: #53009D; border-color: #53009D;"
+            onmouseover="this.style.backgroundColor='#53009D'; this.style.color='white';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#53009D';"
+          >
+            Scottsdale
+          </a>
+          <a 
+            href="/phoenix/blog" 
+            class="px-6 py-2 rounded-lg font-semibold border-2 transition hover:shadow-md"
+            style="color: #53009D; border-color: #53009D;"
+            onmouseover="this.style.backgroundColor='#53009D'; this.style.color='white';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#53009D';"
+          >
+            Phoenix
+          </a>
+        </div>
+      </div>
     </header>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
