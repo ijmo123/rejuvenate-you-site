@@ -1,0 +1,188 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const testimonials = [
+  {
+    quote: "Hands down the least painful Brazilian I've ever had. Danielle's technique is incredible, and the guided breathing really helps!",
+    name: "Sarah M.",
+    location: "Scottsdale",
+    service: "Brazilian Wax",
+    rating: 5
+  },
+  {
+    quote: "I've been coming here for over 3 years. The consistency and quality are unmatched. Worth every penny!",
+    name: "Rebecca L.",
+    location: "Scottsdale",
+    service: "Brazilian Wax",
+    rating: 5
+  },
+  {
+    quote: "Best microneedling results I've ever had. My skin looks 10 years younger. Danielle really knows what she's doing!",
+    name: "Michelle C.",
+    location: "Scottsdale",
+    service: "Microneedling",
+    rating: 5
+  },
+  {
+    quote: "Found Rejuvenate You Phoenix and I'm so glad I did! The Brazilian was quick and much less painful than my previous experiences.",
+    name: "Amanda R.",
+    location: "Phoenix",
+    service: "Brazilian Wax",
+    rating: 5
+  },
+  {
+    quote: "As a guy, I was nervous about my first wax. They made me feel completely comfortable. Professional, fast, and great results.",
+    name: "Michael T.",
+    location: "Phoenix",
+    service: "Men's Waxing",
+    rating: 5
+  },
+  {
+    quote: "Love having a quality waxing option in Phoenix! The dermaplaning facial was amazing too. My skin is glowing.",
+    name: "Jennifer K.",
+    location: "Phoenix",
+    service: "Dermaplaning",
+    rating: 5
+  },
+  {
+    quote: "The 50% off second visit deal is amazing! I saved so much and the service is top-notch. Highly recommend!",
+    name: "Lisa P.",
+    location: "Scottsdale",
+    service: "Brazilian Wax",
+    rating: 5
+  },
+  {
+    quote: "Danielle is so professional and makes you feel so comfortable. The studio is clean and welcoming. Best wax in Phoenix!",
+    name: "Rachel H.",
+    location: "Phoenix",
+    service: "Bikini Wax",
+    rating: 5
+  },
+  {
+    quote: "I've tried many places in Scottsdale and this is by far the best. Fast, efficient, and virtually painless. Danielle is the best!",
+    name: "Christina M.",
+    location: "Scottsdale",
+    service: "Brazilian Wax",
+    rating: 5
+  }
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Client Testimonials | Rejuvenate You',
+  description: 'Read real reviews from satisfied clients of Rejuvenate You in Scottsdale and Phoenix. 5.0★ rated waxing and skincare services.',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '82'
+  }
+};
+---
+
+<BaseLayout
+  title="Client Testimonials | Rejuvenate You Reviews"
+  description="Read real reviews from satisfied clients of Rejuvenate You in Scottsdale and Phoenix. 5.0★ rated waxing and skincare services with 15+ years experience."
+  schema={schema}
+>
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4" style="color: #53009D;">
+        What Our Clients Say
+      </h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Real reviews from real clients. We're proud to have a 5.0★ rating across both our Scottsdale and Phoenix locations.
+      </p>
+      <div class="mt-6 flex justify-center items-center gap-2">
+        <span class="text-3xl">⭐⭐⭐⭐⭐</span>
+        <span class="text-2xl font-bold" style="color: #53009D;">5.0</span>
+        <span class="text-gray-600">(82+ reviews)</span>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-purple-50 rounded-xl p-6 text-center">
+        <p class="text-4xl font-bold mb-2" style="color: #53009D;">5.0★</p>
+        <p class="text-gray-600">Average Rating</p>
+      </div>
+      <div class="bg-purple-50 rounded-xl p-6 text-center">
+        <p class="text-4xl font-bold mb-2" style="color: #53009D;">82+</p>
+        <p class="text-gray-600">Google Reviews</p>
+      </div>
+      <div class="bg-purple-50 rounded-xl p-6 text-center">
+        <p class="text-4xl font-bold mb-2" style="color: #53009D;">15+</p>
+        <p class="text-gray-600">Years Experience</p>
+      </div>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      {testimonials.map((testimonial) => (
+        <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="flex text-yellow-400 mb-3 text-lg">
+            {'★'.repeat(testimonial.rating)}
+          </div>
+          <p class="text-gray-700 mb-4 italic">
+            "{testimonial.quote}"
+          </p>
+          <div class="border-t border-gray-100 pt-4">
+            <p class="font-semibold" style="color: #53009D;">— {testimonial.name}</p>
+            <p class="text-sm text-gray-500">{testimonial.location} • {testimonial.service}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-purple-600 text-white rounded-xl p-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        Ready to Experience the Difference?
+      </h2>
+      <p class="text-lg mb-6 opacity-90">
+        Join our satisfied clients and discover why we're the top-rated waxing studio in Phoenix and Scottsdale.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="https://rejuvenateyouwaxing.glossgenius.com/services"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-8 py-3 rounded-lg font-bold bg-white text-purple-900 hover:bg-gray-100 transition"
+        >
+          Book Scottsdale
+        </a>
+        <a
+          href="https://app.squareup.com/appointments/book/e9ycxyisf79aby/L96KEQZQVHJ37/start"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-8 py-3 rounded-lg font-bold border-2 border-white hover:bg-white/10 transition"
+        >
+          Book Phoenix
+        </a>
+      </div>
+    </div>
+
+    <!-- Review Links -->
+    <div class="mt-12 text-center">
+      <p class="text-gray-600 mb-4">See more reviews on:</p>
+      <div class="flex justify-center gap-6">
+        <a 
+          href="https://www.google.com/maps?cid=9311880125746937216" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="text-purple-700 hover:underline font-semibold"
+        >
+          Google Reviews (Scottsdale)
+        </a>
+        <a 
+          href="https://www.google.com/maps?cid=7887328475959804245" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="text-purple-700 hover:underline font-semibold"
+        >
+          Google Reviews (Phoenix)
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
