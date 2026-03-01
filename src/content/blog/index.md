@@ -1,10 +1,10 @@
 ---
-title: "Our Blog to Rejuvenate You"
+title: "Rejuvenate You Blog"
 description: "Check out our latest articles as we provide you with the latest and 
 greatest info about our services."
 ---
 
-# Our Blog to Rejuvenate You
+# Rejuvenate You Blog
 
 
 Check out our latest articles as we provide you with the latest and 
